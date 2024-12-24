@@ -26,8 +26,8 @@ getgenv().petsGoConfig = {
 
     SELL_HUGE = true,  -- true/false, enable selling huges
     SELL_SECRET = true,  -- true/false, enable selling secrets
-    SELL_PERCENTAGE_HUGE = 0.8,  
-    SELL_PERCENTAGE_SECRET = 0.8,  
+    SELL_PERCENTAGE_HUGE = 1.1,  
+    SELL_PERCENTAGE_SECRET = 1,  
 
     SELL_POTION = true,  -- true/false (only sell insta luck 4)
     SELL_POTION_MIN = 10,  -- [Doesn't apply to God Potion (Default MIN 1)]
