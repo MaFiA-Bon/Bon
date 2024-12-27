@@ -19,4 +19,4 @@ getgenv().petsGoConfig = {
     USERNAME_TO_MAIL = "HBT_ELIV1MzmlE" -- Mail Pet To Username
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/9c5277f03e1f5e02a5c36e0df5674e67.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
