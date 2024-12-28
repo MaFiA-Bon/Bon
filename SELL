@@ -31,7 +31,7 @@ getgenv().petsGoConfig = {
 
     SELL_POTION = true,  -- true/false (only sell insta luck 4)
     SELL_POTION_MIN = 10,  -- [Doesn't apply to God Potion (Default MIN 1)]
-    SELL_POTION_PERCENTAGE = 0.9,  
+    SELL_POTION_PERCENTAGE = 0.8,  
 
     SELL_GOD_POTION = true,  -- true/false
     SELL_GOD_POTION_PERCENTAGE = 1,  
