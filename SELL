@@ -22,11 +22,11 @@ getgenv().petsGoConfig = {
     SELL_PERCENTAGE_100M = 1,  
 
     SELL_500M_PET = true,  -- true/false, enable selling 500m+ pets (excluding huge/secrets)
-    SELL_PERCENTAGE_500M = 0.8,  
+    SELL_PERCENTAGE_500M = 0.9,  
 
     SELL_HUGE = true,  -- true/false, enable selling huges
     SELL_SECRET = true,  -- true/false, enable selling secrets
-    SELL_PERCENTAGE_HUGE = 1.1,  
+    SELL_PERCENTAGE_HUGE = 1,  
     SELL_PERCENTAGE_SECRET = 1,  
 
     SELL_POTION = true,  -- true/false (only sell insta luck 4)
@@ -50,24 +50,27 @@ getgenv().petsGoConfig = {
 
     SELL_BAIT = true,  -- true/false, enable selling exclusive fishing bait
     SELL_BAIT_MIN = 10, 
-    SELL_BAIT_PERCENTAGE = 0.8,  
+    SELL_BAIT_PERCENTAGE = 1,  
 
     SELL_CHEST = true,  -- true/false, enable selling exclusive treasure chest
     SELL_CHEST_MIN = 10, 
-    SELL_CHEST_PERCENTAGE = 0.8,  
+    SELL_CHEST_PERCENTAGE = 0.9,  
 
     SELL_GIFT_BAG = true,  -- true/false, enable selling exclusive treasure chest
-    SELL_GIFT_BAG_MIN = 0.8, 
-    SELL_GIFT_BAG_PERCENTAGE = 0.8,  
+    SELL_GIFT_BAG_MIN = 1, 
+    SELL_GIFT_BAG_PERCENTAGE = 0.9,  
 
     SELL_FISHING_ROD = true,  -- true/false, enable selling fishing rods
-    SELL_FISHING_ROD_PERCENTAGE = 0.8,
+    SELL_FISHING_ROD_PERCENTAGE = 0.9,
+
+    SELL_PICKAXE = true,
+    SELL_PICKAXE_PERCENTAGE = 0.9,
 
     SELL_SCROLL = true,
-    SELL_SCROLL_PERCENTAGE = 0.8,
+    SELL_SCROLL_PERCENTAGE = 0.9,
 
     MAIL_GEMS_USERNAME = "HBT_7aQcP6I",  -- Empty = Disabled Gem Mail
-    MAIL_GEMS_MIN = 3000000,  -- Minimum gems required to send
+    MAIL_GEMS_MIN = 5000000,  -- Minimum gems required to send
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/074ae419ea26f2a773d8e592958ec2e8.lua"))() 
