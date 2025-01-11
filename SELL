@@ -26,7 +26,7 @@ getgenv().petsGoConfig = {
 
     SELL_HUGE = true,  -- true/false, enable selling huges
     SELL_SECRET = true,  -- true/false, enable selling secrets
-    SELL_PERCENTAGE_HUGE = 1.1,  
+    SELL_PERCENTAGE_HUGE = 1,  
     SELL_PERCENTAGE_SECRET = 1,  
 
     SELL_POTION = true,  -- true/false (only sell insta luck 4)
@@ -50,11 +50,15 @@ getgenv().petsGoConfig = {
 
     SELL_BAIT = true,  -- true/false, enable selling exclusive fishing bait
     SELL_BAIT_MIN = 10, 
-    SELL_BAIT_PERCENTAGE = 1,  
+    SELL_BAIT_PERCENTAGE = 0.9,  
 
-    SELL_CHEST = true,  -- true/false, enable selling exclusive treasure chest
+    SELL_CHEST = true,  -- true/false
     SELL_CHEST_MIN = 10, 
     SELL_CHEST_PERCENTAGE = 0.9,  
+
+    SELL_ENCHANT_SAFE = true,  -- true/false
+    SELL_ENCHANT_SAFE_MIN = 5, 
+    SELL_ENCHANT_SAFE_PERCENTAGE = 0.9,  
 
     SELL_GIFT_BAG = true,  -- true/false, enable selling exclusive treasure chest
     SELL_GIFT_BAG_MIN = 1, 
