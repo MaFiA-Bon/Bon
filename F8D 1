@@ -3,7 +3,7 @@ getgenv().petsGoConfig = {
     -- true will open event gift bag/egg
     -- false will auto mail gift bag/egg
     CONSUME_CORRUPTED_HUGE_BAIT = false,
-    CONSUME_ALL_ENCHANT_SAFE = false,
+    CONSUME_ALL_ENCHANT_SAFE = true,
     CONSUME_ALL_MINING_CHEST = false,
     CONSUME_EVENT_GIFT_BAG = false,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
