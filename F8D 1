@@ -16,7 +16,7 @@ getgenv().petsGoConfig = {
     DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
     
     -- Allowed enchant keywords : Criticals, Loot, Speed, Strength, Chests, Diamonds, Huges, Lightning, TNT
-    PICKAXE_ENCHANTS = {"Huges", "Chests"},
+    PICKAXE_ENCHANTS = {"Huges", "Criticals"},
     
     MAILING = true,  -- Auto mail
     MAIL_FISHING_ROD = false,  -- true = mail, false = keep fishing rod on account (FASTER Fishing)
