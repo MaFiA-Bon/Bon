@@ -1,7 +1,7 @@
 getgenv().petsGoConfig = {
-    -- Event config
-    -- true will open event gift bag/egg
-    -- false will auto mail gift bag/egg
+    -- true/false
+    IGNORE_FULL_CHARGE_MEGA_EGG = false,
+
     CONSUME_CORRUPTED_HUGE_BAIT = true,
     CONSUME_ALL_ENCHANT_SAFE = true,
     CONSUME_ALL_MINING_CHEST = true,
@@ -14,9 +14,10 @@ getgenv().petsGoConfig = {
     WEBHOOK_ODDS = 200000000, -- Minimum Pet Odds To Trigger Webhook
 
     DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
+    MINE_ALL_ORES = true,  -- true = all ore, false = runic & event ore
     
     -- Allowed enchant keywords : Criticals, Loot, Speed, Strength, Chests, Diamonds, Huges, Lightning, TNT
-    PICKAXE_ENCHANTS = {"Chests", "Huges"},
+    PICKAXE_ENCHANTS = {"Speed", "Huges", "TNT"},
     
     MAILING = true,  -- Auto mail
     MAIL_FISHING_ROD = false,  -- true = mail, false = keep fishing rod on account (FASTER Fishing)
