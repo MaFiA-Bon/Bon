@@ -47,4 +47,4 @@ getgenv().petsGoConfig = {
     MAIL_GEMS_MIN = 5000000,  -- Minimum gems required to send
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/edafbc84006c0897b76b0d07cef3fe41.lua"))() 
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99dee49f92d83f84ce7c599d2039f0b4.lua"))() 
