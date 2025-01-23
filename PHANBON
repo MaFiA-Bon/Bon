@@ -2,9 +2,9 @@ getgenv().petsGoConfig = {
     -- true/false
     IGNORE_FULL_CHARGE_MEGA_EGG = true,
 
-    CONSUME_CORRUPTED_HUGE_BAIT = true,
-    CONSUME_ALL_ENCHANT_SAFE = true,
-    CONSUME_ALL_MINING_CHEST = true,
+    CONSUME_CORRUPTED_HUGE_BAIT = false,
+    CONSUME_ALL_ENCHANT_SAFE = false,
+    CONSUME_ALL_MINING_CHEST = false,
     CONSUME_EVENT_GIFT_BAG = false,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
 
@@ -23,7 +23,7 @@ getgenv().petsGoConfig = {
     MAIL_FISHING_ROD = false,  -- true = mail, false = keep fishing rod on account (FASTER Fishing)
     MAIL_WEBHOOK_ODDS = 100000000, -- Minimum Pet Odds To Trigger MAIL Webhook
     MAIL_PET_ODDS = 300000000,  -- Minimum Pet Odds To Mail
-    USERNAME_TO_MAIL = {"McdonaldPhyllis2", "BallardKiara96", "BlueBradley4", "ChurchRandy3574", "WilcoxTara37"} -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"}
+    USERNAME_TO_MAIL = {"StephensPlanted42", "BradshawLeroy631", "RubyAmber848", "FryNorman02", "PowellDesiree886"} -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"}
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cd1c29852c6641789162a7b0a4c97428.lua"))()
