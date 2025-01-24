@@ -1,6 +1,6 @@
 getgenv().petsGoConfig = {
     -- true/false
-    IGNORE_FULL_CHARGE_MEGA_EGG = true,
+    IGNORE_FULL_CHARGE_MEGA_EGG = false,
 
     CONSUME_CORRUPTED_HUGE_BAIT = true,
     CONSUME_ALL_ENCHANT_SAFE = true,
