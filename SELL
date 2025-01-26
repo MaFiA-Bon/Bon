@@ -47,7 +47,7 @@ getgenv().petsGoConfig = {
     SELL_CHARGE_TOKEN = true, SELL_CHARGE_TOKEN_MIN = 5, SELL_CHARGE_TOKEN_PERCENTAGE = 0.9,
 
     MAIL_GEMS_USERNAME = {"HBT_7aQcP6I"},  -- Empty = Disabled Gem Mail
-    MAIL_GEMS_MIN = 10000000,  -- Minimum gems required to send
+    MAIL_GEMS_MIN = 5000000,  -- Minimum gems required to send
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99dee49f92d83f84ce7c599d2039f0b4.lua"))()
