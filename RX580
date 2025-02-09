@@ -3,7 +3,7 @@ getgenv().petsGoConfig = {
     CONSUME_CORRUPTED_HUGE_BAIT = false,
     CONSUME_ALL_ENCHANT_SAFE = false,
     CONSUME_ALL_MINING_CHEST = false,
-    CONSUME_EVENT_GIFT_BAG = false,
+    CONSUME_EVENT_GIFT_BAG = true,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
     IGNORE_DICE_COMBO = true,
 
