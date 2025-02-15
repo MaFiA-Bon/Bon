@@ -45,6 +45,7 @@ getgenv().petsGoConfig = {
 
     -- Event
     SELL_CHARGE_TOKEN = true, SELL_CHARGE_TOKEN_MIN = 5, SELL_CHARGE_TOKEN_PERCENTAGE = 0.9,
+
     -- Event
     SELL_EVENT_TICKET = true, SELL_EVENT_TICKET_MIN = 5, SELL_EVENT_TICKET_PERCENTAGE = 0.9,
 
