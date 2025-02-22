@@ -1,11 +1,13 @@
 getgenv().petsGoConfig = {
-    -- true/false
+    AUTO_RESTART = true,
+    -- true/false (true = consume, false = automail)
     CONSUME_CORRUPTED_HUGE_BAIT = true,
     CONSUME_ALL_ENCHANT_SAFE = false,
     CONSUME_ALL_MINING_CHEST = false,
-    CONSUME_EVENT_GIFT_BAG = true,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
-    IGNORE_DICE_COMBO = true,
+    CONSUME_ALL_THIEVING_CHEST = false,
+    CONSUME_INSTA_LUCK_4 = true,
+    IGNORE_DICE_COMBO = false, -- Consume Insta Luck 3 without combo
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1304677344148979772/cS81U8uDXdR-4O7vst5Wk59u82Fa6ij2lSNvORYTT6bSy8gyvPQ-c2UbaD7nfKVRYHSZ",
     MAILING_WEBHOOK_URL = "https://discord.com/api/webhooks/1311596125861576714/v6zVuGK0w7_B-KBXblHLyBxnifZr98KKa51a_mtx3zPvGOOkU9tGdpVjHN1mV4JX0g8v",
@@ -16,6 +18,7 @@ getgenv().petsGoConfig = {
     MINE_ALL_ORES = true,  -- true = all ore, false = runic & event ore
     
     MAILING = true,  -- Auto mail
+    SHOW_PET_WEBHOOK_USERNAME = true,
     MAIL_WEBHOOK_ODDS = 100000000, -- Minimum Pet Odds To Trigger MAIL Webhook
     MAIL_PET_ODDS = 400000000,  -- Minimum Pet Odds To Mail
 
