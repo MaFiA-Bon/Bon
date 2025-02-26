@@ -1,10 +1,10 @@
 getgenv().petsGoConfig = {
     -- true/false
     CONSUME_CORRUPTED_HUGE_BAIT = true,
-    CONSUME_ALL_ENCHANT_SAFE = false,
-    CONSUME_ALL_MINING_CHEST = false,
-    CONSUME_EVENT_GIFT_BAG = false,
-    CONSUME_EVENT_EGG = false, -- Hype eggs not included
+    CONSUME_ALL_ENCHANT_SAFE = true,
+    CONSUME_ALL_MINING_CHEST = true,
+    CONSUME_EVENT_GIFT_BAG = true,
+    CONSUME_EVENT_EGG = true, -- Hype eggs not included
     IGNORE_DICE_COMBO = true,
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1338395567587332116/gqOvQFDPt9iZEj37UjF7PhsMsJKdrY6vXWaBqDdPrmr-O5s1pNTQzHODQkMQLHRaJC-b",
