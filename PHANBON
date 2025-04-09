@@ -1,3 +1,4 @@
+script_key="HOSquxPAzGchxTJgVpIlhXVcWKiuMtlo";
 setfpscap(5)  -- number = fps
 
 getgenv().petsGoConfig = {
