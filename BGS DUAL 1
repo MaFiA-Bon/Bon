@@ -1,16 +1,21 @@
 script_key="azAoChMkXtuLNcJsjUpvGjZIghOMKhkN";
 setfpscap(15)  -- number = fps
 
-getgenv().petsGoConfig = {
+getgenv().bgsInfConfig = {
     AUTO_UPDATE_RESTART = true,
     PURCHASE_ALIENSHOP = true,
-    RIFT_EGGS = {"Aura Egg", "Nightmare Egg", "Rainbow Egg"},  -- Add Any Egg Name
+    USE_ROYAL_KEY = true,
+    USE_GOLDEN_KEY = true,
+    USE_MYSTERY_BOX = true,
     RARITY_TO_DELETE = {"Common", "Unique", "Rare"},  -- Delete if max inventory
+
+    RIFT_EGGS = {"Aura Egg", "Nightmare Egg", "Rainbow Egg"},  -- Add Any Egg Name
+    HATCH_1X_EGG = "Common Egg",  -- Hatch 1x Egg If No Rift & FARM_MIN_GEMS Completed
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
     DISCORD_ID = "1120232109165006859",
     WEBHOOK_RARITY = { Common = false, Unique = false, Rare = false, Epic = false, Legendary = true, Secret = true },
-    LEGENDARY_TIER = 2,  -- Ignore if set not set "Legendary"
+    LEGENDARY_TIER = 3,  -- Ignore if set not set "Legendary"
     SHOW_PET_WEBHOOK_USERNAME = true,  -- shows username in private webhook only
 }
 
