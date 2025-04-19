@@ -8,9 +8,10 @@ getgenv().bgsInfConfig = {
     USE_GOLDEN_KEY = true,
     USE_MYSTERY_BOX = true,
     RARITY_TO_DELETE = {"Common", "Unique", "Rare"},  -- Delete if max inventory
+    LEGENDARY_TIER_TO_DELETE = 2,  -- Ignore Shiny/Mythic/Shiny Mythic
 
-    RIFT_EGGS = {"Aura Egg", "Nightmare Egg", "Rainbow Egg"},  -- Add Any Egg Name
-    HATCH_1X_EGG = "Common Egg",  -- Hatch 1x Egg If No Rift & FARM_MIN_GEMS Completed
+    RIFT_EGGS = {"Aura Egg", "Bunny Egg", "Pastel Egg", "Nightmare Egg"},  -- Add Any Egg Name
+    HATCH_1X_EGG = "Pastel Egg",  -- Hatch 1x Egg If No Rift & FARM_MIN_GEMS Completed
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
     DISCORD_ID = "1120232109165006859",
