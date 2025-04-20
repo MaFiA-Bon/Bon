@@ -15,7 +15,7 @@ getgenv().bgsInfConfig = {
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
     DISCORD_ID = "1120232109165006859",
-    WEBHOOK_RARITY = { Common = false, Unique = false, Rare = false, Epic = false, Legendary = true, Secret = true },
+    WEBHOOK_RARITY = { Common = false, Unique = false, Rare = false, Epic = true, Legendary = true, Secret = true },
     LEGENDARY_TIER = 3,  -- Ignore if set not set "Legendary"
     SHOW_PET_WEBHOOK_USERNAME = true,  -- shows username in private webhook only
 }
