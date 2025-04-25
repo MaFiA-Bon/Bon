@@ -1,3 +1,6 @@
+script_key="azAoChMkXtuLNcJsjUpvGjZIghOMKhkN";
+setfpscap(15)  -- number = fps
+
 getgenv().bgsInfConfig = {
     AUTO_UPDATE_RESTART = true,
     PURCHASE_ALIENSHOP = true,
@@ -8,14 +11,14 @@ getgenv().bgsInfConfig = {
     USE_GOLDEN_KEY = true,
     USE_MYSTERY_BOX = true,
 
-    RARITY_TO_DELETE = {"Common", "Unique", "Rare"},
-    LEGENDARY_TIER_TO_DELETE = 2,
+    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic"},
+    LEGENDARY_TIER_TO_DELETE = 1,
 
     ENCHANT_TEAMUP = true,
     ENCHANT_TEAMUP_TIER = 1,
 
-    RIFT_EGGS = {"Aura Egg", "Bunny Egg", "Pastel Egg", "Nightmare Egg"},
-    HATCH_1X_EGG = "Pastel Egg", 
+    RIFT_EGGS = {"Aura Egg", "Throwback Egg", "Bunny Egg", "Pastel Egg", "Nightmare Egg"},
+    HATCH_1X_EGG = "Throwback Egg", 
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
     DISCORD_ID = "1120232109165006859",
