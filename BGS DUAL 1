@@ -1,6 +1,3 @@
-script_key="azAoChMkXtuLNcJsjUpvGjZIghOMKhkN";
-setfpscap(15)  -- number = fps
-
 getgenv().bgsInfConfig = {
     AUTO_UPDATE_RESTART = true,
     PURCHASE_ALIENSHOP = true,
