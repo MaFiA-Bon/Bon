@@ -17,8 +17,8 @@ getgenv().bgsInfConfig = {
     ENCHANT_TEAMUP = true,
     ENCHANT_TEAMUP_TIER = 1,
 
-    RIFT_EGGS = {"Aura Egg", "Throwback Egg", "Bunny Egg", "Pastel Egg", "Nightmare Egg"},
-    HATCH_1X_EGG = "Throwback Egg", 
+    RIFT_EGGS = {"Silly Egg", "Throwback Egg", "Nightmare Egg"},
+    HATCH_1X_EGG = "100M Egg", 
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
     DISCORD_ID = "1120232109165006859",
