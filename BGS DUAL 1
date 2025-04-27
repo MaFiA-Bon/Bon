@@ -5,6 +5,7 @@ getgenv().bgsInfConfig = {
     AUTO_UPDATE_RESTART = true,
     PURCHASE_ALIENSHOP = true,
     PURCHASE_BLACKMARKET = true,
+    PURCHASE_STARSHOP_SLOT = 14,
     RESTOCK_SHOP = "Blackmarket",
 
     USE_ROYAL_KEY = true,
