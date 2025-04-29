@@ -1,28 +1,34 @@
-wait(30)
+--[[ ONE CLICK SCRIPT - Duck
+Special Thanks to
+Paulvoid for support with .lua and more...
+Tungstrong for contributing ideas
+]]
+
+wait(15)
 script_key = "VLUmmOLVArJJFqrrzjWXXlNCLbPyiUSy";
-
 getgenv().UserConfig = {
-    FPS                 = 10,
+    FPS = 10,
 
-    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback"},
-    AddFriends = false,
+    AddFriends = true,
+
+    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2"},
 
     ["Detector"] = {
         Enable = true,
-        ["Name Needed"] = {"Holy Shock", "Cardinal Bunny"}, -- Blue background
+        ["Name Needed"] = {"Avernus", "Patronus"}, -- Blue
         ["Rarity Needed"] = {
-            {"Legendary", MinDifficult = 500000}, -- Yellow Background
-            "Mythic",
-            "Secret" -- Red Background
+            "Legendary", -- Green
+            "Mythic", -- Red
+            "Secret" -- Yellow
         }
     },
 
     ["Craft Potions"] = {
         Enable = true,
-        MinGems = 20000,
+        MinGems = "20m",
         ["Potion Needed"] = {
-            --{"Coins", Level = 5},
-            --{"Speed", Level = 5},
+            {"Coins", Level = 5},
+            {"Speed", Level = 5},
             {"Lucky", Level = 5},
             {"Mythic", Level = 5}
         }
@@ -37,40 +43,83 @@ getgenv().UserConfig = {
     ["Enchant"] = {
         Enable = true,
         ["Rarity Needed"] = {
-            {"Legendary", MinDifficult = 500000},
+            {"Legendary", MinDifficult = "1m"},
             "Mythic",
             "Secret"
         },
         ["Reroll Needed"] = {
-            -- ["Gleaming"] = {MinLevel = 2, HigherLevels = true},
-            -- ["Looter"] = {MinLevel = 3, HigherLevels = true},
-            ["Team Up"] = {MinLevel = 5, HigherLevels = true}
+            ["Team Up"] = {MinLevel = 2, HigherLevels = true}
+        }
+    },
+
+    ["Alien Shop"] = {
+        Enable = false,
+        ["Min Gems"] = "20m",
+        ["Items Needed"] = {
+            -- "Golden Key",
+            -- "Mystery Box",
+            -- "Coins III",
+            -- "Coins IV",
+            -- "Lucky III",
+            -- "Speed III",
+            "Lucky IV",
+            "Speed IV"
+        }
+    },
+
+    ["Black Market"] = {
+        Enable = false,
+        ["Min Gems"] = "20m",
+        ["Items Needed"] = {
+            -- "Coins Evolved",
+            -- "Speed V",
+            -- "Lucky V",
+            -- "Coins V",
+            -- "Mythic V",
+            "Lucky Evolved",
+            "Mythic Evolved",
+            "Speed Evolved"
+        }
+    },
+
+    Competitive = {
+        Choosing = "2,1,1,2,1,1,2,2,1,2"
+    },
+
+    ["Star Shop"] = {
+        Enable = true,
+        MinStars = "300",
+        ["Items Needed"] = {
+            -- "Speed V",
+            -- "Lucky V",
+            -- "Mythic V",
+            "Speed Evolved",
+            "Lucky Evolved",
+            "Mythic Evolved"
         }
     },
 
     -- Automation Features
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Throwback Egg", "Bunny Egg", "Pastel Egg", "Nightmare Egg", "Hell Egg", "Void Egg"},
+        Targets = {"Silly Egg", "Throwback Egg", "Nightmare Egg"},
         Luck = 5 -- Minimum luck required for a rift target to be considered
     },
 
-    FindDuck = "Throwback Egg", -- Target egg for Priority 7 hatching
+    FindDuck = "Throwback Egg", -- Target egg for normal egg hatching when Rifts.Luck is not met. Ex: Infinity Egg
 
     -- Webhook Configuration
     ["Webhook"] = {
         Enable = true, -- Enable/disable pet hatch notification webhook
-        Note = "", -- Note displayed on the webhook 
-        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH", -- Replace with your URL
+        Note = "Duck Hub", -- Note displayed on the webhook
+        ID = "", -- Enter your Discord ID here
+        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH", -- Add your webhook URL here
         Rarity = {
-            -- "Common",
-            -- "Unique",
-            -- "Rare",
-            -- "Epic",
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = 100000, -- Threshold for Legendary (e.g., 100k = 1/100,000) - only send if chance >= threshold
+Legendary = "100k", -- Only send webhook when hatching a Legendary pet with a value >= Config
+        ["Special Pets"] = {"Avernus", "Patronus"}
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
