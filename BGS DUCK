@@ -106,7 +106,7 @@ getgenv().UserConfig = {
         Luck = 5 -- Minimum luck required for a rift target to be considered
     },
 
-    FindDuck = "Throwback Egg", -- Target egg for normal egg hatching when Rifts.Luck is not met. Ex: Infinity Egg
+    FindDuck = "Nightmare Egg", -- Target egg for normal egg hatching when Rifts.Luck is not met. Ex: Infinity Egg
 
     -- Webhook Configuration
     ["Webhook"] = {
