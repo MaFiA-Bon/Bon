@@ -10,9 +10,9 @@ getgenv().UserConfig = {
     FPS                 = 10,
     AddFriends          = true,
     RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2"},
-    ["Giant Chest"] = true,
-    ["Void Chest"] = true,
-    ["Golden Chest"] = true,
+    ["Giant Chest"] = false,
+    ["Void Chest"] = false,
+    ["Golden Chest"] = false,
     ["Royal Chest"] = true,
     Competitive = {
         Choosing = "1,2,1,2,1,1,2,2,1,2"
@@ -27,7 +27,7 @@ getgenv().UserConfig = {
         }
     },
     ["Alien Shop"] = {
-        Enable = true,
+        Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Golden Key",
@@ -45,11 +45,11 @@ getgenv().UserConfig = {
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Lucky Evolved",
-            "Coins Evolved",
+            --"Coins Evolved",
             "Mythic Evolved",
             "Speed Evolved",
             "Lucky V",
-            "Coins V",
+            --"Coins V",
             "Mythic V",
             "Speed V"
         }
@@ -77,7 +77,7 @@ getgenv().UserConfig = {
             "Lucky V",
             "Mythic V"
         }
-    },
+},
     ["Rifts"] = {
         AlwaysFindRifts = true,
         Targets = {"Silly Egg", "Nightmare Egg"},
