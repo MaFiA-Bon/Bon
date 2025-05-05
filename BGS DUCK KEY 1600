@@ -69,14 +69,15 @@ EquipBestPets       = true,
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Nightmare Egg", "Common Egg"},
+        Targets = {"Silly Egg", "Cyber Egg"},
         Luck = 5
     },
     ["Min gems"] = "20m",
-    FindDuck = "Common Egg", -- Hatch 1x Egg
+    FindDuck = "Game Egg",
+    ["Replace FindDuck"] = "Cyber Egg",
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
-    ["Replace 100M Egg"] = "Common Egg",
+    ["Replace 100M Egg"] = "Cyber Egg",
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
@@ -88,7 +89,7 @@ EquipBestPets       = true,
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "500K",
+        Legendary = "500k",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
     }
 }
