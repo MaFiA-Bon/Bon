@@ -69,26 +69,26 @@ EquipBestPets       = true,
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg"},
+        Targets = {"Silly Egg", "Nightmare Egg", "Common Egg"},
         Luck = 5
     },
     ["Min gems"] = "20m",
-    FindDuck = "Cyber Egg", -- Hatch 1x Egg
+    FindDuck = "Common Egg", -- Hatch 1x Egg
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
-    ["Replace 100M Egg"] = "Cyber Egg",
+    ["Replace 100M Egg"] = "Common Egg",
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "Bon",
+        Note = "DUCK",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "300k",
+        Legendary = "500K",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
     }
 }
