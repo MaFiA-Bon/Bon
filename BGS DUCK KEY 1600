@@ -85,7 +85,7 @@ EquipBestPets       = true,
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "1m",
+        Legendary = "500k",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
     }
 }
