@@ -5,7 +5,10 @@ EquipBestPets       = true,
 ["Best Potions Find Duck"] = false,
     FPS                 = 10,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2"},
+    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2", "sylentlyssorry"},
+    AutoMinigames       = true,
+    AutoRollDice        = true,
+    ["Super Ticket"]    = "Robot Claw",
     ["Giant Chest"] = false,
     ["Void Chest"] = true,
     ["Golden Chest"] = false,
@@ -67,10 +70,11 @@ EquipBestPets       = true,
     ["Rifts"] = {
         AlwaysFindRifts = true,
         Targets = {"Silly Egg", "Cyber Egg"},
-        Luck = 10
+        Luck = 5
     },
     ["Min gems"] = "20m",
-    FindDuck = "Cyber Egg", -- Hatch 1x Egg
+    FindDuck = "Game Egg",
+    ["Replace FindDuck"] = "Cyber Egg",
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
     ["Replace 100M Egg"] = "Cyber Egg",
@@ -78,7 +82,7 @@ EquipBestPets       = true,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "Duck Hub",
+        Note = "DUCK",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
