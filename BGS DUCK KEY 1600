@@ -1,4 +1,4 @@
-wait(15)
+wait(25)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
 EquipBestPets       = true,
