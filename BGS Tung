@@ -34,7 +34,7 @@ EquipBestPets       = true,
     },
     ["Black Market"] = {
         Enable = true,
-        ["Min Gems"] = "20m",
+        ["Min Gems"] = "2m",
         ["Items Needed"] = {
             "Lucky Evolved",
             "Mythic Evolved",
