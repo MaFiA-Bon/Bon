@@ -26,15 +26,15 @@ EquipBestPets       = true,
         }
     },
     ["Alien Shop"] = {
-        Enable = true,
+        Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Mystery Box"
         }
     },
     ["Black Market"] = {
-        Enable = true,
-        ["Min Gems"] = "20m",
+        Enable = false,
+        ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Lucky Evolved",
             "Mythic Evolved",
@@ -46,7 +46,7 @@ EquipBestPets       = true,
     },
     ["Craft Potions"] = {
         Enable = true,
-        MinGems = "20m",
+        MinGems = "100k",
         ["Potion Needed"] = {
             {"Speed", Level = 5},
             {"Lucky", Level = 5},
@@ -69,14 +69,15 @@ EquipBestPets       = true,
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Nightmare Egg", "Common Egg"},
+        Targets = {"Silly Egg", "Cyber Egg"},
         Luck = 5
     },
     ["Min gems"] = "2m",
-    FindDuck = "Common Egg", -- Hatch 1x Egg
+    FindDuck = "Game Egg",
+    ["Replace FindDuck"] = "Cyber Egg",
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
-    ["Replace 100M Egg"] = "Common Egg",
+    ["Tickets coefficient"] = 100,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
@@ -88,7 +89,7 @@ EquipBestPets       = true,
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "800K",
+        Legendary = "500k",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
     }
 }
