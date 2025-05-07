@@ -92,7 +92,7 @@ getgenv().UserConfig = {
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 100,
-    ["Auto Restart"] = true,
+    ["Auto Restart"] = false,
 
     ["Webhook"] = {
         Enable = true,
