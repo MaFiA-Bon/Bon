@@ -1,4 +1,4 @@
-wait(25)
+wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
 EquipBestPets       = true,
@@ -26,15 +26,15 @@ EquipBestPets       = true,
         }
     },
     ["Alien Shop"] = {
-        Enable = false,
+        Enable = true,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Mystery Box"
         }
     },
     ["Black Market"] = {
-        Enable = false,
-        ["Min Gems"] = "1m",
+        Enable = true,
+        ["Min Gems"] = "20m",
         ["Items Needed"] = {
             "Lucky Evolved",
             "Mythic Evolved",
@@ -46,7 +46,7 @@ EquipBestPets       = true,
     },
     ["Craft Potions"] = {
         Enable = true,
-        MinGems = "100k",
+        MinGems = "20m",
         ["Potion Needed"] = {
             {"Speed", Level = 5},
             {"Lucky", Level = 5},
@@ -69,15 +69,14 @@ EquipBestPets       = true,
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg"},
+        Targets = {"Silly Egg", "Nightmare Egg", "Common Egg"},
         Luck = 5
     },
     ["Min gems"] = "2m",
-    FindDuck = "Game Egg",
-    ["Replace FindDuck"] = "Cyber Egg",
+    FindDuck = "Common Egg", -- Hatch 1x Egg
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
-    ["Tickets coefficient"] = 100,
+    ["Replace 100M Egg"] = "Common Egg",
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
@@ -89,7 +88,7 @@ EquipBestPets       = true,
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "500k",
+        Legendary = "500K",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
     }
 }
