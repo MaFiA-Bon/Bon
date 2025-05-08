@@ -1,53 +1,66 @@
-wait(15)
+--[[ ONE CLICK SCRIPT - Duck
+Special Thanks to
+Paulvoid for support with .lua and more...
+Tungstrong for contributing ideas
+]]
+
+wait(10)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
-EquipBestPets       = true,
-["Best Potions Find Duck"] = false,
-    FPS                 = 10,
+    FPS                 = 5,
     AddFriends          = true,
     RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2", "sylentlyssorry"},
+    EquipBestFlavorGum  = true,
+    BuyFlavorGum        = true,
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
     ["Giant Chest"] = false,
-    ["Void Chest"] = true,
+    ["Void Chest"] = false,
     ["Golden Chest"] = false,
-    ["Royal Chest"] = true,
-    Competitive = {
-        Choosing = "1,2,1,2,1,1,2,2,1,2"
-    },
+    ["Royal Chest"] = false,
     ["Detector"] = {
         Enable = true,
         ["Name Needed"] = {"Avernus", "Patronus"},
         ["Rarity Needed"] = {
             "Legendary",
             "Mythic",
-            "Secret" -- Red Background
+            "Secret"
         }
     },
     ["Alien Shop"] = {
-        Enable = true,
+        Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
-            "Mystery Box"
+            "Golden Key",
+            "Mystery Box",
+            "Coins III",
+            "Coins IV",
+            "Lucky III",
+            "Lucky IV",
+            "Speed III",
+            "Speed IV"
         }
     },
     ["Black Market"] = {
-        Enable = true,
-        ["Min Gems"] = "2m",
+        Enable = false,
+        ["Min Gems"] = "1m",
         ["Items Needed"] = {
             "Lucky Evolved",
+            -- "Coins Evolved",
             "Mythic Evolved",
             "Speed Evolved",
             "Lucky V",
+            -- "Coins V",
             "Mythic V",
             "Speed V"
         }
     },
     ["Craft Potions"] = {
-        Enable = true,
-        MinGems = "20m",
+        Enable = false,
+        MinGems = "100k",
         ["Potion Needed"] = {
+            {"Coins", Level = 5},
             {"Speed", Level = 5},
             {"Lucky", Level = 5},
             {"Mythic", Level = 5}
@@ -60,7 +73,7 @@ EquipBestPets       = true,
     },
     ["Star Shop"] = {
         Enable = true,
-        MinStars = 300,
+        MinStars = 100,
         ["Items Needed"] = {
             "Speed V",
             "Lucky V",
@@ -69,28 +82,29 @@ EquipBestPets       = true,
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg"},
+        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
         Luck = 5
     },
-    ["Min gems"] = "20m",
-    FindDuck = "Game Egg",
+    ["Min gems"] = "3m",
+    FindDuck = "Game Egg", -- Nightmare Egg, Common Egg, Cyber Egg
     ["Replace FindDuck"] = "Cyber Egg",
+    ["Best Potions Find Duck"] = true,
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
-    ["Replace 100M Egg"] = "Cyber Egg",
-    ["Auto Restart"] = true,
+    ["Tickets coefficient"] = 100,
+    ["Auto Restart"] = false,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "DUCK",
+        Note = "Duck Hub",
         ID = "1346333795519037450",
         URL = "https://discord.com/api/webhooks/1367875963098235111/CK2UAYOzgJp0P1vXmix2rN5fPoXOHWAM0Eo7X5k56iVuNRsUNhCfUGEWMf358EaEdbF7",
         Rarity = {
             "Legendary",
             "Secret"
-        }, -- General rarity filter
+        },
         Legendary = "1m",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
+        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Dragon Plushie","Luminosity"}
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
