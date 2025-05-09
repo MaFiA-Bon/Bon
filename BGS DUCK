@@ -1,4 +1,11 @@
+--[[ ONE CLICK SCRIPT - Duck
+Special Thanks to
+Paulvoid for support with .lua and more...
+Tungstrong for contributing ideas
+]]
+
 wait(10)
+script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
     AddFriends          = true,
@@ -75,7 +82,7 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg"},
+        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
         Luck = 5
     },
     ["Min gems"] = "3m",
@@ -85,19 +92,19 @@ getgenv().UserConfig = {
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 100,
-    ["Auto Restart"] = true,
+    ["Auto Restart"] = false,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "p",
+        Note = "Duck Hub",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
             "Legendary",
             "Secret"
-        }, -- General rarity filter
+        },
         Legendary = "1m",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Dragon Plushie","Luminosity"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/2a09661279714b3bbb23d083a42c161d.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
