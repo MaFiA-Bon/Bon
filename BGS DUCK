@@ -80,11 +80,12 @@ getgenv().UserConfig = {
             "Mythic V"
         }
     },
-    ["Rifts"] = {
-        AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
-        Luck = 5
-    },
+    FindDuck = "200M Egg",
+["Rifts"] = {
+    AlwaysFindRifts = true,
+    Targets = {"Underworld Egg 1","Underworld Egg 2","Underworld Egg 3"},
+    Luck = 5
+},
     ["Min gems"] = "3m",
     FindDuck = "Game Egg", -- Nightmare Egg, Common Egg, Cyber Egg
     ["Replace FindDuck"] = "Cyber Egg",
