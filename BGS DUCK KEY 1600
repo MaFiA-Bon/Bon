@@ -1,10 +1,5 @@
---[[ ONE CLICK SCRIPT - Duck
-Special Thanks to
-Paulvoid for support with .lua and more...
-Tungstrong for contributing ideas
-]]
-
-wait(10)
+wait(15)
+setfpscap(5)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
@@ -15,6 +10,8 @@ getgenv().UserConfig = {
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
+    ["Use Super Ticket"] = false,
+    ["Season Challenges"] = true,
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
@@ -82,28 +79,28 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
+        Targets = {"Silly Egg", "Cyber Egg"},
         Luck = 5
     },
-    ["Min gems"] = "3m",
+    ["Min gems"] = "1m",
     FindDuck = "Game Egg", -- Nightmare Egg, Common Egg, Cyber Egg
     ["Replace FindDuck"] = "Cyber Egg",
     ["Best Potions Find Duck"] = true,
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 100,
-    ["Auto Restart"] = false,
+    ["Auto Restart"] = true,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "Duck Hub",
+        Note = "Q9",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
             "Legendary",
             "Secret"
-        },
-        Legendary = "1m",
+        }, -- General rarity filter
+        Legendary = "100m",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Dragon Plushie","Luminosity"}
     }
 }
