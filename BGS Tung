@@ -1,10 +1,4 @@
---[[ ONE CLICK SCRIPT - Duck
-Special Thanks to
-Paulvoid for support with .lua and more...
-Tungstrong for contributing ideas
-]]
-
-wait(10)
+wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
@@ -15,6 +9,8 @@ getgenv().UserConfig = {
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
+    ["Use Super Ticket"] = false,
+    ["Season Challenges"] = true,
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
@@ -82,29 +78,29 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Cyber Egg", "Game Egg"},
+        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Rainbow Egg" },
         Luck = 5
     },
-    ["Min gems"] = "3m",
-    FindDuck = "Game Egg", -- Nightmare Egg, Common Egg, Cyber Egg
-    ["Replace FindDuck"] = "Cyber Egg",
+    ["Min gems"] = "1m",
+    FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
+    ["Replace FindDuck"] = "Rainbow Egg",
     ["Best Potions Find Duck"] = true,
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
-    ["Gems coefficient"] = 24,
-    ["Tickets coefficient"] = 100,
-    ["Auto Restart"] = false,
+    ["Gems coefficient"] = 1,
+    ["Tickets coefficient"] = 1,
+    ["Auto Restart"] = true,
 
     ["Webhook"] = {
         Enable = true,
-        Note = "Duck Hub",
+        Note = "Duck",
         ID = "1346333795519037450",
         URL = "https://discord.com/api/webhooks/1367875963098235111/CK2UAYOzgJp0P1vXmix2rN5fPoXOHWAM0Eo7X5k56iVuNRsUNhCfUGEWMf358EaEdbF7",
         Rarity = {
             "Legendary",
             "Secret"
-        },
+        }, -- General rarity filter
         Legendary = "1m",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Dragon Plushie","Luminosity"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
