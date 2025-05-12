@@ -101,7 +101,7 @@ getgenv().UserConfig = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "100m",
+        Legendary = "1m",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
     }
 }
