@@ -1,4 +1,4 @@
-script_key="azAoChMkXtuLNcJsjUpvGjZIghOMKhkN";
+script_key="";
 setfpscap(10)  -- number = fps
 
 getgenv().bgsInfConfig = {
@@ -16,8 +16,8 @@ getgenv().bgsInfConfig = {
     USE_DICE_KEY = true,
     USE_MYSTERY_BOX = true,
 
-    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic"},
-    MAX_LEGENDARY_TIER_TO_DELETE = 1,
+    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
+    MAX_LEGENDARY_TIER_TO_DELETE = 2,
 
     ENCHANT_TEAMUP = true,
     ENCHANT_TEAMUP_TIER = 1,
@@ -25,9 +25,9 @@ getgenv().bgsInfConfig = {
     RIFT_EGGS = {"Underworld Egg", "Nightmare Egg", "Cyber Egg"},
     HATCH_1X_EGG = {"200M Egg", "Game Egg", "Cyber Egg"}, 
 
-    WEBHOOK_URL = "1120232109165006859",
-    DISCORD_ID = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
-    WEBHOOK_ODDS = 1000000,
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
+    DISCORD_ID = "1120232109165006859",
+    WEBHOOK_ODDS = 5000000,
     SHOW_PET_WEBHOOK_USERNAME = true,
 }
 
