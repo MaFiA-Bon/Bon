@@ -1,4 +1,3 @@
-wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
@@ -80,13 +79,14 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Void Egg" }, --add Rainbow Egg or Void Egg if have secret bounty
-        Luck = 5
+        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"},
+        Luck = 5 -- dont change
     },
+    ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
     ["Min gems"] = "1m",
     FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
     ["Replace FindDuck"] = "Rainbow Egg",
-    ["Best Potions Find Duck"] = true,
+    ["Best Potions Find Duck"] = false, --false if there are pnly few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
     ["Tickets coefficient"] = 100,
@@ -101,7 +101,7 @@ getgenv().UserConfig = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "1m",
+        Legendary = "100m",
         ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
     }
 }
