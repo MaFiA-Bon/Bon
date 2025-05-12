@@ -3,14 +3,16 @@ script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2", "sylentlyssorry"},
+    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update3"},
     EquipBestFlavorGum  = true,
     BuyFlavorGum        = true,
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
-    ["Use Super Ticket"] = false,
-    ["Season Challenges"] = true,
+    ["Use Super Ticket"] = true,
+    ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
+    ["Min tickets"] = "10b", -- Default if not set in UserConfig
+    ["Min coins"] = "5b", -- Default if not set in UserConfig
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
@@ -78,7 +80,7 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Rainbow Egg" },
+        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1" }, --add rainbow egg if have secret bounty
         Luck = 5
     },
     ["Min gems"] = "1m",
@@ -87,7 +89,7 @@ getgenv().UserConfig = {
     ["Best Potions Find Duck"] = true,
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 1,
+    ["Tickets coefficient"] = 100,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
@@ -100,7 +102,7 @@ getgenv().UserConfig = {
             "Secret"
         }, -- General rarity filter
         Legendary = "1m",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Dragon Plushie","Luminosity"}
+        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
