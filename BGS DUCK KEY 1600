@@ -1,3 +1,4 @@
+wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
     FPS                 = 5,
@@ -10,6 +11,7 @@ getgenv().UserConfig = {
     ["Super Ticket"]    = "Robot Claw",
     ["Use Super Ticket"] = true,
     ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
+    ["Min gems"] = "1m",
     ["Min tickets"] = "10b", -- Default if not set in UserConfig
     ["Min coins"] = "5b", -- Default if not set in UserConfig
     ["Giant Chest"] = false,
@@ -79,17 +81,16 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"},
+        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Cyber Egg","Nightmare Egg"}, -- delete cyber egg and nightmare egg if u want
         Luck = 5 -- dont change
     },
     ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
-    ["Min gems"] = "1m",
     FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
     ["Replace FindDuck"] = "Rainbow Egg",
-    ["Best Potions Find Duck"] = false, --false if there are pnly few potions 
+    ["Best Potions Find Duck"] = false, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 100,
+    ["Tickets coefficient"] = 490,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
