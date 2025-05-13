@@ -12,8 +12,8 @@ getgenv().UserConfig = {
     ["Use Super Ticket"] = true,
     ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
     ["Min gems"] = "1m",
-    ["Min tickets"] = "10b", -- Default if not set in UserConfig
-    ["Min coins"] = "5b", -- Default if not set in UserConfig
+    ["Min tickets"] = "5b", -- Default if not set in UserConfig
+    ["Min coins"] = "3b", -- Default if not set in UserConfig
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
@@ -90,7 +90,7 @@ getgenv().UserConfig = {
     ["Best Potions Find Duck"] = false, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 490,
+    ["Tickets coefficient"] = 40,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
