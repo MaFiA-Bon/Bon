@@ -31,7 +31,7 @@ getgenv().bgsInfConfig = {
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
     DISCORD_ID = "1120232109165006859",
-    WEBHOOK_ODDS = 5000000,
+    WEBHOOK_ODDS = 1000000,
     SHOW_PET_WEBHOOK_USERNAME = true,
 }
 
