@@ -1,38 +1,109 @@
-script_key="azAoChMkXtuLNcJsjUpvGjZIghOMKhkN";
-setfpscap(10)  -- number = fps
+wait(15)
+script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
+getgenv().UserConfig = {
+    FPS                 = 5,
+    AddFriends          = true,
+    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update3"},
+    EquipBestFlavorGum  = true,
+    BuyFlavorGum        = true,
+    AutoMinigames       = true,
+    AutoRollDice        = true,
+    ["Super Ticket"]    = "Robot Claw",
+    ["Use Super Ticket"] = true,
+    ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
+    ["Min gems"] = "1m",
+    ["Min tickets"] = "5b", -- Default if not set in UserConfig
+    ["Min coins"] = "3b", -- Default if not set in UserConfig
+    ["Giant Chest"] = false,
+    ["Void Chest"] = false,
+    ["Golden Chest"] = false,
+    ["Royal Chest"] = false,
+    ["Detector"] = {
+        Enable = true,
+        ["Name Needed"] = {"Avernus", "Patronus"},
+        ["Rarity Needed"] = {
+            "Legendary",
+            "Mythic",
+            "Secret"
+        }
+    },
+    ["Alien Shop"] = {
+        Enable = false,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Golden Key",
+            "Mystery Box",
+            "Coins III",
+            "Coins IV",
+            "Lucky III",
+            "Lucky IV",
+            "Speed III",
+            "Speed IV"
+        }
+    },
+    ["Black Market"] = {
+        Enable = false,
+        ["Min Gems"] = "1m",
+        ["Items Needed"] = {
+            "Lucky Evolved",
+            -- "Coins Evolved",
+            "Mythic Evolved",
+            "Speed Evolved",
+            "Lucky V",
+            -- "Coins V",
+            "Mythic V",
+            "Speed V"
+        }
+    },
+    ["Craft Potions"] = {
+        Enable = false,
+        MinGems = "100k",
+        ["Potion Needed"] = {
+            {"Coins", Level = 5},
+            {"Speed", Level = 5},
+            {"Lucky", Level = 5},
+            {"Mythic", Level = 5}
+        }
+    },
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 15,
+        Shops = 10
+    },
+    ["Star Shop"] = {
+        Enable = true,
+        MinStars = 100,
+        ["Items Needed"] = {
+            "Speed V",
+            "Lucky V",
+            "Mythic V"
+        }
+    },
+    ["Rifts"] = {
+        AlwaysFindRifts = true,
+        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Cyber Egg","Nightmare Egg"}, -- delete cyber egg and nightmare egg if u want
+        Luck = 5 -- dont change
+    },
+    ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
+    FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
+    ["Replace FindDuck"] = "Rainbow Egg",
+    ["Best Potions Find Duck"] = false, --false if there are only few potions 
+    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
+    ["Gems coefficient"] = 1,
+    ["Tickets coefficient"] = 40,
+    ["Auto Restart"] = true,
 
-getgenv().bgsInfConfig = {
-    ADD_FRIEND = true,
-    AUTO_UPDATE_RESTART = true,
-    ALWAYS_INFINITY_ELIXIR = true,
-    AUTO_BOUNTY_RIFT = true,
-
-    PURCHASE_ALIENSHOP = true,
-    PURCHASE_BLACKMARKET = true,
-    PURCHASE_DICE_MERCHANT = true,
-    PURCHASE_STARSHOP_SLOT = 14,
-    RESTOCK_SHOP = "Blackmarket",
-
-    USE_ROYAL_KEY = true,
-    USE_GOLDEN_KEY = true,
-    USE_DICE_KEY = true,
-    USE_MYSTERY_BOX = true,
-
-    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
-    RARITY_TO_SHINY = {"Common", "Unique", "Rare", "Epic", "Legendary"},
-    MAX_LEGENDARY_TIER_TO_DELETE = 2,
-    DELETE_LEGENDARY_SHINY = true,
-
-    ENCHANT_TEAMUP = true,
-    ENCHANT_TEAMUP_TIER = 1,
-
-    RIFT_EGGS = {"Underworld Egg", "Nightmare Egg", "Cyber Egg"},
-    HATCH_1X_EGG = {"200M Egg", "Game Egg", "Cyber Egg"}, 
-
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
-    DISCORD_ID = "1120232109165006859",
-    WEBHOOK_ODDS = 1000000,
-    SHOW_PET_WEBHOOK_USERNAME = true,
+    ["Webhook"] = {
+        Enable = true,
+        Note = "Duck",
+        ID = "1120232109165006859",
+        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
+        Rarity = {
+            "Legendary",
+            "Secret"
+        }, -- General rarity filter
+        Legendary = "1m",
+        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
+    }
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e2d15fd8d5fd053a359cc3e296c68150.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
