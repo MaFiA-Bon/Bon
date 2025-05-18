@@ -90,7 +90,7 @@ getgenv().UserConfig = {
     ["Best Potions Find Duck"] = false, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 490,
+    ["Tickets coefficient"] = 40,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
