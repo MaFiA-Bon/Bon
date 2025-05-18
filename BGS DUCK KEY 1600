@@ -1,19 +1,19 @@
-wait(15)
+setfpscap(3)
+wait(20)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
-    FPS                 = 5,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update3"},
+    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
     EquipBestFlavorGum  = true,
     BuyFlavorGum        = true,
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
     ["Use Super Ticket"] = true,
-    ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
+    ["Season Challenges"] = false, -- True  stucking bubble gum quest now
     ["Min gems"] = "1m",
-    ["Min tickets"] = "5b", -- Default if not set in UserConfig
-    ["Min coins"] = "3b", -- Default if not set in UserConfig
+    ["Min tickets"] = "10b", -- Default if not set in UserConfig
+    ["Min coins"] = "5b", -- Default if not set in UserConfig
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
@@ -81,16 +81,16 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Cyber Egg","Nightmare Egg"}, -- delete cyber egg and nightmare egg if u want
+        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2","Underworld Egg 1", "Underworld Egg 0", "Cyber Egg","Nightmare Egg"}, -- delete cyber egg and nightmare egg if u want
         Luck = 5 -- dont change
     },
     ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
-    FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
-    ["Replace FindDuck"] = "Rainbow Egg",
+    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Neon Egg",
     ["Best Potions Find Duck"] = false, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 40,
+    ["Tickets coefficient"] = 490,
     ["Auto Restart"] = true,
 
     ["Webhook"] = {
@@ -103,7 +103,6 @@ getgenv().UserConfig = {
             "Secret"
         }, -- General rarity filter
         Legendary = "1m",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity","Dragon Plushie"}
+        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
