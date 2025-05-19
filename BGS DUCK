@@ -1,9 +1,9 @@
-wait(15)
+setfpscap(3)
+wait(20)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
-    FPS                 = 5,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update3"},
+    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
     EquipBestFlavorGum  = true,
     BuyFlavorGum        = true,
     AutoMinigames       = true,
@@ -81,13 +81,13 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Underworld Egg 3","Underworld Egg 2","Underworld Egg 1","Cyber Egg","Nightmare Egg"}, -- delete cyber egg and nightmare egg if u want
+        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2"},
         Luck = 5 -- dont change
     },
     ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
-    FindDuck = "200M Egg", -- Nightmare Egg, Common Egg, Cyber Egg
-    ["Replace FindDuck"] = "Rainbow Egg",
-    ["Best Potions Find Duck"] = false, --false if there are only few potions 
+    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Neon Egg",
+    ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
     ["Tickets coefficient"] = 40,
