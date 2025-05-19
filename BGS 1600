@@ -1,95 +1,130 @@
+setfpscap(3)
 wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
-EquipBestPets       = true,
-["Best Potions Find Duck"] = false,
     FPS                 = 10,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "LUCKY", "Easter", "Throwback", "update2", "sylentlyssorry"},
+
+   RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
+    EquipBestFlavorGum  = true, -- false cái này là ko làm quest đc
+    BuyFlavorGum        = true, -- false cái này là ko làm quest đc
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
     ["Giant Chest"] = false,
-    ["Void Chest"] = true,
+    ["Void Chest"] = false,
     ["Golden Chest"] = false,
-    ["Royal Chest"] = true,
-    Competitive = {
-        Choosing = "1,2,1,2,1,1,2,2,1,2"
-    },
+    ["Royal Chest"] = false,
+    ["Use Super Ticket"] = true,
+    ["Season Challenges"] = true,
+   ["Min gems"] = "1m",
+    ["Min coins"] = "3b",
+    ["Min tickets"] = "5b",
+    
+
     ["Detector"] = {
-        Enable = true,
-        ["Name Needed"] = {"Avernus", "Patronus"},
+        Enable = false,
+        ["Name Needed"] = {"Avernus", "Patronus"}, -- Blue
         ["Rarity Needed"] = {
-            "Legendary",
-            "Mythic",
-            "Secret" -- Red Background
+            "Legendary", -- Green
+            "Mythic", -- Red
+            "Secret" -- Yellow
         }
     },
+
     ["Alien Shop"] = {
-        Enable = true,
+        Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
-            "Mystery Box"
+            -- "Mystery Box",
+            -- "Coins III",
+            -- "Coins IV",
+            -- "Lucky III",
+            -- "Lucky IV",
+            -- "Speed III",
+            -- "Speed IV",
+            "Golden Key"
         }
     },
     ["Black Market"] = {
-        Enable = true,
-        ["Min Gems"] = "20m",
+        Enable = false,
+        ["Min Gems"] = "1m",
         ["Items Needed"] = {
-            "Lucky Evolved",
-            "Mythic Evolved",
-            "Speed Evolved",
-            "Lucky V",
-            "Mythic V",
+            -- "Lucky Evolved",
+            -- "Coins Evolved",
+            -- "Mythic Evolved",
+            -- "Speed Evolved",
+            -- "Lucky V",
+            -- "Coins V",
+            -- "Mythic V",
             "Speed V"
         }
     },
+
     ["Craft Potions"] = {
         Enable = true,
-        MinGems = "20m",
+        ["Min Gems"] = "1m",
         ["Potion Needed"] = {
+            {"Coins", Level = 5},
             {"Speed", Level = 5},
             {"Lucky", Level = 5},
             {"Mythic", Level = 5}
         }
     },
+
     ["Mastery"] = {
         Pets = 15,
         Buffs = 15,
         Shops = 10
     },
+
+
+    Competitive = {
+        Choosing = "1,2,1,2,1,1,2,2,1,2"
+    },
+
     ["Star Shop"] = {
         Enable = true,
-        MinStars = 300,
+        MinStars = "1k",
         ["Items Needed"] = {
             "Speed V",
             "Lucky V",
             "Mythic V"
         }
     },
+
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 15,
+        Shops = 10
+    },
+
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Silly Egg", "Nightmare Egg", "Common Egg"},
-        Luck = 5
+        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"}, -- delete cyber egg and nightmare egg if u want
+        Luck = 5 -- dont change
     },
-    ["Min gems"] = "20m",
-    FindDuck = "Common Egg", -- Hatch 1x Egg
+    ["Secret Bounty"] = {"Prophet"}, -- delete pet name if you dont want that pet Queen Kitty
+    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg,   Chance Egg
+    ["Replace FindDuck"] = "Neon Egg",
+    ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
-    ["Gems coefficient"] = 24,
-    ["Replace 100M Egg"] = "Common Egg",
-    ["Auto Restart"] = true,
+    ["Gems coefficient"] = 1,
+    ["Tickets coefficient"] = 40,
+["Auto Restart"] = false,
 
     ["Webhook"] = {
-        Enable = true,
-        Note = "DUCK",
-        ID = "1120232109165006859",
-        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
+        Enable = true, -- Enable/disable pet hatch notification webhook
+         Note = getgenv().DuckHook, -- Note displayed on the webhook 
+        ID = "1120232109165006859", -- Enter your Discord ID here
+        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH", -- Add your webhook URL here  Dragon Plushie Magmas 
+        
         Rarity = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "500K",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor"}
+        Legendary = "10m", -- Threshold for Legendary (e.g., 100k = 1/100,000) - only send if chance >= threshold     
+        ["Special Pets"] = {"Avernus", "Patronus", "Overseer", "Seraph" , "NULLVoid", "Luminosity" , "Jackpot"}  
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
