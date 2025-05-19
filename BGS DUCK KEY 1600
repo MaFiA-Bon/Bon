@@ -1,63 +1,69 @@
 setfpscap(3)
-wait(20)
+wait(15)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
 getgenv().UserConfig = {
+    FPS                 = 10,
     AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
-    EquipBestFlavorGum  = true,
-    BuyFlavorGum        = true,
+
+   RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
+    EquipBestFlavorGum  = true, -- false cái này là ko làm quest đc
+    BuyFlavorGum        = true, -- false cái này là ko làm quest đc
     AutoMinigames       = true,
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
-    ["Use Super Ticket"] = true,
-    ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
-    ["Min gems"] = "1m",
-    ["Min tickets"] = "5b", -- Default if not set in UserConfig
-    ["Min coins"] = "3b", -- Default if not set in UserConfig
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
     ["Royal Chest"] = false,
+    ["Use Super Ticket"] = true,
+    ["Season Challenges"] = true,
+   ["Min gems"] = "1m",
+    ["Min coins"] = "3b",
+    ["Min tickets"] = "5b",
+    
+
     ["Detector"] = {
-        Enable = true,
-        ["Name Needed"] = {"Avernus", "Patronus"},
+        Enable = false,
+        ["Name Needed"] = {"Avernus", "Patronus"}, -- Blue
         ["Rarity Needed"] = {
-            "Legendary",
-            "Mythic",
-            "Secret"
+            "Legendary", -- Green
+            "Mythic", -- Red
+            "Secret" -- Yellow
         }
     },
+
     ["Alien Shop"] = {
         Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
-            "Golden Key",
-            "Mystery Box",
-            "Coins III",
-            "Coins IV",
-            "Lucky III",
-            "Lucky IV",
-            "Speed III",
-            "Speed IV"
+            -- "Mystery Box",
+            -- "Coins III",
+            -- "Coins IV",
+            -- "Lucky III",
+            -- "Lucky IV",
+            -- "Speed III",
+            -- "Speed IV",
+            "Golden Key"
         }
     },
     ["Black Market"] = {
         Enable = false,
         ["Min Gems"] = "1m",
         ["Items Needed"] = {
-            "Lucky Evolved",
+            -- "Lucky Evolved",
             -- "Coins Evolved",
-            "Mythic Evolved",
-            "Speed Evolved",
-            "Lucky V",
+            -- "Mythic Evolved",
+            -- "Speed Evolved",
+            -- "Lucky V",
             -- "Coins V",
-            "Mythic V",
+            -- "Mythic V",
             "Speed V"
         }
     },
+
     ["Craft Potions"] = {
-        Enable = false,
-        MinGems = "100k",
+        Enable = true,
+        ["Min Gems"] = "1m",
         ["Potion Needed"] = {
             {"Coins", Level = 5},
             {"Speed", Level = 5},
@@ -65,45 +71,60 @@ getgenv().UserConfig = {
             {"Mythic", Level = 5}
         }
     },
+
     ["Mastery"] = {
         Pets = 15,
         Buffs = 15,
         Shops = 10
     },
+
+
+    Competitive = {
+        Choosing = "1,2,1,2,1,1,2,2,1,2"
+    },
+
     ["Star Shop"] = {
         Enable = true,
-        MinStars = 100,
+        MinStars = "1k",
         ["Items Needed"] = {
             "Speed V",
             "Lucky V",
             "Mythic V"
         }
     },
+
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 15,
+        Shops = 10
+    },
+
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2"},
+        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"}, -- delete cyber egg and nightmare egg if u want
         Luck = 5 -- dont change
     },
-    ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
-    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Secret Bounty"] = {"Prophet"}, -- delete pet name if you dont want that pet Queen Kitty
+    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg,   Chance Egg
     ["Replace FindDuck"] = "Neon Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
     ["Tickets coefficient"] = 40,
-    ["Auto Restart"] = true,
+["Auto Restart"] = false,
 
     ["Webhook"] = {
-        Enable = true,
-        Note = "Duck",
-        ID = "1120232109165006859",
-        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
+        Enable = true, -- Enable/disable pet hatch notification webhook
+         Note = getgenv().DuckHook, -- Note displayed on the webhook 
+        ID = "1120232109165006859", -- Enter your Discord ID here
+        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH", -- Add your webhook URL here  Dragon Plushie Magmas 
+        
         Rarity = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "1m",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
+        Legendary = "10m", -- Threshold for Legendary (e.g., 100k = 1/100,000) - only send if chance >= threshold     
+        ["Special Pets"] = {"Avernus", "Patronus", "Overseer", "Seraph" , "NULLVoid", "Luminosity" , "Jackpot"}  
     }
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
