@@ -1,0 +1,59 @@
+script_key="mZZPSDKIQNxFmOYWORZCHHUyEJIKbnuv";
+getgenv().Config = {
+    ["Time To Sell"] = 35, -- Seconds
+    ["Seed"] = {
+        ["Strawberry"] = 44,
+        ["Corn"] = 44,
+        ["Coconut"] = 44,
+        ["Cacao"] = 44,
+        ["Pumpkin"] = 44,
+        ["Mango"] = 44,
+        ["Banana"] = 44,
+        ["Orange Tulip"] = 44,
+        ["Watermelon"] = 44,
+        ["Dragon Fruit"] = 44,
+        ["Cactus"] = 44,
+        ["Daffodil"] = 44,
+        ["Pepper"] = 44,
+        ["Bamboo"] = 44
+    },
+    ["FPS"] = 30,
+    ["Buy Egg"] = true,
+    ["Egg"] = {
+        ["Common Egg"] = false,
+        ["Rare Egg"] = false,
+        ["Mythical Egg"] = false,
+        ["Legendary Egg"] = false,
+        ["Bug Egg"] = true
+    },
+    ["ItemBlood"] = {
+        ["Blood Banana"] = true,
+        ["Blood Owl"] = true,
+        ["Night Seed Pack"] = true,
+        ["Moon Melon"] = false,
+        ["Mysterious Crate"] = false,
+        ["Blood Kiwi"] = false,
+        ["Night Egg"] = false,
+        ["Star Caller"] = false,
+        ["Blood Hedgehog"] = false
+    },
+    ["Item Special Buy"] = {
+        ["Candy Blossom"] = true,
+        ["Chocolate Sprinkler"] = true,
+        ["Candy Sunflower"] = true,
+        ["Easter Egg"] = true,
+        ["Red Lollipop"] = true,
+        ["Chocolate Carrot"] = true
+    },
+    ["Sprinkler"] = {
+        ["Basic Sprinkler"] = true,
+        ["Advanced Sprinkler"] = true,
+        ["Master Sprinkler"] = true,
+        ["Godly Sprinkler"] = true
+    },
+    ["PetNeedSend"] = "Dragonfly",
+    ["Url"] = "https://discord.com/api/webhooks/1374202628925554780/8UiPzVuUa--FTRKaCsg3xtYH5WRLdE9-dPHlRDkKNRA2LHJbAQYuu3dbQJ0YhR48RDl_", -- URL WEBHOOK
+    ["Boost FPS"] = false,
+    ["Black Screen"] = false
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/392bd177458276c103d5ec042d7d4e38.lua"))()
