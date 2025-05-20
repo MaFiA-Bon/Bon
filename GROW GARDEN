@@ -1,6 +1,6 @@
-script_key="mZZPSDKIQNxFmOYWORZCHHUyEJIKbnuv";
+script_key = "mZZPSDKIQNxFmOYWORZCHHUyEJIKbnuv";
 getgenv().Config = {
-    ["Time To Sell"] = 35, -- Seconds
+    ["Time To Sell"] = 5, -- Seconds
     ["Seed"] = {
         ["Strawberry"] = 44,
         ["Corn"] = 44,
@@ -17,7 +17,7 @@ getgenv().Config = {
         ["Pepper"] = 44,
         ["Bamboo"] = 44
     },
-    ["FPS"] = 30,
+    ["FPS"] = 15,
     ["Buy Egg"] = true,
     ["Egg"] = {
         ["Common Egg"] = false,
