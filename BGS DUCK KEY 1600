@@ -104,7 +104,7 @@ getgenv().UserConfig = {
         Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2","Underworld Egg 1"}, -- delete cyber egg and nightmare egg if u want
         Luck = 5 -- dont change
     },
-    ["Secret Bounty"] = {"Prophet"}, -- delete pet name if you dont want that pet Queen Kitty
+    ["Secret Bounty"] = {"Prophet" "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet Queen Kitty
     FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg,   Chance Egg
     ["Replace FindDuck"] = "Neon Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
