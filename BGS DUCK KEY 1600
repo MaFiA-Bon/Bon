@@ -106,7 +106,7 @@ getgenv().UserConfig = {
     },
     ["Secret Bounty"] = {"Overlord Plushie","Everblaze","Beelzebub"}, -- delete pet name if you dont want that pet Queen Kitty
     FindDuck = "Mining Egg", -- Nightmare Egg, Common Egg, Cyber Egg,   Chance Egg
-    ["Replace FindDuck"] = "Neon Egg",
+    ["Replace FindDuck"] = "Chance Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Gems coefficient"] = 1,
