@@ -101,7 +101,7 @@ getgenv().UserConfig = {
 
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Mining Egg","Chance Egg"}, -- delete cyber egg and nightmare egg if u want
+        Targets = {"Mining Egg", "Chance Egg", "Neon Egg"}, -- delete cyber egg and nightmare egg if u want
         Luck = 5 -- dont change
     },
     ["Secret Bounty"] = {"Overlord Plushie","Everblaze","Beelzebub"}, -- delete pet name if you dont want that pet Queen Kitty
