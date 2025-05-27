@@ -93,7 +93,7 @@ getgenv().UserConfig = {
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 40,
     ["Seashells coefficient"] = 24,
-    ["Auto Restart"] = true,
+    ["Auto Restart"] = false,
 
     ["Webhook"] = {
         Enable = true,
