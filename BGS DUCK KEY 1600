@@ -64,8 +64,8 @@ getgenv().UserConfig = {
     },
     ["Mastery"] = {
         Pets = 15,
-        Buffs = 8,
-        Shops = 1
+        Buffs = 10,
+        Shops = 10
     },
     ["Star Shop"] = {
         Enable = true,
@@ -87,13 +87,13 @@ getgenv().UserConfig = {
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
     ["Min gems"] = "1m",
-    ["Min coins"] = "100m",
-    ["Min tickets"] = "10m",
-    ["Min seashells"] = "20m",
+    ["Min coins"] = "3b",
+    ["Min tickets"] = "5b",
+    ["Min seashells"] = "1m",
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 40,
     ["Seashells coefficient"] = 24,
-    ["Auto Restart"] = true,
+    ["Auto Restart"] = false,
 
     ["Webhook"] = {
         Enable = true,
@@ -104,7 +104,7 @@ getgenv().UserConfig = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "100m",
+        Legendary = "10m",
         ["Special Pets"] = {"Monolith"}
     }
 }
