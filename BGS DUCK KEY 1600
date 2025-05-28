@@ -14,44 +14,9 @@ getgenv().UserConfig = {
     ["Giant Chest"] = false,
     ["Void Chest"] = false,
     ["Golden Chest"] = false,
-    ["Royal Chest"] = false,
-    ["Detector"] = {
-        Enable = true,
-        ["Name Needed"] = {"Avernus", "Patronus"},
-        ["Rarity Needed"] = {
-            "Legendary",
-            "Mythic",
-            "Secret"
-        }
-    },
-    ["Alien Shop"] = {
-        Enable = false,
-        ["Min Gems"] = "1m",
-        ["Items Needed"] = {
-            "Golden Key",
-            "Mystery Box",
-            "Coins III",
-            "Coins IV",
-            "Lucky III",
-            "Lucky IV",
-            "Speed III",
-            "Speed IV"
-        }
-    },
-    ["Black Market"] = {
-        Enable = false,
-        ["Min Gems"] = "1m",
-        ["Items Needed"] = {
-            "Lucky Evolved",
-            -- "Coins Evolved",
-            "Mythic Evolved",
-            "Speed Evolved",
-            "Lucky V",
-            -- "Coins V",
-            "Mythic V",
-            "Speed V"
-        }
-    },
+    ["Royal Chest"] = true,
+    ["Dice Chest"] = true, -- default is false if not set
+    ["Summer Shop"] = true, -- default is true if not set
     ["Craft Potions"] = {
         Enable = false,
         MinGems = "100k",
@@ -62,11 +27,7 @@ getgenv().UserConfig = {
             {"Mythic", Level = 5}
         }
     },
-    ["Mastery"] = {
-        Pets = 15,
-        Buffs = 10,
-        Shops = 10
-    },
+    ["Mastery"] = {Pets = 15,Buffs = 10,Shops = 10},
     ["Star Shop"] = {
         Enable = true,
         MinStars = 100,
@@ -81,20 +42,20 @@ getgenv().UserConfig = {
         Targets = {"Icecream Egg", "Fruit Egg"},
         Luck = 5 -- dont change
     },
-    ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"}, -- delete pet name if you dont want that pet
-    FindDuck = "Fruit Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
-    ["Replace FindDuck"] = "Icecream Egg",
+    ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"},
+    ["Secret Bounty x1 Egg"] = false, -- true = 100% Secret Bounty
+    FindDuck = "Icecream Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Fruit Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
     ["Min gems"] = "1m",
-    ["Min coins"] = "3b",
-    ["Min tickets"] = "5b",
-    ["Min seashells"] = "1m",
+    ["Min coins"] = "100m",
+    ["Min tickets"] = "10m",
+    ["Min seashells"] = "20m",
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 40,
     ["Seashells coefficient"] = 24,
-    ["Auto Restart"] = false,
-
+    ["Auto Restart"] = true,
     ["Webhook"] = {
         Enable = true,
         Note = "HenRy",
@@ -108,4 +69,4 @@ getgenv().UserConfig = {
         ["Special Pets"] = {"Monolith"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
