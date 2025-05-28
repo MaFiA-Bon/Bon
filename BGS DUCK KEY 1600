@@ -81,19 +81,19 @@ getgenv().UserConfig = {
         Targets = {"Icecream Egg", "Fruit Egg"},
         Luck = 5 -- dont change
     },
-    ["Secret Bounty"] = {"Everblaze", "Overlord Plushie", "Beelzebub"}, -- delete pet name if you dont want that pet
-    FindDuck = "Luna Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
-    ["Replace FindDuck"] = "Icecream Egg",
+    ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"}, -- delete pet name if you dont want that pet
+    FindDuck = "Icecream Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Fruit Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
     ["Min gems"] = "1m",
-    ["Min coins"] = "3b",
-    ["Min tickets"] = "1b",
-    ["Min seashells"] = "10m",
+    ["Min coins"] = "100m",
+    ["Min tickets"] = "10m",
+    ["Min seashells"] = "20m",
     ["Gems coefficient"] = 24,
     ["Tickets coefficient"] = 40,
     ["Seashells coefficient"] = 24,
-    ["Auto Restart"] = false,
+    ["Auto Restart"] = true,
 
     ["Webhook"] = {
         Enable = true,
@@ -104,8 +104,8 @@ getgenv().UserConfig = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "10m",
+        Legendary = "100m",
         ["Special Pets"] = {"Monolith"}
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/0cf205a620e81d1f3c3d3f75474ab32f.lua"))()
