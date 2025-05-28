@@ -81,7 +81,7 @@ getgenv().UserConfig = {
         Targets = {"Icecream Egg", "Fruit Egg"},
         Luck = 5 -- dont change
     },
-    ["Secret Bounty"] = {"Hatchable", "Overlord Plushie", "Everblaze", "Beelzebub"}, -- delete pet name if you dont want that pet
+    ["Secret Bounty"] = {"Everblaze", "Overlord Plushie", "Beelzebub"}, -- delete pet name if you dont want that pet
     FindDuck = "Luna Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
     ["Replace FindDuck"] = "Icecream Egg",
     ["Best Potions Find Duck"] = true, --false if there are only few potions 
