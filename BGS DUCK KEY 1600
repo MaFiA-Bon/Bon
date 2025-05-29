@@ -10,15 +10,15 @@ getgenv().UserConfig = {
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
     ["Use Super Ticket"] = true,
-    ["Season Challenges"] = true, -- false bc ss end 
+    ["Season Challenges"] = true,
     ["Giant Chest"] = false,
-    ["Void Chest"] = false,
-    ["Golden Chest"] = false,
+    ["Void Chest"] = true,
+    ["Golden Chest"] = true,
     ["Royal Chest"] = true,
-    ["Dice Chest"] = true, -- default is false if not set
-    ["Summer Shop"] = true, -- default is true if not set
+    ["Dice Chest"] = true,
+    ["Summer Shop"] = true,
     ["Craft Potions"] = {
-        Enable = false,
+        Enable = true,
         MinGems = "100k",
         ["Potion Needed"] = {
             {"Coins", Level = 5},
@@ -27,7 +27,11 @@ getgenv().UserConfig = {
             {"Mythic", Level = 5}
         }
     },
-    ["Mastery"] = {Pets = 15,Buffs = 10,Shops = 10},
+    ["Mastery"] = {
+        Pets = 15,
+        Buffs = 10,
+        Shops = 10
+    },
     ["Star Shop"] = {
         Enable = true,
         MinStars = 100,
@@ -43,22 +47,23 @@ getgenv().UserConfig = {
         Luck = 5 -- dont change
     },
     ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"},
-    ["Secret Bounty x1 Egg"] = false, -- true = 100% Secret Bounty
-    FindDuck = "Fruit Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
-    ["Replace FindDuck"] = "Icecream Egg",
-    ["Best Potions Find Duck"] = true, --false if there are only few potions 
-    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
+    ["Secret Bounty x1 Egg"] = false,
+    FindDuck = "Fruit Egg",
+    ["Replace FindDuck"] = "Fruit Egg",
+    ["Best Potions Find Duck"] = true,
+    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Min gems"] = "1m",
-    ["Min coins"] = "100m",
-    ["Min tickets"] = "10m",
-    ["Min seashells"] = "20m",
-    ["Gems coefficient"] = 24,
-    ["Tickets coefficient"] = 40,
+    ["Min coins"] = "500m",
+    ["Min tickets"] = "50m",
+    ["Min seashells"] = "2m",
+    ["Gems coefficient"] = 0,
+    ["Tickets coefficient"] = 100,
     ["Seashells coefficient"] = 24,
     ["Auto Restart"] = true,
+
     ["Webhook"] = {
         Enable = true,
-        Note = "HenRy",
+        Note = "Duck Hub",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
