@@ -49,7 +49,7 @@ getgenv().UserConfig = {
     ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"},
     ["Secret Bounty x1 Egg"] = false,
     FindDuck = "Fruit Egg",
-    ["Replace FindDuck"] = "Fruit Egg",
+    ["Replace FindDuck"] = "Icecream Egg",
     ["Best Potions Find Duck"] = true,
     ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
     ["Min gems"] = "1m",
