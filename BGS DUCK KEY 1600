@@ -1,3 +1,4 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 setfpscap(3)
 wait(20)
 script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
@@ -10,15 +11,16 @@ getgenv().UserConfig = {
     AutoRollDice        = true,
     ["Super Ticket"]    = "Robot Claw",
     ["Use Super Ticket"] = true,
-    ["Season Challenges"] = true,
+    ["Season Challenges"] = false, -- true if u want secret monolith 
     ["Giant Chest"] = false,
-    ["Void Chest"] = true,
-    ["Golden Chest"] = true,
+    ["Void Chest"] = false,
+    ["Golden Chest"] = false,
     ["Royal Chest"] = true,
-    ["Dice Chest"] = true,
-    ["Summer Shop"] = true,
+    ["Dice Chest"] = true, -- default is false if not set
+    ["Summer Shop"] = true, -- default is true if not set
+    ["Mastery"] = {Pets = 15,Buffs = 10,Shops = 10},
     ["Craft Potions"] = {
-        Enable = true,
+        Enable = false,
         MinGems = "100k",
         ["Potion Needed"] = {
             {"Coins", Level = 5},
@@ -26,11 +28,6 @@ getgenv().UserConfig = {
             {"Lucky", Level = 5},
             {"Mythic", Level = 5}
         }
-    },
-    ["Mastery"] = {
-        Pets = 15,
-        Buffs = 10,
-        Shops = 10
     },
     ["Star Shop"] = {
         Enable = true,
@@ -43,34 +40,33 @@ getgenv().UserConfig = {
     },
     ["Rifts"] = {
         AlwaysFindRifts = true,
-        Targets = {"Icecream Egg", "Fruit Egg"},
-        Luck = 5 -- dont change
+        Targets = {"Fossil Egg"},
+        Luck = 5
     },
     ["Secret Bounty"] = {"Overlord Plushie", "Everblaze", "Beelzebub"},
-    ["Secret Bounty x1 Egg"] = false,
-    FindDuck = "Fruit Egg",
-    ["Replace FindDuck"] = "Icecream Egg",
-    ["Best Potions Find Duck"] = true,
-    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
+    ["Secret Bounty x1 Egg"] = false, -- true = 100% Secret Bounty
+    FindDuck = "Fossil Egg", -- Fruit Egg, Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
+    ["Replace FindDuck"] = "Fossil Egg",
+    ["Best Potions Find Duck"] = true, --false if there are only few potions 
+    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1}, -- can set 2 or 3
     ["Min gems"] = "1m",
-    ["Min coins"] = "500m",
-    ["Min tickets"] = "50m",
-    ["Min seashells"] = "2m",
-    ["Gems coefficient"] = 24,
-    ["Tickets coefficient"] = 100,
+    ["Min coins"] = "100m",
+    ["Min tickets"] = "10m",
+    ["Min seashells"] = "10m",
+    ["Gems coefficient"] = 0,
+    ["Tickets coefficient"] = 40,
     ["Seashells coefficient"] = 24,
     ["Auto Restart"] = true,
-
     ["Webhook"] = {
         Enable = true,
-        Note = "Duck Hub",
+        Note = "SEC",
         ID = "1120232109165006859",
         URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
         Rarity = {
             "Legendary",
             "Secret"
         }, -- General rarity filter
-        Legendary = "10m",
+        Legendary = "100m",
         ["Special Pets"] = {"Monolith"}
     }
 }
