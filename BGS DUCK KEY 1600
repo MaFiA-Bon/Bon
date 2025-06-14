@@ -37,9 +37,9 @@ getgenv().bgsInfConfig = {
     MASTERY_SHOPS_LEVEL = 1,
     MASTERY_MINIGAMES_LEVEL = 1,
 
-    WEBHOOK_URL = "",
-    DISCORD_ID = "",
-    WEBHOOK_NOTE = "",
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
+    DISCORD_ID = "1120232109165006859",
+    WEBHOOK_NOTE = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
     WEBHOOK_ODDS = "5m",
     SHOW_PET_WEBHOOK_USERNAME = true,
 }
