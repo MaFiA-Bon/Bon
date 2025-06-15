@@ -1,5 +1,5 @@
 script_key="YNMCPkFmVrykpCVzPbyZKiJZNIAOcTcq";
-setfpscap(3)  -- number = fps
+setfpscap(5)  -- number = fps
 
 getgenv().bgsInfConfig = {
     SUMMER_EVENT = true,
