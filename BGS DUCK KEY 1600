@@ -1,3 +1,4 @@
+wait(10)
 script_key="YNMCPkFmVrykpCVzPbyZKiJZNIAOcTcq";
 setfpscap(5)  -- number = fps
 
@@ -5,6 +6,8 @@ getgenv().bgsInfConfig = {
     SUMMER_EVENT = true,
     ADD_FRIEND = true,
     AUTO_UPDATE_RESTART = true,
+    SUPER_TICKET_MINIGAME = "Robot Claw",
+    AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
     FOCUS_DICE = true,
     
     PURCHASE_ALIENSHOP = true,
@@ -25,22 +28,19 @@ getgenv().bgsInfConfig = {
     DELETE_LEGENDARY_SHINY = true,
     DELETE_LEGENDARY_MYTHIC = true,
 
-    ENCHANT_TEAMUP = true,
-    ENCHANT_TEAMUP_TIER = 3,
+    ENCHANT_HIGH_ROLLER = true,
 
     AUTO_BOUNTY_RIFT = true,
     MIN_RIFT_MULTIPLIER = 10,
     HATCH_1X_EGG = {"Dark Egg", "Light Egg"}, 
     ALWAYS_INFINITY_ELIXIR = true,
     ALWAYS_EGG_ELIXIR = true,
-
-    MASTERY_SHOPS_LEVEL = 1,
-    MASTERY_MINIGAMES_LEVEL = 1,
+    MASTERY_BUFFS_LEVEL = 20,
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
     DISCORD_ID = "1120232109165006859",
-    WEBHOOK_NOTE = "",
-    WEBHOOK_ODDS = "5m",
+    WEBHOOK_NOTE = "SEC",
+    WEBHOOK_ODDS = "10m",
     SHOW_PET_WEBHOOK_USERNAME = true,
 }
 
