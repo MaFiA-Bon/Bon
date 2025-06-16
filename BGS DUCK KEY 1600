@@ -35,7 +35,7 @@ getgenv().bgsInfConfig = {
     HATCH_1X_EGG = {"Dark Egg", "Light Egg"}, 
     ALWAYS_INFINITY_ELIXIR = true,
     ALWAYS_EGG_ELIXIR = true,
-    MASTERY_BUFFS_LEVEL = 20,
+    MASTERY_BUFFS_LEVEL = 15,
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
     DISCORD_ID = "1120232109165006859",
