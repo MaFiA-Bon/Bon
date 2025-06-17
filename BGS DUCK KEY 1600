@@ -1,22 +1,18 @@
-wait(10)
 script_key="YNMCPkFmVrykpCVzPbyZKiJZNIAOcTcq";
-setfpscap(5)  -- number = fps
+setfpscap(3)  -- number = fps
 
 getgenv().bgsInfConfig = {
-    SUMMER_EVENT = true,
     ADD_FRIEND = true,
     AUTO_UPDATE_RESTART = true,
-    SUPER_TICKET_MINIGAME = "Robot Claw",
-    AUTO_INDEX = {"The Overworld", "Minigame Paradise"},
     FOCUS_DICE = true,
+    SUPER_TICKET_MINIGAME = "Robot Claw",
     
     PURCHASE_ALIENSHOP = true,
     PURCHASE_BLACKMARKET = true,
     PURCHASE_DICE_MERCHANT = true,
-    PURCHASE_EVENT_SHOP = true,
     PURCHASE_TRAVELING_MERCHANT = true,
     PURCHASE_STARSHOP_SLOT = 14,
-    RESTOCK_SHOP = "Traveling Merchant",
+    RESTOCK_SHOP = "Dice Merchant",
 
     USE_ROYAL_KEY = true,
     USE_DICE_KEY = true,
@@ -28,19 +24,19 @@ getgenv().bgsInfConfig = {
     DELETE_LEGENDARY_SHINY = true,
     DELETE_LEGENDARY_MYTHIC = true,
 
-    ENCHANT_HIGH_ROLLER = true,
+    ENCHANT_TEAMUP = true,
+    ENCHANT_TEAMUP_TIER = 3,
 
     AUTO_BOUNTY_RIFT = true,
     MIN_RIFT_MULTIPLIER = 10,
-    HATCH_1X_EGG = {"Lunar Egg"}, 
+    HATCH_1X_EGG = {"Voidcrystal Egg"}, 
     ALWAYS_INFINITY_ELIXIR = true,
     ALWAYS_EGG_ELIXIR = true,
-    MASTERY_BUFFS_LEVEL = 15,
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/1367870468266131559/acvHcojm4uc8Edbh2G6RyGCnlVdNX95ZH91wQv3d6hBcy0OHfjIW_sex48cFpGElTWWc",
     DISCORD_ID = "1120232109165006859",
     WEBHOOK_NOTE = "SEC",
-    WEBHOOK_ODDS = "10m",
+    WEBHOOK_ODDS = "5m",
     SHOW_PET_WEBHOOK_USERNAME = true,
 }
 
