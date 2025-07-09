@@ -2,10 +2,7 @@ script_key="BhpLKcfIKZBeTgJDfhOVwSPgDsSckHNr";
 setfpscap(3)
 
 getgenv().gagConfig = {
-    SUMMER_EVENT = true,
-    CRAFT_EVENT = { "Anti Bee Egg" },
-    BUY_EVENT_SHOP = { "Hamster", "Oasis Egg" },
-    IGNORE_FRUIT_SUMMER_EVENT = {},  -- Put fruit names to ignore ("Submit Plant")
+    CRAFT_EVENT = { "Anti Bee Egg", "Ancient Seed Pack" },
 
     AUTO_UPDATE_RESTART = true,
     REDEEM_CODES = {},
@@ -14,22 +11,26 @@ getgenv().gagConfig = {
     OPEN_ALL_SEED_PACK = true,
     ADD_FRIEND = true,
 
-    MAX_PLANTS = 500,
-    DESTROY_UNTIL_MIN_PLANTS = 450,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato" },
+    MAX_PLANTS = 250,
+    DESTROY_UNTIL_MIN_PLANTS = 230,
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry", "Tomato", "Cauliflower" },
     
-    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Common Summer Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "Oasis Egg", "Anti Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Common Summer Egg", "Uncommon Egg" },
-
-    BUY_SEED_SHOP = { "Sugar Apple", "Pitcher Plant", "Feijoa", "Loquat", "Prickly Pear", "Bell Pepper", "Kiwi", "Pineapple", "Banana", "Avocado", "Green Apple", "Rafflesia", "Watermelon", "Cauliflower", "Tomato", "Blueberry", "Strawberry", "Carrot" },
+    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    PLANT_EGGS = { "Dinosaur Egg", "Anti Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    
+    -- BUY_SEED_SHOP Priority (Left -> Right)
+    BUY_SEED_SHOP = { "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", "Daffodil", "Tomato", "Orange Tulip", "Blueberry", "Strawberry", "Carrot" },
     KEEP_SEEDS = {},
+    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot", "Strawberry", "Blueberry", "Orange Tulip", "Tomato" },
     
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Blood Kiwi", "Firefly", "Chicken Zombie" },
+    KEEP_PETS = { "Bald Eagle", "Pterodactyl", "Brontosaurus", "T-Rex", "Rooster", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Blood Kiwi", "Firefly", "Chicken Zombie" },
+    KEEP_PETS_WEIGHT = 10,
 
-    EQUIP_PETS = { "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse" },
+    -- EQUIP_PETS Priority (Left -> Right)
+    EQUIP_PETS = { "Bald Eagle", "Rooster", "Blood Kiwi", "Chicken", "Starfish" },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler" },
