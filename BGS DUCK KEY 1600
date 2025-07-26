@@ -5,8 +5,9 @@ getgenv().gagConfig = {
     -- Event:
     CRAFT_EVENT = { "Anti Bee Egg" },
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Zen Egg", "Zen Seed Pack", "Spiked Mango", "Koi", "Soft Sunshine", "Zenflare" },
+    BUY_EVENT_SHOP = { "Zen Egg", "Koi" },
     MAX_EVENT_RESTOCK_SHECKLES = 0,
+    PLACE_ALL_EVENT_STAFF = true,
     
     -- General:
     AUTO_UPDATE_RESTART = true,
@@ -18,21 +19,21 @@ getgenv().gagConfig = {
 
     MAX_PLANTS = 250,
     DESTROY_UNTIL_MIN_PLANTS = 230,
-    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Strawberry", "Blueberry" },
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Apple", "Cactus" },
     
     BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "Dinosaur Egg", "Zen Egg", "Primal Egg", "Anti Bee Egg", "Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    PLANT_EGGS = { "Dinosaur Egg", "Corrupted Zen Egg", "Zen Egg", "Primal Egg", "Anti Bee Egg", "Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
     
-    BUY_SEED_SHOP = { "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
+    BUY_SEED_SHOP = { "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", "Coconut", "Bamboo", "Apple", "Pumpkin", "Watermelon", ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
     KEEP_SEEDS = {},
     KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot", "Orange Tulip", "Tomato", "Daffodil", "Apple" },
     
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Tanchozuru", "Kappa", "Kitsune", "Bald Eagle", "Dilophosaurus", "Ankylosaurus", "Spinosaurus", "Pterodactyl", "Brontosaurus", "T-Rex", "Seal", "Rooster", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Blood Kiwi"] = 2, ["Capybara"] = 1, ["Starfish"] = 1, ["Chicken"] = 2, ["Dog"] = 2, ["Bunny"] = 2, ["Golden Lab"] = 2 },
-    KEEP_PETS_WEIGHT = 10,
-    KEEP_PETS_AGE = 50,
+    KEEP_PETS = { "Corrupted Kitsune", "Raiju", "Mizuchi", "Tanchozuru", "Kappa", "Kitsune", "Bald Eagle", "Dilophosaurus", "Ankylosaurus", "Spinosaurus", "Pterodactyl", "Brontosaurus", "T-Rex", "Seal", "Rooster", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Blood Kiwi"] = 2, ["Capybara"] = 1, ["Starfish"] = 1, ["Chicken"] = 2 },
+    KEEP_PETS_WEIGHT = {},
+    KEEP_PETS_AGE = {},
 
     EQUIP_PETS = { "Bald Eagle", ["Rooster"] = 2, ["Blood Kiwi"] = 2, ["Capybara"] = 1, ["Starfish"] = 1, ["Chicken"] = 2 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
@@ -43,8 +44,8 @@ getgenv().gagConfig = {
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1389519695505264781/w_YYiRUlM32rNF__U31UUs9qJJL19241ZL3wez79_4AZuIQlQLM1BK7p4q2rI0tu2wzE",
     SEED_WEBHOOK_URL = "https://discord.com/api/webhooks/1389528057538412564/SE1zRnfxzzZ8LPMK1ldq6UDYGtHswhm3oedSMO73HuPqhmum5sVZ5lZzh0p_NhyZNUye", 
-    NOTIFY_PETS = { "Bald Eagle", "Tanchozuru", "Kappa", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Axolotl", "Echo Frog", "Bear Bee", "Praying Mantis", "Pterodactyl", "Brontosaurus", "T-Rex", "Dilophosaurus", "Ankylosaurus", "Spinosaurus" },
-    NOTIFY_PETS_WEIGHT = 10,
+    NOTIFY_PETS = { "Corrupted Kitsune", "Raiju", "Mizuchi", "Bald Eagle", "Tanchozuru", "Kappa", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Axolotl", "Echo Frog", "Bear Bee", "Praying Mantis", "Pterodactyl", "Brontosaurus", "T-Rex", "Dilophosaurus", "Ankylosaurus", "Spinosaurus" },
+    NOTIFY_PETS_WEIGHT = {},
     DISCORD_ID = "1120232109165006859",
     WEBHOOK_NOTE = "Henry",
     SHOW_WEBHOOK_USERNAME = true,
