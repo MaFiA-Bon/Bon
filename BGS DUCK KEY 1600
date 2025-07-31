@@ -52,4 +52,4 @@ getgenv().gagConfig = {
     SHOW_WEBHOOK_JOBID = true,
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cce06c6250967a6cf79d49aa08c7c904.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
