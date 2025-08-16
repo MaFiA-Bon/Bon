@@ -1,4 +1,18 @@
-script_key="eLSyYAKCpkUWCPDyOFKvwNPjNeVzCmJK";
+local keys = {  -- Add as many key
+    "LPoIeycRgNKIzfBAXcSQCzWANYirSDkQ",
+    "UmpoEJaPlMRdTKMWhkPoMSNkmrxpjBDq",
+    "HxJAFReZDniKBGiUdGgxuafQoviknTyo",
+    "XTjSriZoTeuppzlmVEZXRaFegXYyBYyM",
+    "sboGIQHiolzqmetbckkJLnatuKzMsWrL",
+    "dMepQmVTOwwGtMVHnGfZPWAXzuwIelfK",
+    "xxRNhrbjHAKzvtdvcLkwTaJdKEvCjSei",
+    "UqhkefQfQIOPsvkBpoZVnyVoCHgoOslb",
+    "DUZOdtRNeFVNdRHwXmTNjvBbFbpgihGu",
+    "ORqpdPnYLmFbEwdwRAIkJOijtJPgXExu",
+}
+
+script_key = keys[math.random(#keys)];
+setfpscap(3)
 setfpscap(3)
 
 getgenv().gagConfig = {
