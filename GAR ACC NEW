@@ -1,4 +1,3 @@
-
 local keys = {  -- Add as many key
     "LPoIeycRgNKIzfBAXcSQCzWANYirSDkQ",
     "UmpoEJaPlMRdTKMWhkPoMSNkmrxpjBDq",
@@ -45,7 +44,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 3,
     KEEP_PETS_AGE = 90,
 
-    EQUIP_PETS = { ["Sunny-Side Chicken"] = 8 },
+    EQUIP_PETS = { ["Capybara"] = 1, ["Starfish"] = 2, ["Sunny-Side Chicken"] = 5 },
     USE_PETS_FOR_UPGRADE_SLOT = { "Starfish" },
     REMOVE_PET_MAX_UPGRADE = { "Capybara", "Starfish" },
 
