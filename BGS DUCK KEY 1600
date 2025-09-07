@@ -48,7 +48,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 3,
     KEEP_PETS_AGE = 90,
 
-    EQUIP_PETS = { ["Glimmering Sprite"] = 5, ["Giant Ant"] = 1, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 2 },
+    EQUIP_PETS = { ["Glimmering Sprite"] = 5, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 2 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10 },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
