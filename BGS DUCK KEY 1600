@@ -21,6 +21,7 @@ getgenv().gagConfig = {
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     BUY_EVENT_SHOP = {"Enchanted Chest", "Luminous Sprite", "Drake" },
     MAX_EVENT_RESTOCK_SHECKLES = 480000001,
+    BUY_ASCEND_SHOP = {"Egg Capacity Upgrade"},
     
     CLAIM_FAIRY_REWARD = { "Mutation Spray Glimmering", "Enchanted Egg", "Enchanted Seed Pack", "FairyPoints" },
     PLANT_EVENT_TREES = true,  -- This config will replace most plant related config
@@ -31,6 +32,7 @@ getgenv().gagConfig = {
     REDEEM_CODES = {"BEANORLEAVE10"},
     EXTRA_PET_SLOTS = 5,
     EXTRA_EGG_SLOTS = 5,
+    MAX_REBIRTH_SHECKLES = 1_000_000_000_000,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
     
@@ -45,10 +47,11 @@ getgenv().gagConfig = {
     SKIP_HARVEST_MUTATIONS = {},
 
     KEEP_PETS = { "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Pixie"] = 2, ["Glimmering Sprite"] = 8, "Peacock", "Ostrich", "Gnome", "Griffin", "Lemon Lion", "Green Bean", "Moon Cat", "Peach Wasp", "Apple Gazelle", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Nihonzaru", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Seal"] = 3, ["Kodama"] = 6, ["Golem"] = 2, ["Giant Ant"] = 2, ["Gorilla Chef"] = 4, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 5, ["Starfish"] = 6, ["Chicken"] = 4, ["Rooster"] = 4, ["Sunny-Side Chicken"] = 8, ["Tanchozuru"] = 5, ["Kappa"] = 5 },
-    KEEP_PETS_WEIGHT = 3,
+    KEEP_PETS_WEIGHT = 7,
     KEEP_PETS_AGE = 90,
-
-    EQUIP_PETS = { ["Glimmering Sprite"] = 5, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 2 },
+    
+    EQUIP_PET_SHARD = { ["Glimmering Sprite"] = "Glimmering" },
+    EQUIP_PETS = { ["Glimmering Sprite"] = 5, ["Rooster"] = 2, ["Sunny-Side Chicken"] = 1 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10 },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
