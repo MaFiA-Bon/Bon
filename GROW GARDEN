@@ -1,4 +1,3 @@
-
 local keys = {  -- Add as many key
     "VLKQaMWbuhyXAJMHISCWhLfdofgOmBVT",
     "TEOdcdEKTGgSXAwVlUSuGXUiHyatPjBi",
@@ -19,7 +18,7 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Fall Egg", "Golden Acorn", },
+    BUY_EVENT_SHOP = { "Fall Egg", "Red Panda", "Golden Acorn", },
     
     PLANT_EVENT_TREES = true,  -- This config will replace most plant related config
     PLACE_COSMETIC = { "Cooking Kit" },
@@ -46,7 +45,7 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Barn Owl", "Swan", "Space Squirrel", ["Marmot"] = 2, ["Sugar Glider"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Pixie"] = 2, ["Glimmering Sprite"] = 8, "Peacock", "Ostrich", "Gnome", "Griffin", "Lemon Lion", "Green Bean", "Moon Cat", "Peach Wasp", "Apple Gazelle", "Golden Goose", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Nihonzaru", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Seal"] = 3, ["Kodama"] = 6, ["Golem"] = 2, ["Giant Ant"] = 2, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 5, ["Starfish"] = 6, ["Chicken"] = 4, ["Rooster"] = 4, ["Sunny-Side Chicken"] = 8, ["Tanchozuru"] = 5, ["Kappa"] = 5 },
+    KEEP_PETS = { "Barn Owl", "Red Panda", "Swan", "Space Squirrel", ["Marmot"] = 2, ["Sugar Glider"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Pixie"] = 2, ["Glimmering Sprite"] = 8, "Peacock", "Ostrich", "Gnome", "Griffin", "Lemon Lion", "Green Bean", "Moon Cat", "Peach Wasp", "Apple Gazelle", "Golden Goose", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Nihonzaru", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Seal"] = 3, ["Kodama"] = 6, ["Golem"] = 2, ["Giant Ant"] = 2, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 5, ["Starfish"] = 6, ["Chicken"] = 4, ["Rooster"] = 4, ["Sunny-Side Chicken"] = 8, ["Tanchozuru"] = 5, ["Kappa"] = 5 },
     KEEP_PETS_WEIGHT = 5,
     KEEP_PETS_AGE = 90,
     
