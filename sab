@@ -1,0 +1,38 @@
+script_key="IUJZkHuxGDxTXNOxJyjbbknzHUurGdWI";
+setfpscap(12)
+
+getgenv().sabConfig = {
+    -- General
+    CLONE_PRIVATE_SERVER = true,
+    KICK_PLAYER_LOBBY_AMOUNT = 3,  -- kick from game if 3+ players in lobby
+    CHASE_BRAINROT = false,  -- true -> chase | false -> stand at end of conveyor
+    MAX_CASH = math.huge,  -- can add number 999999, math.huge = always collect
+    COLLECT_CASH_COOLDOWN = 120,
+    LOCK_GATE = false,
+
+    -- Brainrot
+    PRIORITY_BRAINROT = { "Secret Lucky Block", "Admin Lucky Block", "Taco Lucky Block" },  -- Keep brainrot & priority buy
+    OPEN_LUCKY_BLOCK = { "Mythic Lucky Block" },
+
+    -- Tools
+    AUTO_BUY_TOOL = {},
+    EQUIP_TOOL = {},  -- Equip left to right
+
+    -- Rebirth
+    MAX_REBIRTH = 6,
+    KICK_AFTER_REBIRTH = false,
+    BRAINROT_RARITY_STOP_REBIRTH = { "Secret", "Admin", "OG" },
+    IGNORE_BRAINROT_GENERATION_STOP_REBIRTH = 300000,  -- Stop Rebirth if have 300k+/s brainrot 
+
+    -- Webhook
+    BRAINROT_WEBHOOK_URL = "https://discord.com/api/webhooks/1420601738959913020/5-9tk7zefAWE54MYSkm-DZE64VoKQsmIzgxq5ubQXzo9396WjheJ0ALWTQKTKti4OZxr",
+    NOTIFY_GENERATION = 300000,
+    NOTIFY_NAME = { "Secret Lucky Block", "Admin Lucky Block", "Taco Lucky Block" },
+    NOTIFY_RARITY = {},  -- "Secret", "Admin", "OG", any rarity
+    DISCORD_ID = "1120232109165006859",
+    WEBHOOK_NOTE = "sab",
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/a43e08bf148ac388b48fa78091494ebd.lua"))()
