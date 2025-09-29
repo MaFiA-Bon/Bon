@@ -41,18 +41,18 @@ getgenv().gagConfig = {
     BUY_COSMETIC_SHOP = { ["Cooking Kit"] = 3 },
     
     BUY_EGGS = { "Jungle Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "Jungle Egg" },
+    PLANT_EGGS = { "Jungle Egg", "Rare Summer Egg", "Bug Egg" },
     
     BUY_SEED_SHOP = { "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", ["Coconut"] = 50, ["Bamboo"] = 50, ["Apple"] = 50, ["Pumpkin"] = 50, ["Watermelon"] = 50, ["Daffodil"] = 50, ["Corn"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
     
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Tiger", "Mizuchi", "Chimpanzee", "Barn Owl", "Red Panda", "Swan", "Space Squirrel", ["Marmot"] = 2, ["Sugar Glider"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Pixie"] = 2, ["Glimmering Sprite"] = 8, "Peacock", "Ostrich", "Gnome", "Griffin", "Lemon Lion", "Green Bean", "Moon Cat", "Peach Wasp", "Apple Gazelle", "Golden Goose", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Nihonzaru", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", ["Seal"] = 3, ["Kodama"] = 6, ["Golem"] = 2, ["Giant Ant"] = 2, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 5, ["Starfish"] = 6, ["Chicken"] = 4, ["Rooster"] = 4, ["Sunny-Side Chicken"] = 8, ["Tanchozuru"] = 5, ["Kappa"] = 5 },
+    KEEP_PETS = { "Tiger", "Mizuchi", ["Chimpanzee"] = 2 , "Barn Owl", "Red Panda", "Swan", "Space Squirrel", ["Marmot"] = 2, ["Sugar Glider"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Pixie"] = 2, ["Glimmering Sprite"] = 8, "Peacock", "Ostrich", "Gnome", "Griffin", "Lemon Lion", "Green Bean", "Moon Cat", "Peach Wasp", "Apple Gazelle", "Golden Goose", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Nihonzaru", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Firefly", "Chicken Zombie", "Seal", ["Kodama"] = 6, ["Golem"] = 2, ["Giant Ant"] = 2, ["Corrupted Kodama"] = 6, ["Blood Kiwi"] = 2, ["Capybara"] = 5, ["Starfish"] = 6, ["Chicken"] = 4, ["Rooster"] = 4, ["Sunny-Side Chicken"] = 8, ["Tanchozuru"] = 5, ["Kappa"] = 5 },
     KEEP_PETS_WEIGHT = 3,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { ["Rooster"] = 8, ["Sunny-Side Chicken"] = 2 },
+    EQUIP_PETS = { ["Rooster"] = 8, ["Sunny-Side Chicken"] = 2, ["Chicken"] = 2 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", ["Harvest Tool"] = 10, ["Watering Can"] = 20 },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
