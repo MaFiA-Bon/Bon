@@ -1,4 +1,4 @@
-script_key="";
+script_key="UODdaTOqFAfxqwaZwhLFPeDbLuGGNAcP";
 
 getgenv().pvbConfig = {
     AUTO_UPDATE_RESTART = true,
