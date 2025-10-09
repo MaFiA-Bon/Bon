@@ -34,6 +34,15 @@ getgenv().pvbConfig = {
     SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,
     SHOW_WEBHOOK_JOBID = true,
+
+    -- Gifting
+    KICK_AFTER_GIFTED_ALL = false,
+    GIFT_USERNAME = {},  -- Add username "username1", "username2"
+    GIFT_BRAINROT = {},  -- Gift brainrot via name
+    GIFT_BRAINROT_MONEY_PER_SECOND = 10000,  -- $10k+/s -> Gift
+    GIFT_PLANT = {},  -- Gift plant via name
+    GIFT_PLANT_DAMAGE = 100000,  -- 100k+ Damage -> Gift
+    GIFTING_COOLDOWN = 5,
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/1955a9eeb0a6b663051651121e75f7f7.lua"))()
