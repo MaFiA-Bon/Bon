@@ -34,6 +34,7 @@ getgenv().gagConfig = {
     MAX_REBIRTH_SHECKLES = 0,
     ADD_FRIEND = true,
     OPEN_ALL_SEED_PACK = true,
+    COLLECT_FRUIT_PER_SECOND = 3,
 
     BUY_COSMETIC_SHOP = { ["Cooking Kit"] = 3 },
     
@@ -49,7 +50,7 @@ getgenv().gagConfig = {
     KEEP_PETS_WEIGHT = 5,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { ["Ghost Bear"] = 8 },
+    EQUIP_PETS = { ["Ghost Bear"] = 8, ["Rooster"] = 8, ["Sunny-Side Chicken"] = 8 },
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
     USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
