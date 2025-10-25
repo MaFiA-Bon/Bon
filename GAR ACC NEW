@@ -47,7 +47,7 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Lich", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", ["Ghost Bear"] = 8, ["Black Cat"] = 2, ["Spider"] = 2, ["Fortune Squirrel"] = 2, "Chinchilla", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", "Space Squirrel", "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 4, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Giant Ant"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8, ["Chicken"] = 8 },
+    KEEP_PETS = { "Lich", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", ["Ghost Bear"] = 8, ["Spider"] = 2, "Chinchilla", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", "Space Squirrel", "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 4, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Gorilla Chef", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Giant Ant"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8, ["Chicken"] = 8 },
     KEEP_PETS_WEIGHT = 3,
     KEEP_PETS_AGE = 90,
     
@@ -60,7 +60,7 @@ getgenv().gagConfig = {
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1389519695505264781/w_YYiRUlM32rNF__U31UUs9qJJL19241ZL3wez79_4AZuIQlQLM1BK7p4q2rI0tu2wzE",
     SHOW_PUBLIC_DISCORD_ID = true,
     NOTIFY_PETS = { "Lich", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Fortune Squirrel", "Chinchilla", "Tiger", "Barn Owl", "Swan", "Marmot", "Space Squirrel", "Sugar Glider", "Phoenix", "Cockatrice", "Gnome", "Griffin", "Golden Goose", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox" },
-    NOTIFY_PETS_WEIGHT = 7,
+    NOTIFY_PETS_WEIGHT = 5,
     DISCORD_ID = "1120232109165006859",
     WEBHOOK_NOTE = "Bon",
     SHOW_WEBHOOK_USERNAME = true,
