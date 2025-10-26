@@ -21,7 +21,7 @@ getgenv().gagConfig = {
     BUY_EVENT_SHOP = { "Spooky Egg", "Reaper", ["Ghost Bear"] = 2, "Spooky Chest" },
     DISABLE_REAPER_EVENT = false,
 
-    MAX_PLANTS = 120,
+    MAX_PLANTS = 180,
     DESTROY_UNTIL_MIN_PLANTS = 80,
     KEEP_SEEDS = { "Bone Blossom" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = {},
