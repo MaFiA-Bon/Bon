@@ -18,7 +18,7 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "Spooky Egg", "Reaper", ["Ghost Bear"] = 2, "Spooky Chest" },
+    BUY_EVENT_SHOP = { "Spooky Egg", ["Ghost Bear"] = 2, "Spooky Chest" },
     DISABLE_REAPER_EVENT = false,
 
     MAX_PLANTS = 180,
