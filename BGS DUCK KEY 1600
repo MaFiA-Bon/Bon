@@ -10,6 +10,7 @@ local keys = {  -- Add as many key
     "SGptqOUdEXpHauCtZuUOjPEeZiBdFPCA",
     "wGrMmnsVOXtdDWUmGsEANgubrjzdZyTT",
     "PjremEVBTObGakdyhzqjgFQiwZEzPlpc",
+    "rXkTIBIJMwajBVBoiVLmrteGutgSkRDW",
 }
 
 script_key = keys[math.random(#keys)];
