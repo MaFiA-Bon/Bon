@@ -10,6 +10,7 @@ local keys = {  -- Add as many key
     "SGptqOUdEXpHauCtZuUOjPEeZiBdFPCA",
     "wGrMmnsVOXtdDWUmGsEANgubrjzdZyTT",
     "PjremEVBTObGakdyhzqjgFQiwZEzPlpc",
+    "rXkTIBIJMwajBVBoiVLmrteGutgSkRDW",
 }
 
 script_key = keys[math.random(#keys)];
@@ -18,12 +19,10 @@ setfpscap(3)
 getgenv().gagConfig = {
     -- Event:
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    SUBMIT_SAFARI_JOE_PET = {"Giraffe", "Zebra", "Oxpecker"},
-    CRAFT_EVENT = { "Gem Egg", "Cheetah" },
-    IGNORE_SUBMIT_EVENT_FORGE = { "Coal", "Gem Egg", "Safari Egg", "Spooky Egg", "Jungle Egg", "Fall Egg", "Enchanted Egg", "Sprout Egg", "Gourmet Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Bee Egg", "Night Egg", "Bug Egg", "Paradise Egg", "Mythical Egg", "Common Summer Egg", "Rare Egg" , "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },  -- "Coal" will ignore all types of Coal
+    PLANT_EVENT_TREES = true,
     
-    MAX_PLANTS = 150,
-    DESTROY_UNTIL_MIN_PLANTS = 100,
+    MAX_PLANTS = 300,
+    DESTROY_UNTIL_MIN_PLANTS = 250,
     KEEP_SEEDS = { "Bone Blossom" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = {},
 
@@ -41,19 +40,19 @@ getgenv().gagConfig = {
 
     BUY_COSMETIC_SHOP = { ["Cooking Kit"] = 3 },
     
-    BUY_EGGS = { "Common Egg", "Jungle Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "Gem Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Night Egg", "Paradise Egg" },
+    BUY_EGGS = { ["Common Egg"] = 10, "Jungle Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    PLANT_EGGS = { "Gem Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Night Egg", "Spooky Egg", "Paradise Egg", "Safari Egg" },
     
-    BUY_SEED_SHOP = { "Zebrazinkle", "Crimson Thorn", "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Sunflower", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", ["Coconut"] = 50, ["Bamboo"] = 50, ["Apple"] = 50, ["Pumpkin"] = 50, ["Watermelon"] = 50, ["Daffodil"] = 50, ["Corn"] = 50, ["Tomato"] = 50, ["Buttercup"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
+    BUY_SEED_SHOP = { "Octobloom Seed", "Zebrazinkle", "Crimson Thorn", "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Sunflower", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", ["Coconut"] = 50, ["Bamboo"] = 50, ["Apple"] = 50, ["Pumpkin"] = 50, ["Watermelon"] = 50, ["Daffodil"] = 50, ["Corn"] = 50, ["Tomato"] = 50, ["Buttercup"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
     
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Goblin Miner", "Ruby Squid", "Diamond Panther", "Lion", ["Crocodile"] = 1, "Orange Tabby", ["Hippo"] = 1, "Elephant", "Hydra", ["Giraffe"] = 1, "Mantis Shrimp", ["Rhino"] = 8, "Lich", "Sea Turtle", "Mummy", "Hex Serpent", "Headless Horseman", ["Reaper"] = 2, "Chinchilla", "Sugar Glider", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", ["Space Squirrel"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 2, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Gorilla Chef"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8, ["Chicken"] = 8 },
+    KEEP_PETS = { "Bearded Dragon", "Goblin Miner", "Ruby Squid", "Diamond Panther", "Lion", ["Crocodile"] = 1, ["Sapphire Macaw"] = 1, ["Emerald Snake"] = 1, "Orange Tabby", ["Hippo"] = 1, "Elephant", "Hydra", ["Giraffe"] = 1, "Mantis Shrimp", ["Rhino"] = 8, "Lich", "Sea Turtle", "Mummy", "Hex Serpent", "Headless Horseman", ["Reaper"] = 2, "Chinchilla", "Sugar Glider", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", ["Space Squirrel"] = 2, "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 2, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", "Petal Bee", "Bear Bee", "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Gorilla Chef"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8, ["Chicken"] = 8 },
     KEEP_PETS_WEIGHT = 3,
     KEEP_PETS_AGE = 90,
     
-    EQUIP_PETS = { {"Rhino", 8, 8} },
+    EQUIP_PETS = { {"Rhino", 8, 8}, {"Emerald Snake", 1, 1} },
     LEVELUP_LOLLIPOP_MIN_LEVEL = 90,
 
     BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
@@ -61,7 +60,7 @@ getgenv().gagConfig = {
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1389519695505264781/w_YYiRUlM32rNF__U31UUs9qJJL19241ZL3wez79_4AZuIQlQLM1BK7p4q2rI0tu2wzE",
     SHOW_PUBLIC_DISCORD_ID = true,
-    NOTIFY_PETS = { "Ruby Squid", "Diamond Panther", "Elephant", "Lich", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Fortune Squirrel", "Chinchilla", "Tiger", "Barn Owl", "Swan", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee" },
+    NOTIFY_PETS = { "Bearded Dragon", "Goblin Miner", "Lion", "Ruby Squid", "Diamond Panther", "Elephant", "Lich", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Fortune Squirrel", "Chinchilla", "Tiger", "Barn Owl", "Swan", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee" },
     NOTIFY_PETS_WEIGHT = 5,
     DISCORD_ID = "1120232109165006859",
     WEBHOOK_NOTE = "BON",
