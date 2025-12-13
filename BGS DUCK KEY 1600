@@ -24,8 +24,8 @@ getgenv().gagConfig = {
     BUY_EVENT_SHOP = { "Santa's Surprise Present", "Jingle Bells" },
     OPEN_ALL_PRESENT = true,
     
-    MAX_PLANTS = 350,
-    DESTROY_UNTIL_MIN_PLANTS = 300,
+    MAX_PLANTS = 400,
+    DESTROY_UNTIL_MIN_PLANTS = 350,
     KEEP_SEEDS = { "Bone Blossom" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = {},
 
