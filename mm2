@@ -1,0 +1,26 @@
+script_key = "PuwKxSsxyfpNmLAySrdZxSfWeeUANSLu"
+getgenv().Config = {
+    FARM_MODE = "Crate", -- BattlePass / Crate
+    AUTO_RESTART_WHEN_UPDATE = true,
+    DISPLAY_UI = true,
+    STOP_AUTO_BUY_FINAL_REWARD = false, -- Stop auto buy Godly Item when completed Battle Pass
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1450345724968697967/uwZ8SUmZ3dPMk5uqaFgXvXau7OzPjMLAfgq2OcdRU7Vz8iYjUu2NQEGTbthwPPE_IuoU",
+    WEBHOOK_NOTE = "Bon"
+}
+
+task.spawn(function()
+    local LastCheck = tick()
+    while task.wait() do
+        if getgenv().ScriptLoaded then
+            break
+        end
+
+        pcall(function()
+            if LastCheck + 180 <= tick() then
+                game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
+            end
+        end)
+    end
+end)
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/8b381051c5e99846fe64dcea7d597e49.lua"))()
