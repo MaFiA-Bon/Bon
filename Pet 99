@@ -19,7 +19,7 @@ getgenv().GPOTIONS_MAX_TIER = 99
 getgenv().GWEBHOOK_USERID = "1120232109165006859"
 getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
 getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
-getgenv().GMAIL_RECEIVERS = {"your-receiver-mule"}
+getgenv().GMAIL_RECEIVERS = {"PhongCaleb"}
 getgenv().GMAIL_ITEMS = {
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
