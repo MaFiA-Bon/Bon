@@ -3,7 +3,7 @@ task.wait(60)
 getgenv().GPROGRESS_MODE = "Hybrid"
 getgenv().GGFX_MODE = 2  --1 = REMOVE_TEXTURES : more stable! but no visuals
 getgenv().GRANK_TO = 99
-getgenv().GZONE_TO = 999 -- PLEASE READ FAQ about this property!!! it's important to understand. 99 means last zone W1 only!! 999: go to final zone of game
+getgenv().GZONE_TO = 99 -- PLEASE READ FAQ about this property!!! it's important to understand. 99 means last zone W1 only!! 999: go to final zone of game
 getgenv().GMAX_EGG_SLOTS = 50
 getgenv().GMAX_EQUIP_SLOTS = 50
 getgenv().GAUTO_UPGRADE_PETS = false
