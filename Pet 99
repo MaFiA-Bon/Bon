@@ -1,0 +1,19 @@
+script_key = "FAtNCtIkxFLJdyocxDWQFprHhikVLWWm";
+task.wait(60)
+getgenv().GPROGRESS_MODE = "Hybrid"
+getgenv().GGFX_MODE = 2  --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GRANK_TO = 99
+getgenv().GZONE_TO = 999 -- PLEASE READ FAQ about this property!!! it's important to understand. 99 means last zone W1 only!! 999: go to final zone of game
+getgenv().GMAX_EGG_SLOTS = 50
+getgenv().GMAX_EQUIP_SLOTS = 50
+getgenv().GAUTO_UPGRADE_PETS = false
+getgenv().GHOLD_GIFTS = false
+getgenv().GHOLD_BUNDLES = false
+getgenv().GMAX_ZONE_UPGRADE_COST = 200000
+getgenv().GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
+getgenv().GPOTIONS_MAX_TIER = 99
+getgenv().GENCHANTS = {"Tap Power", "Coins", "Treasure Hunter", "Strong Pets", "Criticals", "Diamonds"}
+getgenv().GWEBHOOK_USERID = "" -- your discord userID, not your name. numerical id.
+getgenv().GWEBHOOK_LINK = "" -- a webhook URL from your private discord channel.
+getgenv().GMAIL_RECEIVERS = {""} -- an account to receive hatched Huges etc
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
