@@ -13,7 +13,7 @@ getgenv().GMAX_ZONE_UPGRADE_COST = 200000
 getgenv().GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
 getgenv().GPOTIONS_MAX_TIER = 99
 getgenv().GENCHANTS = {"Tap Power", "Coins", "Treasure Hunter", "Strong Pets", "Criticals", "Diamonds"}
-getgenv().GWEBHOOK_USERID = "" -- your discord userID, not your name. numerical id.
-getgenv().GWEBHOOK_LINK = "" -- a webhook URL from your private discord channel.
-getgenv().GMAIL_RECEIVERS = {""} -- an account to receive hatched Huges etc
+getgenv().GWEBHOOK_USERID = "1120232109165006859" -- your discord userID, not your name. numerical id.
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N" -- a webhook URL from your private discord channel.
+getgenv().GMAIL_RECEIVERS = {"PhongCaleb"} -- an account to receive hatched Huges etc
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
