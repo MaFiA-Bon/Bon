@@ -13,9 +13,10 @@ getgenv().gagConfig = {
     BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
     BUY_EVENT_SHOP = { "Santa's Surprise Present", "Jingle Bells" },
     OPEN_ALL_PRESENT = true,
+    USE_CHRISTMAS_GEAR = {"Jingle Bells", "Ice Wand"},
     
-    MAX_PLANTS = 400,
-    DESTROY_UNTIL_MIN_PLANTS = 350,
+    MAX_PLANTS = 350,
+    DESTROY_UNTIL_MIN_PLANTS = 300,
     KEEP_SEEDS = { "Bone Blossom" },
     KEEP_SEEDS_AFTER_MAX_PLANTS = {},
 
@@ -41,7 +42,7 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},
     SKIP_HARVEST_MUTATIONS = {},
 
-    KEEP_PETS = { "Ice Golem", "Eggnog Chick", "Yeti", ["Turtle Dove"] = 1, ["Nutcracker"] = 1, ["Reindeer"] = 1, "Krampus", "Frost Dragon", "Snowman Soldier", "Snowman Builder", "Arctic Fox", "Penguin", ["Mistletoad"] = 1, ["Christmas Gorilla"] = 1, ["French Hen"] = 1, "Bearded Dragon", ["Camel"] = 1, ["Magpie"] = 1, "Chimera", ["Pack Mule"] = 1, "Tarantula Hawk", "Goblin Miner", "Ruby Squid", "Diamond Panther", "Lion", ["Crocodile"] = 1, "Orange Tabby", "Elephant", "Hydra", "Mantis Shrimp", ["Rhino"] = 8, "Lich", "Sea Turtle", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Chinchilla", "Sugar Glider", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", "Space Squirrel", "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 1, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", ["Bear Bee"] = 1, ["Petal Bee"] = 1, "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Gorilla Chef"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8 },
+    KEEP_PETS = { "Wendigo", "Ice Golem", "Eggnog Chick", "Yeti", ["Turtle Dove"] = 1, ["Nutcracker"] = 1, ["Reindeer"] = 1, "Krampus", "Frost Dragon", "Snowman Soldier", "Snowman Builder", "Arctic Fox", "Penguin", ["Mistletoad"] = 1, ["Christmas Gorilla"] = 1, ["French Hen"] = 1, "Bearded Dragon", ["Camel"] = 1, ["Magpie"] = 1, "Chimera", ["Pack Mule"] = 1, "Tarantula Hawk", "Goblin Miner", "Ruby Squid", "Diamond Panther", "Lion", ["Crocodile"] = 1, "Orange Tabby", "Elephant", "Hydra", "Mantis Shrimp", ["Rhino"] = 8, "Lich", "Sea Turtle", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Chinchilla", "Sugar Glider", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", "Space Squirrel", "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 1, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", ["Bear Bee"] = 1, ["Petal Bee"] = 1, "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Gorilla Chef"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8 },
     KEEP_PETS_WEIGHT = 5,
     KEEP_PETS_AGE = 90,
     
@@ -53,10 +54,10 @@ getgenv().gagConfig = {
 
     PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1389519695505264781/w_YYiRUlM32rNF__U31UUs9qJJL19241ZL3wez79_4AZuIQlQLM1BK7p4q2rI0tu2wzE",
     SHOW_PUBLIC_DISCORD_ID = true,
-    NOTIFY_PETS = { "Ice Golem", "Yeti", "Frost Dragon", "Krampus", "Bearded Dragon", "Goblin Miner", "Lion", "Ruby Squid", "Diamond Panther", "Elephant", "Chinchilla", "Tiger", "Barn Owl", "Swan", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee" },
+    NOTIFY_PETS = { "Wendigo", "Ice Golem", "Yeti", "Krampus", "Bearded Dragon", "Goblin Miner", "Lion", "Ruby Squid", "Diamond Panther", "Elephant", "Chinchilla", "Swan", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Queen Bee" },
     NOTIFY_PETS_WEIGHT = 5,
     DISCORD_ID = "1120232109165006859",
-    WEBHOOK_NOTE = "Bon",
+    WEBHOOK_NOTE = "HenRy",
     SHOW_WEBHOOK_USERNAME = true,
     SHOW_WEBHOOK_JOBID = true,
 
