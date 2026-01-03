@@ -1,48 +1,20 @@
--- Super basic Christmas 2025 Config:
+-- Please Read FAQ channel for more info! Make sure you understand these parameters
+-- If not sure ask info in channel
 script_key = "FAtNCtIkxFLJdyocxDWQFprHhikVLWWm";
-getgenv().GGFX_MODE = 1 -- or 2 to if you want to see what happens
-getgenv().GDO_XMAS_WORLD = true
-getgenv().GHOP_ON_STAFF = true
-getgenv().GEVENT_UPGRADES = {
---"MegaPresentGrowFaster",
---"MegaPresentMoreLoot",
---"MegaPresentEggLuckBoost",
---"MegaPresentHigherHugeChance",
---"MegaPresentHigherTitanicChance",
---"MegaPresentHigherGargantuanChance"
-} -- remove the -- in front of the upgrades you want it to invest in.
-getgenv().GXMAS_WORLD_DO_ICE_BLOCKS = true
-getgenv().GXMAS_WORLD_MIN_HATCH_REQUESTS_PER_CYCLE = 25
-getgenv().GXMAS_WORLD_MIN_FARM_TIME_SECONDS = 300
-getgenv().GXMAS_WORLD_CRAFT_SANTA_GIFTS = false -- if you put to true it cannot buy the upgrades as they also use santa hats
-getgenv().GDO_LOCKPICKING = false -- read announcement
-getgenv().GXMAS_WORLD_DO_MEGA_PRESENT = false
-getgenv().GXMAS_WORLD_OPEN_MEGA_PRESENT_IF_LUCK_REACH = 8000
-getgenv().GXMAS_WORLD_AUTO_CRAFT = true
-GXMAS_WORLD_FOCUS_EGGS_FOR_AUTO_CRAFT_PETS = true
-getgenv().GXMAS_WORLD_ENTER_RAFFLE = true
-getgenv().GXMAS_WORLD_PETS_EXCLUDED_FROM_SENDING = {"Elf Golem","Candycane Kitsune", "Hippomint", "Krampus","Merry Mule"} -- this is to exclude these from the present, if you want to sell them or use them in the autocraft..
-getgenv().GRANK_FIRST = false --if you use this you have to define GREBIRTH_TO and GRANK_TO
-getgenv().GZONE_TO = 1 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
-getgenv().GUSE_ULTIMATES = {"Tornado","Hidden Treasure","Pet Surge","Tsunami","Black Hole","UFO","Nightmare","Lightning Storm","TNT Shower","Chest Spell","Ground Pound"}
+getgenv().GPROGRESS_MODE = "Hybrid"
+getgenv().GGFX_MODE = 2  --1 = REMOVE_TEXTURES : more stable! but no visuals
+getgenv().GRANK_TO = 99
+getgenv().GZONE_TO = 99 -- PLEASE READ FAQ about this property!!! it's important to understand. 99 means last zone W1 only!! 999: go to final zone of game
+getgenv().GMAX_EGG_SLOTS = 50
+getgenv().GMAX_EQUIP_SLOTS = 50
+getgenv().GAUTO_UPGRADE_PETS = false
+getgenv().GHOLD_GIFTS = false
+getgenv().GHOLD_BUNDLES = false
+getgenv().GMAX_ZONE_UPGRADE_COST = 200000
 getgenv().GPOTIONS = {"Coins","Lucky","Treasure Hunter","Walkspeed","Diamonds","Damage"}
-getgenv().GENCHANTS = {"Tap Power", "Coins", "Treasure Hunter", "Strong Pets", "Criticals", "Diamonds"}
 getgenv().GPOTIONS_MAX_TIER = 99
-getgenv().GWEBHOOK_USERID = "1120232109165006859"
-getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
-getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
-getgenv().GMAIL_RECEIVERS = {"your-receiver-mule"}
-getgenv().GMAIL_ITEMS = {
-["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
-["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
-["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
-["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
-["Candycane Gift"] = {Class = "Lootbox", Id = "CandyCane Gift", MinAmount = 100},
-["Santa Gift"] = {Class = "Lootbox", Id = "Santa Gift", MinAmount = 100},
-["Cove Lockpick"] = {Class = "Misc", Id = "Lockpick A", MinAmount = 99999},
-["Gold Lockpick"] = {Class = "Misc", Id = "Lockpick B", MinAmount = 99999},
-["All my Elf Golem"] = {Class = "Pet", Id = "Lit Cat", MinAmount = 999, AllVariants = true},
-}
-getgenv().GMAX_MAIL_COST = "2m"
+getgenv().GENCHANTS = {"Tap Power", "Coins", "Treasure Hunter", "Strong Pets", "Criticals", "Diamonds"}
+getgenv().GWEBHOOK_USERID = "1120232109165006859" -- your discord userID, not your name. numerical id.
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N" -- a webhook URL from your private discord channel.
+getgenv().GMAIL_RECEIVERS = {"PhongCaleb"} -- an account to receive hatched Huges etc
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
