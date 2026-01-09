@@ -1,0 +1,20 @@
+setfpscap(3)
+getgenv().Config = {
+    ["AutoQuest"] = {
+        ["Element Rod"] = true,
+        ["Ghostfinn Rod"] = true
+    },
+    ["Webhook"] = {
+        ["URL"] = "",
+        ["UserID"] = "",
+        ["Chance"] = "250k"
+    },
+    ["RodLocations"] = {
+        ["Fisherman Island"] = {"Starter Rod"},
+        ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod", "Steampunk Rod"},
+        ["Ocean"] = {"Element Rod", "Ghostfinn Rod", "Astral Rod"},
+    },
+    ["AutoGiftUsernames"] = {""},
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/df5eb5d7241a01c362b313e2c01b1e99.lua"))()
+api.luarmor.net
