@@ -17,4 +17,3 @@ getgenv().Config = {
     ["AutoGiftUsernames"] = {""},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/df5eb5d7241a01c362b313e2c01b1e99.lua"))()
-api.luarmor.net
