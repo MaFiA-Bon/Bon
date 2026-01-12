@@ -1,0 +1,61 @@
+script_key="yGNefkUlQUQmYdzNXmxtTZTSYGrNkIbP";
+setfpscap(3)
+getgenv().fishItConfig = {
+    FISHING_LOCATION = { 
+        ["Fisherman Island"] = { "Starter Rod", "Luck Rod" },
+        ["Tropical Grove"] = { "Lava Rod", "Lucky Rod", "Steampunk Rod", "Astral Rod", "Hazmat Rod", "Ghostfinn Rod", "Element Rod" },
+    },
+
+    AUTO_QUEST = {
+        -- Coin Quest
+        ["A New Adventure"] = true,
+        ["Kohana Explorer"] = true,
+        ["Heavenly Fish"] = false,
+        ["Frog Army"] = false,
+        ["Lost Treasure"] = true,
+        ["Steve's Lost Coins"] = true,
+        ["Prove Thyself"] = false,
+
+        -- Rod Quest
+        ["Volcanic Fish"] = true,
+        ["Deep Sea Quest"] = true,  -- Start when have Astral or Better Rod
+        ["Element Quest"] = true,  -- Start when have Ghostfinn Rod
+        ["Diamond Researcher"] = true,  -- Start when have Element Rod
+
+        -- Potion Quest
+        -- Jungle Fish, Variety Diet, We'll Show Him! -> Auto Complete Passive Quest
+        ["Spicy Fish"] = false,
+        ["Steve's Lost Keys"] = true,
+        ["Test Subjects"] = false,
+
+        -- Misc Item Quest
+        -- Enchanting Discoveries -> Auto Complete Passive Quest
+        ["Mushroom Collector"] = true,
+        ["Swimming Narwhals"] = false,
+    },
+
+    KEEP_FISH_ODDS = 250000,
+    BUY_FISHING_ROD = { "Lucky Rod", "Steampunk Rod", "Astral Rod" },
+    BUY_BAIT = { "Midnight Bait", "Chroma Bait", "Corrupt Bait", "Aether Bait" },
+    BUY_TRAVELING_MERCHANT = { "Singularity Bait", "Hazmat Rod" },
+    ENCHANT_ROD = { 
+        ["Steampunk Rod"] = { "Mutation Hunter I", "Mutation Hunter II", "Gold Digger I", "Glistening I", "Leprechaun I", "Leprechaun II", "Stormhunter I", "Stargazer I", "Empowered I", "XPerienced I", "Prismatic I", "Reeler I", "Big Hunter I" },
+        ["Ghostfinn Rod"] = { "Leprechaun I", "Leprechaun II" },
+        ["Element Rod"] = { "Leprechaun I", "Leprechaun II" },
+    },
+
+    -- Auto Gift
+    AUTO_GIFT_USER_FISH = {},  -- Username to gift
+    GIFT_FISH_ODDS = 250000,
+
+    -- Webhook
+    WEBHOOK_FISH_ODDS = 250000,
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1457328095269748766/SODtTtXAUAcj7haZ4mYY6ocqkL-jDwsZkecK0w72Ve5rsrQg-Vgr-0nqFB79O5DJ37k4",
+    DISCORD_ID = "1120232109165006859",
+    WEBHOOK_NOTE = "Bon",
+    SHOW_PUBLIC_DISCORD_ID = true,
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = false,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/db8c893d7f0773653a850f508218b539.lua"))()
