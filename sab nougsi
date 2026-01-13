@@ -1,4 +1,4 @@
-getgenv().Key = "NOUSIGI FREE/PRO/PREMIUM KEY"
+getgenv().Key = "cb28e604ab832402"
 getgenv().Config = {
     ["Gameplay"] = {
         ["Server Type"] = "Private",
