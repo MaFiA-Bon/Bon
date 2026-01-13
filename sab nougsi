@@ -1,0 +1,37 @@
+getgenv().Key = "NOUSIGI FREE/PRO/PREMIUM KEY"
+getgenv().Config = {
+    ["Gameplay"] = {
+        ["Server Type"] = "Private",
+        -- Private Server config
+        ["Collect Cash Cap"] = "10B",
+        -- Public Server config
+        ["Max Auctioning Multiplier"] = 10,
+        ["Lock Base Extra Time"] = 5,
+    },
+    ["Misc"] = {
+        ["Kick if Ping above"] = 750,
+        ["Kick if FPS below"] = 5,
+        ["Max Rebirth"] = 0,
+        ["Rare Animal Generation"] = "10M",
+        ["Only keep Secret if Cash Cap"] = true,
+        ["Ignore Secret"] = {},
+        ["Auto Fuse"] = {
+            ["Enable"] = false,
+            ["Fuse Animal"] = {},
+        },
+        ["Buy Lucky Block"] = {},
+        ["Open Lucky Block"] = {},
+        ["Rare Lucky Block"] = {
+            "Secret Lucky Block",
+        },
+    },
+    ["Performance"] = {
+        ["FPS Cap"] = 10,
+        ["Black Screen"] = true,
+    },
+    ["Webhook"] = {
+        ["Url"] = "https://discord.com/api/webhooks/1460545332193525851/rXL7_QgMWYDQ9Hea2_bZyE65OAOnRbAySHhPyxhWVwwJXKWm4f5ZLEgR9xQVISaKoGCc",
+        ["Ignore Notify"] = {},
+    },
+}
+spawn(function() task.wait(30) if not getgenv().scriptLoaded then game.Players.LocalPlayer:Kick("Script load timeout\nKick to prevent animal gets stolen") end end) repeat wait()spawn(function()loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()end)wait(20)until getgenv().Joebiden
