@@ -1,4 +1,4 @@
-getgenv().Key = "cb28e604ab832402"
+getgenv().Key = "k531afce6df795f475132496"
 getgenv().Config = {
     ["Gameplay"] = {
         ["Server Type"] = "Private",
