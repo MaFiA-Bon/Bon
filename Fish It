@@ -1,12 +1,17 @@
 _G.FishItConfig = _G.FishItConfig or {
     ["Fishing"] = {
-        ["Auto Perfect"] = true,
+        ["Auto Perfect"] = false,
+        ["Random Result"] = false,
+
         ["Auto Favorite"] = true,
+        ["Auto Unfavorite"] = false,
         ["Fish Name"] = {
             "Sacred Guardian Squid",
             {Name = "Ruby", Variant = "Gemstone"},
         },
         ["Auto Accept Trade"] = true,
+
+        ["Auto Friend Request"] = false,
     },
     ["Auto Trade"] = {
         ["Enabled"] = false,
@@ -15,6 +20,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Secret",
         },
         ["Fish Name"] = {
+            {Name = "Ruby", Variant = "Gemstone"},
         },
         ["Item Name"] = {
             "Evolved Enchant Stone",
@@ -32,8 +38,14 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Doing Quest"] = {
         ["Auto Ghostfinn Rod"] = true,
         ["Auto Element Rod"] = false,
-        ["Unlock Ancient Ruin"] = true,
+        ["Unlock Ancient Ruin"] = false,
         ["Allowed Sacrifice"] = {
+            "Ghost Shark",
+            "Cryoshade Glider",
+            "Panther Eel",
+            "Queen Crab",
+            "King Crab",
+            "Giant Squid",
             "Blob Shark",
             "Ghost Shark",
         },
@@ -42,7 +54,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Minimum Rod"] = "Astral Rod",
     },
     ["WebHook"] = {
-        ["Link Webhook"] = "https://discord.com/api/webhooks/1457328095269748766/SODtTtXAUAcj7haZ4mYY6ocqkL-jDwsZkecK0w72Ve5rsrQg-Vgr-0nqFB79O5DJ37k4",
+        ["Link Webhook"] = "",
         ["Auto Sending"] = false,
         ["Category"] = {"Secret"},
 
@@ -63,7 +75,7 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Auto Use"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Buy List"] = {
-            "Luck Totem",
+            ["Luck Totem"] = 5,
             "Mutation Totem",
             "Shiny Totem",
         },
@@ -72,18 +84,18 @@ _G.FishItConfig = _G.FishItConfig or {
         ["Start Farm"] = true,
         ["Minimum Rod"] = "Ghostfinn Rod",
         ["Event List"] = {
-            ["Christmas Cave"] = true,
-            ["Hacker Event"] = true,
             "Megalodon Hunt",
             "Ghost Shark Hunt",
             "Shark Hunt",
+            ["Christmas Cave"] = true,
         },
     },
     ["Enchant"] = {
         ["Auto Enchant"] = true,
-        ["Roll Enchant"] = false, -- true = Roll until get TOP 1 enchant only (first in list)
-        ["Evolved Roll Enchant"] = true, -- true = Roll Evolved Stone until get ANY evolved-only enchant from list, then fallback to regular stone
+        ["Roll Enchant"] = false,
+        ["Evolved Roll Enchant"] = true,
         ["Enchant List"] = {
+            "Reeler II",
             "SECRET Hunter",
             "Shark Hunter",
             "Mutation Hunter III",
@@ -111,6 +123,7 @@ _G.FishItConfig = _G.FishItConfig or {
             "Corrupt Bait",
             "Aether Bait",
         },
+        ["Endgame"] = "",
     },
     ["Rod List"] = {
         ["Auto Buying"] = true,
@@ -125,8 +138,9 @@ _G.FishItConfig = _G.FishItConfig or {
             ["Fisherman Island"] = {"Starter Rod"},
             ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
             ["Tropical Grove"] = {"Astral Rod"},
-            ["Ancient Ruin"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+            ["Kohana"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
         },
+        ["Endgame"] = "",
     },
 
     ["ExtremeFpsBoost"] = true,
@@ -134,9 +148,8 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Disable3DRender"] = false,
     ["AutoRemovePlayer"] = true,
 
-    ["AutoReconnect"] = true,
+    ["AutoReconnect"] = false,
     ["HideGUI"] = false,
-    ["Debug"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
 
