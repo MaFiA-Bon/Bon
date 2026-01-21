@@ -10,25 +10,25 @@ getgenv().Key = "ee0b02f437d60325ccae89e6"
                     ["Enabled"] = true,
                     ["All Fruit"] = true, 
                     ["Select Fruit"] = {
-                        ["Enabled"] = True,
-                        ["Fruit"] = {Dough-Dough},
+                        ["Enabled"] = false,
+                        ["Fruit"] = {},
                     },
                 },
             },
         },
         ["White Screen"] = false,
         ["Lock Fps"] = {
-            ["Enabled"] = true,
+            ["Enabled"] = false,
             ["FPS"] = 20,
         },
         ["Get Items"] = {
-            ["Saber"] = false,
+            ["Saber"] = true,
             ["Godhuman"] =  true,
-            ["Skull Guitar"] = false,
+            ["Skull Guitar"] = true,
             ["Mirror Fractal"] = true,
-            ["Cursed Dual Katana"] = false,
-            ["Upgrade Race V2-V3"] = false,
-            ["Auto Pull Lever"] = false,
+            ["Cursed Dual Katana"] = true,
+            ["Upgrade Race V2-V3"] = true,
+            ["Auto Pull Lever"] = true,
             ["Shark Anchor"] = false, --- if have cdk,sg,godhuman
         },
         ["Get Rare Items"] = {
@@ -45,16 +45,16 @@ getgenv().Key = "ee0b02f437d60325ccae89e6"
             ["Enabled"] = false,
             ["Text"] = "",
         },
-        ["Auto Summon Rip Indra"] = false, --- auto buy haki and craft haki legendary 
+        ["Auto Summon Rip Indra"] = true, --- auto buy haki and craft haki legendary 
         ["Select Hop"] = { -- 70% will have it
             ["Hop Server If Have Player Near"] = true,
-            ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = false, 
-            ["Hop Find Dough King Get Mirror Fractal"] = false,
-            ["Hop Find Raids Castle [CDK]"] = false,
-            ["Hop Find Cake Queen [CDK]"] = false,
-            ["Hop Find Soul Reaper [CDK]"] = false,
-            ["Hop Find Darkbeard [SG]"] = false,
-            ["Hop Find Mirage [ Pull Lever ]"] = false,
+            ["Hop Find Rip Indra Get Valkyrie Helm or Get Tushita"] = true, 
+            ["Hop Find Dough King Get Mirror Fractal"] = true,
+            ["Hop Find Raids Castle [CDK]"] = true,
+            ["Hop Find Cake Queen [CDK]"] = true,
+            ["Hop Find Soul Reaper [CDK]"] = true,
+            ["Hop Find Darkbeard [SG]"] = true,
+            ["Hop Find Mirage [ Pull Lever ]"] = true,
         },
         ["Farm Mastery"] = {
             ["Melee"] = false,
@@ -68,9 +68,9 @@ getgenv().Key = "ee0b02f437d60325ccae89e6"
         },
         ["Sniper Fruit Shop"] = {
             ["Enabled"] = true, -- Auto Buy Fruit in Shop Mirage and Normal
-            ["Fruit"] = {"Dough-Dough"},
+            ["Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
         },
-        ["Lock Fruit"] = {"Leopard-Leopard","Kitsune-Kitsune","Dragon-Dragon","Yeti-Yeti","Gas-Gas"},
+        ["Lock Fruit"] = {},
         ["Webhook"] = {
             ["Enabled"] = false,
             ["WebhookUrl"] = "",
