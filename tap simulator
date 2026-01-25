@@ -1,13 +1,20 @@
 script_key="FeKvMYZXIvlgmZJmaHebzhcGxQIXrXfy";
 setfpscap(5)
 getgenv().tapSimConfig = {
+    -- Event Config
+    ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
+
+    -- General Config
     AUTO_UPDATE_RESTART = true,
+    AUTO_EQUIP_BEST = true,
+    ADD_FRIEND = true,
     MAX_REBIRTH = math.huge,
     OPEN_EGG = { "Lightning Event" },
-    BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
-    BUY_LIMITED_TIER_STORE_SECRET = false,  -- only buy if can afford all tiers
+    HATCH_1000_QUEST = false,
     FOCUS_EVENT_HATCH = true,  -- must have event egg in OPEN_EGG, focus event hatch if enough clicks
 
+    BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
+    BUY_LIMITED_TIER_STORE_SECRET = false,  -- only buy if can afford all tiers
     BUY_AUTO_CLICKER = true,
     OPEN_ALL_GIFT = true,
     BUY_GEM_SHOP = { 
@@ -20,16 +27,28 @@ getgenv().tapSimConfig = {
         ["DoubleJumps"] = 0 
     },
 
+    ENCHANT_EQUIPPED_ONLY = true,
+    AUTO_ENCHANT = { 
+        ["Secret I"] = { "Secret Hunter" },
+        ["Secret II"] = { "Secret Hunter" },
+        ["Secret III"] = { "Secret Hunter" },
+    },
+    FALLBACK_3_SECRET_HUNTER_ENCHANT = { 
+        ["Secret I"] = { "Rainbow Hunter" },
+        ["Secret II"] = { "Rainbow Hunter" },
+        ["Secret III"] = { "Rainbow Hunter" },
+    },
+
     AUTO_DELETE_EGG_PET = { 
         ["Lightning Event"] = { "Sparky", "Charged Dino", "Electric Slime" },
     },
-    HATCH_1000_QUEST = false,
     KEEP_PET_NAME = { }, 
     KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
-    GOLDEN_PET = { },  -- ["Pet Name"] = 6 
+    GOLDEN_PET = { ["Tesla Bot"] = 6, ["Electric Glitch"] = 6 },  -- ["Pet Name"] = 6 
     RAINBOW_PET = { },  -- ["Pet Name"] = 5
     USE_BOOST = { },  -- "Boost Name"
 
+    -- Webhook
     WEBHOOK_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
     WEBHOOK_URL = "https://discord.com/api/webhooks/1464468614970085376/3_Sp_vpO6LxUaCSXw_B09aZ286lJKVbdyT7hqrvd8iYsYfX3NUJXjO-_R87D9A_a4Faa",
     DISCORD_ID = "1120232109165006859",
