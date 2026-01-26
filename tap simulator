@@ -3,18 +3,19 @@ setfpscap(5)
 getgenv().tapSimConfig = {
     -- Event Config
     ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
+    BUY_SECRET_STARTER_PLAZA_PACK = false, -- only buy if can afford 2x purchase
 
     -- General Config
     AUTO_UPDATE_RESTART = true,
     AUTO_EQUIP_BEST = true,
     ADD_FRIEND = true,
     MAX_REBIRTH = math.huge,
+    REDEEM_CODE = { "russo", "lucky", "tacos", "enchant", "HTH" },
     OPEN_EGG = { "Lightning Event" },
     HATCH_1000_QUEST = false,
     FOCUS_EVENT_HATCH = true,  -- must have event egg in OPEN_EGG, focus event hatch if enough clicks
 
     BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
-    BUY_LIMITED_TIER_STORE_SECRET = false,  -- only buy if can afford all tiers
     BUY_AUTO_CLICKER = true,
     OPEN_ALL_GIFT = true,
     BUY_GEM_SHOP = { 
