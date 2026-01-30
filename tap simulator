@@ -3,7 +3,6 @@ setfpscap(5)
 getgenv().tapSimConfig = {
     -- Event Config
     ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
-    STABLE_HATCH = false,  -- set true if have 0hpm bug
     BUY_SECRET_STARTER_PLAZA_PACK = false, -- only buy if can afford 2x purchase
 
     -- General Config
@@ -11,12 +10,10 @@ getgenv().tapSimConfig = {
     AUTO_EQUIP_BEST = true,
     ADD_FRIEND = true,
     MAX_REBIRTH = math.huge,
-    REBIRTH_DELAY = 30,
     REDEEM_CODE = { "russo", "lucky", "tacos", "enchant", "HTH" },
     OPEN_EGG = { "Lightning Event" },
+    HATCH_1000_QUEST = false,
     FOCUS_EVENT_HATCH = true,  -- must have event egg in OPEN_EGG, focus event hatch if enough clicks
-    UNLOCK_WORLD_1_BEST_EGG = true,
-    UNLOCK_WORLD_2_BEST_EGG = false,  -- change true if farm best egg, false if event egg
 
     BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
     BUY_AUTO_CLICKER = true,
@@ -44,11 +41,11 @@ getgenv().tapSimConfig = {
     },
 
     AUTO_DELETE_EGG_PET = { 
-        ["Lightning Event"] = { "Sparky", "Charged Dino", "Electric Slime", "Tesla Bot" },
+        ["Lightning Event"] = { "Sparky", "Charged Dino", "Electric Slime" },
     },
     KEEP_PET_NAME = { }, 
     KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
-    GOLDEN_PET = { ["Electric Glitch"] = 6 },  -- ["Pet Name"] = 6 
+    GOLDEN_PET = { ["Tesla Bot"] = 6, ["Electric Glitch"] = 6 },  -- ["Pet Name"] = 6 
     RAINBOW_PET = { },  -- ["Pet Name"] = 5
     USE_BOOST = { },  -- "Boost Name"
 
@@ -59,13 +56,6 @@ getgenv().tapSimConfig = {
     SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,
     SHOW_WEBHOOK_JOBID = true,
-
-    -- Autotrade
-    TRADE_PET_NAME = {},
-    TRADE_PET_RARITY = {},
-    TRADE_USERNAME = {},
-    KICK_IF_NO_TRADE_PET = false,
-    AUTO_ACCEPT_TRADE = false,  -- if true, leave all trade config above empty/default (this is for receiver account)
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ffab66f7d96a48c13b12e526b19b37d4.lua"))()
