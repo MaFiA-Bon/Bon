@@ -3,21 +3,23 @@ setfpscap(5)
 getgenv().tapSimConfig = {
     -- Event Config
     ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
-    BUY_SECRET_STARTER_PLAZA_PACK = false, -- only buy if can afford 2x purchase
+    STABLE_HATCH = false,  -- set true if have 0hpm bug
 
     -- General Config
     AUTO_UPDATE_RESTART = true,
     AUTO_EQUIP_BEST = true,
     ADD_FRIEND = true,
     MAX_REBIRTH = math.huge,
+    REBIRTH_DELAY = 120,  -- Seconds
     REDEEM_CODE = { "russo", "lucky", "tacos", "enchant", "HTH" },
-    OPEN_EGG = { "Lightning Event" },
-    HATCH_1000_QUEST = false,
-    FOCUS_EVENT_HATCH = true,  -- must have event egg in OPEN_EGG, focus event hatch if enough clicks
+    OPEN_EGG = { "Lunar", "Snowman" },
+    UNLOCK_WORLD_1_BEST_EGG = true,
+    UNLOCK_WORLD_2_BEST_EGG = true,  -- change true if farm best egg, false if event egg
 
     BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
     BUY_AUTO_CLICKER = true,
     OPEN_ALL_GIFT = true,
+    BUY_MERCHANT = {},
     BUY_GEM_SHOP = { 
         ["RebirthButtons"] = 34, 
         ["ClickMultiplier"] = 20, 
@@ -41,13 +43,14 @@ getgenv().tapSimConfig = {
     },
 
     AUTO_DELETE_EGG_PET = { 
-        ["Lightning Event"] = { "Sparky", "Charged Dino", "Electric Slime" },
+        ["Snowman"] = { "Moose", "Mammoth", "Snowman", "Yeti", "Tri-Yeti", "Frost Golem" },
     },
     KEEP_PET_NAME = { }, 
     KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
-    GOLDEN_PET = { ["Tesla Bot"] = 6, ["Electric Glitch"] = 6 },  -- ["Pet Name"] = 6 
-    RAINBOW_PET = { },  -- ["Pet Name"] = 5
+    GOLDEN_PET = { ["Frost Golem"] = 6, ["Lunar Alien"] = 6, ["Eclipse Fox"] = 6, ["Moon Explorer"] = 6, ["Eclipse Hydra"] = 6, ["Eternal Moon"] = 6, ["Orbital Demigod"] = 6 },  -- ["Pet Name"] = 6 
+    RAINBOW_PET = { ["Frost Golem"] = 6, ["Eternal Moon"] = 5, ["Orbital Demigod"] = 5 },  -- ["Pet Name"] = 5
     USE_BOOST = { },  -- "Boost Name"
+    USE_TOTEM = { "TotemOfClicks", "TotemOfHatchSpeed", "TotemOfLuck", "TotemOfRebirths", "TotemOfSecretLuck" },
 
     -- Webhook
     WEBHOOK_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
@@ -56,6 +59,13 @@ getgenv().tapSimConfig = {
     SHOW_PUBLIC_DISCORD_ID = true,
     SHOW_WEBHOOK_USERNAME = true,
     SHOW_WEBHOOK_JOBID = true,
+
+    -- Autotrade
+    TRADE_PET_NAME = {},
+    TRADE_PET_RARITY = {},
+    TRADE_USERNAME = {},
+    KICK_IF_NO_TRADE_PET = false,
+    AUTO_ACCEPT_TRADE = false,  -- if true, leave all trade config above empty/default (this is for receiver account)
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ffab66f7d96a48c13b12e526b19b37d4.lua"))()
