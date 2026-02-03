@@ -3,7 +3,7 @@ setfpscap(5)
 getgenv().tapSimConfig = {
     -- Event Config
     ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
-    STABLE_HATCH = false,  -- set true if have 0hpm bug
+    STABLE_HATCH = false,  -- uses game hatch delay
 
     -- General Config
     AUTO_UPDATE_RESTART = true,
@@ -13,7 +13,6 @@ getgenv().tapSimConfig = {
     REBIRTH_DELAY = 120,  -- Seconds
     REDEEM_CODE = { "russo", "lucky", "tacos", "enchant", "HTH" },
     OPEN_EGG = { "Lunar", "Snowman" },
-    UNLOCK_WORLD_1_BEST_EGG = true,
     UNLOCK_WORLD_2_BEST_EGG = true,  -- change true if farm best egg, false if event egg
 
     BUY_GAMEPASS = { "SecretHunter", "MagicEggs", "x8Egg", "+4Equip", "+2Equip", "SuperLucky", "FasterEgg", "Luck", "Storage2", "Storage1" },
@@ -43,17 +42,17 @@ getgenv().tapSimConfig = {
     },
 
     AUTO_DELETE_EGG_PET = { 
-        ["Snowman"] = { "Moose", "Mammoth", "Snowman", "Yeti", "Tri-Yeti", "Frost Golem" },
+        ["Snowman"] = { "Moose", "Mammoth", "Snowman", "Yeti", "Tri-Yeti" },
     },
     KEEP_PET_NAME = { }, 
-    KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
+    KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III", "Secret X" },
     GOLDEN_PET = { ["Frost Golem"] = 6, ["Lunar Alien"] = 6, ["Eclipse Fox"] = 6, ["Moon Explorer"] = 6, ["Eclipse Hydra"] = 6, ["Eternal Moon"] = 6, ["Orbital Demigod"] = 6 },  -- ["Pet Name"] = 6 
     RAINBOW_PET = { ["Frost Golem"] = 6, ["Eternal Moon"] = 5, ["Orbital Demigod"] = 5 },  -- ["Pet Name"] = 5
     USE_BOOST = { },  -- "Boost Name"
     USE_TOTEM = { "TotemOfClicks", "TotemOfHatchSpeed", "TotemOfLuck", "TotemOfRebirths", "TotemOfSecretLuck" },
 
     -- Webhook
-    WEBHOOK_PET_RARITY = { "Secret I", "Secret II", "Secret III" },
+    WEBHOOK_PET_RARITY = { "Secret I", "Secret II", "Secret III", "Secret X" },
     WEBHOOK_URL = "https://discord.com/api/webhooks/1464468614970085376/3_Sp_vpO6LxUaCSXw_B09aZ286lJKVbdyT7hqrvd8iYsYfX3NUJXjO-_R87D9A_a4Faa",
     DISCORD_ID = "1120232109165006859",
     SHOW_PUBLIC_DISCORD_ID = true,
