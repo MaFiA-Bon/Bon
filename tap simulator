@@ -2,11 +2,10 @@ script_key="FeKvMYZXIvlgmZJmaHebzhcGxQIXrXfy";
 setfpscap(5)
 getgenv().tapSimConfig = {
     -- Event Config
-    ELECTRIC_PET = {},  -- ["Pet Name"] = 3 
-    STABLE_HATCH = false,  -- uses game hatch delay
 
     -- General Config
     AUTO_UPDATE_RESTART = true,
+    STABLE_HATCH = false,  -- uses game hatch delay
     AUTO_EQUIP_BEST = true,
     ADD_FRIEND = true,
     MAX_REBIRTH = math.huge,
@@ -48,6 +47,7 @@ getgenv().tapSimConfig = {
     KEEP_PET_RARITY = { "Secret I", "Secret II", "Secret III", "Secret X" },
     GOLDEN_PET = { ["Frost Golem"] = 6, ["Lunar Alien"] = 6, ["Eclipse Fox"] = 6, ["Moon Explorer"] = 6, ["Eclipse Hydra"] = 6, ["Eternal Moon"] = 6, ["Orbital Demigod"] = 6 },  -- ["Pet Name"] = 6 
     RAINBOW_PET = { ["Frost Golem"] = 6, ["Eternal Moon"] = 5, ["Orbital Demigod"] = 5 },  -- ["Pet Name"] = 5
+    USE_ALL_POTIONS = true,
     USE_BOOST = { },  -- "Boost Name"
     USE_TOTEM = { "TotemOfClicks", "TotemOfHatchSpeed", "TotemOfLuck", "TotemOfRebirths", "TotemOfSecretLuck" },
 
