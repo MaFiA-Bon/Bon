@@ -1,0 +1,12 @@
+script_key="88f8e70880be63e5b5334c11199b3932"
+getgenv().YuukiHub = {
+    ["Change Acc Custom"] = true, -- Auto Change Account After Do Daily Quest
+    ["Change Mode"] = "Decode", -- Yummy | Decode
+    ["Original ID"] = "", -- Support Decode
+    ["Completed ID"] = "", -- Support Decode
+    ["Webhook URL"] = "",
+    ["Discord Id"] = "",
+    ["Performance"] = {["FPS Lock"] = 3,["Low CPU"] = true}
+}
+loadstring(game:HttpGet('https://yuukihubz.net/scripts/94f86c5f71845e76baff4b7b1e971f20'))()
+yuukihubz.net
