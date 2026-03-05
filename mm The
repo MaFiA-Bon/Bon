@@ -9,4 +9,3 @@ getgenv().YuukiHub = {
     ["Performance"] = {["FPS Lock"] = 3,["Low CPU"] = true}
 }
 loadstring(game:HttpGet('https://yuukihubz.net/scripts/94f86c5f71845e76baff4b7b1e971f20'))()
-yuukihubz.net
