@@ -4,7 +4,7 @@ getgenv().YuukiHub = {
     ["Change Mode"] = "Yummy", -- Yummy | Decode
     ["Original ID"] = "", -- Support Decode
     ["Completed ID"] = "", -- Support Decode
-    ["Webhook URL"] = "",
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1450345724968697967/uwZ8SUmZ3dPMk5uqaFgXvXau7OzPjMLAfgq2OcdRU7Vz8iYjUu2NQEGTbthwPPE_IuoU",
     ["Discord Id"] = "",
     ["Performance"] = {["FPS Lock"] = 3,["Low CPU"] = true}
 }
