@@ -2,4 +2,4 @@ script_key = "SUFwQxOXpbzBPlGxdQvQLktjaFiiolWi";
 getgenv().GGFX_MODE = 1
 getgenv().GENTER_PLAZA = true
 getgenv().GPROGRESS_MODE = "Castle"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ba2dcad2127dcfc04301dfe52ce6c61c.lua"))()
