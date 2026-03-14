@@ -1,6 +1,6 @@
 -- Please Read FAQ channel for more info! Make sure you understand these parameters
 -- If not sure ask info in channel
-script_key = "FAtNCtIkxFLJdyocxDWQFprHhikVLWWm";
+script_key = "SUFwQxOXpbzBPlGxdQvQLktjaFiiolWi";
 getgenv().GPROGRESS_MODE = "Hybrid"
 getgenv().GGFX_MODE = 2  --1 = REMOVE_TEXTURES : more stable! but no visuals
 getgenv().GRANK_TO = 99
