@@ -22,6 +22,8 @@ getgenv().GMAX_RAID_LEVEL = 10000
 getgenv().GMIN_MULTIPLIER = 50 -- which raid eggs to hatch
 getgenv().GRESET_UPGRADES = false -- only do true when you actually need a reset
 getgenv().GEVENT_UPGRADES = {
+getgenv().GMIN_MULTIPLIER = 200 -- min required multiplier of raid egg to hatch
+getgenv().GRAID_MAX_HATCH_MINUTES = 5 -- abort hatching after 5 min
    "LuckyRaidDamage",
    "LuckyRaidAttackSpeed",
    "LuckyRaidPets",
