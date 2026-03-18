@@ -1,0 +1,28 @@
+script_key = "nQEhanyzTlToTHccgMBtbXAwVZyMpbsR";
+getgenv().Config = {
+    Reroll = {
+        ["Only Roll If have Title Lucky"] = {
+            Enable = true,
+            Title = "Destiny Marked", -- Lucky Novice,Fortune Seeker,Lucky Star,Blessed One,The Chosen One,Blessed Sovereign,Destiny Marked
+        },
+        Clan = {
+            Enable = true,
+            Keep = {"Monarch"} -- You Can Put Yourself
+        },
+        Race = {
+            Enable = true,
+            Keep = {"Oni","Kitsune","Leviathan","Slime","Servant","Sunborn","Galevorn","Swordblessed"} -- You Can Put Yourself
+        },
+        Trait = {
+            Enable = true,
+            Keep = {"Overload","Cataclysm","Singularity","Celestial","Godspeed","Sovereign","Infinity","Malevolent"} -- You Can Put Yourself
+        },
+    },
+    ["Task Do After Max Level"] = {
+        ["Auto Kill Saber Until Full Title"] = true, -- Unlocked All Title Bosses
+        ["Farm Drops"] = true,
+    },
+    Performance = {["FPS Lock"] = 10}
+}
+task.delay(120, function() if not getgenv().Loaded then game:GetService("TeleportService"):Teleport(game.PlaceId) end end)
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/b7ccd16f8c67f9b5528cf22a897443fb.lua"))()
