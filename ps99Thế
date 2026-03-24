@@ -2,9 +2,29 @@ getgenv().Settings = {
     ["Raid Settings"] = {
         Enabled = true,
         Difficulty = "Max",
-        ["Heroic"] = {1,2},
+
+        OpenLeprechaunChest = false,
+
+        ["Egg Settings"] = {
+          Enabled = true,
+          MinimumEggMulti = 200,
+          MinimumLuckyCoins = 1000000,
+          MaxOpenTime = 300,
+        },
+        ["LeaveOnBreakable"] = {
+          --"LuckyRaidBoss1",
+          --"LuckyRaidBoss2",
+          --"LuckyRaidBoss3",
+          --"LuckyRaidBoss1Heroic",
+          --"LuckyRaidBoss2Heroic",
+          "LuckyRaidBoss3Heroic",
+          "LuckyRaidMassiveChest",
+          "LuckyRaidBigChest",
+},
+        ["Heroic"] = {1,2,3},
         ["Open Rooms"] = {1,2,3},
         ["Use Boosts"] = true,
+        ["Auto Enchant"] = {"Criticals", "Walkspeed", "Tap Power", "Tap Power", "Strong Pets", "Chest Breaker", "Happy Pets", "Diamonds"}
     },
 
     ["Webhook"] = {
@@ -13,28 +33,36 @@ getgenv().Settings = {
         ["Send Normal Huges"] = true
     }, 
 
-    ["Mail Settings"] = {
+["Mail Settings"] = {
         ["User"] = "",
         ["Only_New_Huges"] = false,
-        ["Min_Gems"] = 5000000,
+
+        ["Min_Gems"] = 100000000,
         ["MAX_MAIL_COST"] = 1000000,
-        ["Mailing"] = {}, 
+
+        ["Mailing"] = {
+            ["Huge Mining Penguin"] = {Class = "Pet", MinAmount = 9999},
+        },
     },
 
+    ["Hatch Starter Pets"] = false,
+    ["CPU Saver"] = true,
+    
     ["Auto Upgrade"] = true,
     ["UpgradeSettings"] = {
-        LuckyRaidDamage = 20,
-        LuckyRaidAttackSpeed = 10,
-        LuckyRaidPets = 15,
-        LuckyRaidTitanicChest = 99,
-        LuckyRaidHugeChest = 99,
+        LuckyRaidDamage = 25,
+        LuckyRaidAttackSpeed = 25,
+        LuckyRaidPets = 25,
+        LuckyRaidPetSpeed = 25,
+        LuckyRaidTitanicChest = 0,
+        LuckyRaidHugeChest = 25,
         LuckyRaidXP = 0,
-        LuckyRaidBetterLoot = 99,
-        LuckyRaidPetSpeed = 0,
+        LuckyRaidBetterLoot = 25,
         LuckyRaidMoreCurrency = 0,
         LuckyRaidEggCost = 0,
         LuckyRaidKeyDrops = 0,
+        LuckyRaidBossHugeChances = 25,
+        LuckyRaidBossTitanicChances = 0,
     },
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ac744eeb76f8cd60a809ad60c80acd28.lua"))()
-api.luarmor.net
