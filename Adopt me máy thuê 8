@@ -11,7 +11,7 @@ getgenv().CONFIG_2G = {
     PrioritizePet = "2D Kitty",
 
     -- === EVENT FARM ===
-    AutoBuyCandyChisel = true,
+    AutoBuyCandyChisel = false,
     AutoBuyMochiMallet = true,
 
     -- === PET PEN ===
