@@ -1,42 +1,86 @@
-getgenv().Settings = {
-    ["Raid Settings"] = {
-        Enabled = true,
-        Difficulty = "Max", 
-        ["Heroic"] = {1,2},
-        ["Open Rooms"] = {1,2,3},
-        ["Use Boosts"] = true,
-    },
-    ["Webhook"] = {
-        ["url"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {"1120232109165006859"}, --  User ID
-        ["Send Normal Huges"] = true,
-    },
-
-    ["Mail Settings"] = {
-        ["User"] = "",
-        ["Only_New_Huges"] = false,
-        ["Min_Gems"] = 5000000,
-        ["MAX_MAIL_COST"] = 1000000,
-        ["Mailing"] = {}, 
-    },
-
-    ["Hatch Starter Pets"] = false,
-    ["CPU Saver"] = true,
-
-    ["Auto Upgrade"] = true,
-    ["UpgradeSettings"] = {
-        LuckyRaidPets = 25,
-        LuckyRaidDamage = 25,
-        LuckyRaidAttackSpeed = 25,
-        LuckyRaidTitanicChest = 99,
-        LuckyRaidHugeChest = 99,
-        LuckyRaidXP = 1,
-        LuckyRaidBetterLoot = 99,
-        LuckyRaidPetSpeed = 1,
-        LuckyRaidMoreCurrency = 1,
-        LuckyRaidEggCost = 1,
-        LuckyRaidKeyDrops = 1,
-    },
+setfpscap(4)
+getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals, 2: see some stuff, 3: see all
+getgenv().GRANK_FIRST = true --if you use this you have to define GREBIRTH_TO and GRANK_TO
+getgenv().GZONE_TO = 999 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
+getgenv().GREBIRTH_TO = 9
+getgenv().GRANK_TO = 8
+getgenv().GMASTERY_TO_MAX = "Enchants"
+getgenv().GDO_LUCKY_WORLD_EVENT = true
+getgenv().GMAKE_HORSESHOE_GIFTS = true
+getgenv().GLIMIT_HORSESHOE_GIFTS = 99999999 -- choose yourself, don't set it lower than your MinAmount in your Horseshoe Gift mailrule!
+getgenv().GDO_BOSSES = {1,2,3}
+getgenv().GHEROIC_BOSSES  = {1,2,3}
+getgenv().GMYTHIC_BOSSES  = {1}
+getgenv().GUSE_BOOSTS = true
+getgenv().GSKIP_RAID_EGG = true
+getgenv().GMINUTE_HATCH_RAID_EGG = true
+getgenv().GMIN_MULTIPLIER = 300 -- min required multiplier of raid egg to hatch
+getgenv().GRAID_MAX_HATCH_MINUTES = 5 -- abort hatching after 5 min
+getgenv().GDISABLE_MINUTE_HATCH = false
+getgenv().GRAID_TIMEOUT_MINUTES = 60
+getgenv().GRAID_MAX_BREAKABLE_HEALTH = "999qt"
+getgenv().GAUTO_RAID = true
+getgenv().GHATCH_LOBBY = true
+getgenv().GUSE_LEPRECHAUN_KEYS = false
+getgenv().GMAX_RAID_LEVEL = 50000
+getgenv().GRESET_UPGRADES = true -- only do true when you actually need a reset
+getgenv().GEVENT_UPGRADES = {
+    { Id = "LuckyRaidPets", MaxTier = 26 }, --50 max 50 slot pet
+    { Id = "LuckyRaidDamage", MaxTier = 25 }, --25 max 2265%
+    { Id = "LuckyRaidAttackSpeed", MaxTier = 15 }, --15 max 340%
+    { Id = "LuckyRaidBetterLoot", MaxTier = 15 }, --15 max 150%
+    { Id = "LuckyRaidHugeChest", MaxTier = 15 }, --15 max 430%
+    { Id = "LuckyRaidTitanicChest", MaxTier = 15 }, --15 max 2250%
+    { Id = "LuckyRaidBossHugeChances", MaxTier = 5 }, --20 max 260%
+    { Id = "LuckyRaidBossTitanicChances", MaxTier = 4 }, --10 max 500%
+    { Id = "LuckyRaidPetSpeed", MaxTier = 1 }, --15 max 225%
+    { Id = "LuckyRaidXP", MaxTier = 1 }, --30 max 4080%
+    { Id = "LuckyRaidEggCost", MaxTier = 1 },
+    { Id = "LuckyRaidMoreCurrency", MaxTier = 1 },
+    { Id = "LuckyRaidKeyDrops", MaxTier = 0 },
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ac744eeb76f8cd60a809ad60c80acd28.lua"))()
+getgenv().GLOOTBOXES = {"Locked Hype Egg","Horseshoe Gift"}
+getgenv().GKICK_ON_STAFF = true
+getgenv().GAUTO_UPGRADE_PETS = true
+getgenv().GHATCH_CHARGED_EGGS = false
+getgenv().GHATCH_GOLDEN_EGGS = false
+getgenv().GCLEAR_FAVORITE_PETS = true
+getgenv().GHATCH_SPEED_MS = 0
+getgenv().GMAX_HATCH = 99
+getgenv().GHUGE_COUNT = 99 -- amount of huges to keep/not mail
+getgenv().GDAYCARE = true
+getgenv().GDAYCARE_NAME_PARTS_TO_EXCLUDE = {"Palace Pooka", "Lucki Golem", "Lucki Chest Mimic", "Leprechaun Kitsune"}
+getgenv().GMAX_EGG_SLOTS = 99
+getgenv().GMAX_EQUIP_SLOTS = 99
+getgenv().GCOMBINE_KEYS = true -- ghep keys
+getgenv().GHOLD_GIFTS = false
+getgenv().GHOLD_BUNDLES = false
+getgenv().GCONSUME_SEED_BAGS = true
+getgenv().GOPEN_ITEMS_IN_BULK = true
+getgenv().GMAX_ZONE_UPGRADE_COST = 20000000
+getgenv().GCOLLECT_FREE_ITEMS = true
+--getgenv().GIGNORE_ALL_INSTANCES = true
+getgenv().GIGNORE_ALL_INSTANCES = false
+getgenv().GIGNORE_SLEDRACE = false
+getgenv().GDO_DOODLE_BATTLE = false
+getgenv().GUSE_SPRINKLERS = true
+getgenv().GENCHANTS = {"Criticals","Walkspeed","Tap Power","Tap Power","Strong Pets","Chest Breaker","Happy Pets","Diamonds"}
+--getgenv().GENCHANTS = {"Strong Pets", "Criticals", "Explosive", "Explosive", "Breakable Mayhem", "Breakable Mayhem", "Tap Power", "Lucky Eggs", "Criticals", "Strong Pets", "Treasure Hunter", "Diamonds", "Lucky Eggs", "Huge Hunter", "Fortune"} --leo rank
+getgenv().GUSE_ULTIMATES = {"UFO", "Tsunami", "Tornado", "Pet Surge", "Chest Spell","Ground Pound"}
+getgenv().GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
+getgenv().GFRUITS = {"Watermelon","Candycane","Apple","Rainbow","Pineapple","Orange","Banana"}
+getgenv().GPOTIONS = {"Coins","Lucky","The Cocktail","Huge","Treasure Hunter","Walkspeed","Diamonds","Damage"}
+getgenv().GPOTIONS_MAX_TIER = 99
+getgenv().GWEBHOOK_USERID = "1120232109165006859"
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
+getgenv().GMAIL_RECEIVERS = {""}
+getgenv().GMAIL_ITEMS = {
+--["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
+["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
+--["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
+["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
+["Horseshoe Gift"] = {Class = "Lootbox", Id = "Horseshoe Gift", MinAmount = 100},
+}
+getgenv().GMAX_MAIL_COST = "1m"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
