@@ -12,7 +12,7 @@ getgenv().CONFIG_2G = {
 
     -- === EVENT FARM ===
     AutoBuyCandyChisel = false,
-    AutoBuyMochiMallet = true,
+    AutoBuyMochiMallet = false,
 
     -- === PET PEN ===
     PetPen = false,
