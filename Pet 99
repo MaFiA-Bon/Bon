@@ -73,11 +73,11 @@ getgenv().GPOTIONS = {"Coins","Lucky","The Cocktail","Huge","Treasure Hunter","W
 getgenv().GPOTIONS_MAX_TIER = 99
 getgenv().GWEBHOOK_USERID = "1120232109165006859"
 getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
-getgenv().GMAIL_RECEIVERS = {""}
+getgenv().GMAIL_RECEIVERS = {"PhongCaleb"}
 getgenv().GMAIL_ITEMS = {
---["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
---["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
+["Lucki Chest Mimic"] = {Class = "Pet", Id = "Lucki Chest Mimic", IsRainbow = true, IsShiny = true, MinAmount = 2, KeepAmount = 1},	
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
 ["Horseshoe Gift"] = {Class = "Lootbox", Id = "Horseshoe Gift", MinAmount = 100},
