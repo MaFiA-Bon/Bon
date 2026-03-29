@@ -1,0 +1,24 @@
+task.spawn(function()
+    local LOADING_TIMEOUT = 300 -- giây
+    local lastActivity = tick()
+
+    -- detect activity map
+    workspace.DescendantAdded:Connect(function()
+        lastActivity = tick()
+    end)
+
+    workspace.DescendantRemoving:Connect(function()
+        lastActivity = tick()
+    end)
+
+    while task.wait(1) do
+        local idle = tick() - lastActivity
+
+        if idle >= LOADING_TIMEOUT then
+            warn("Map đứng quá lâu -> Rejoin")
+
+            game.Players.LocalPlayer:Kick("KickMap")
+            break
+        end
+    end
+end)
