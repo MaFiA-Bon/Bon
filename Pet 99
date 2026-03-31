@@ -77,7 +77,7 @@ getgenv().GMAIL_RECEIVERS = {"PhongCaleb"}
 getgenv().GMAIL_ITEMS = {
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
 ["Lucki Chest Mimic"] = {Class = "Pet", Id = "Lucki Chest Mimic", IsRainbow = true, IsShiny = true, MinAmount = 2, KeepAmount = 1},	
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "10m"}, -- mail diamonds, to enable lower MinAmount..
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "10m", MinAmount = "10m"}, -- mail diamonds, to enable lower MinAmount..
 ["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
 ["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
 ["Horseshoe Gift"] = {Class = "Lootbox", Id = "Horseshoe Gift", MinAmount = 100},
