@@ -5,7 +5,7 @@ getgenv().CONFIG_2G = {
 
     -- === EVENT FARM ===
     AutoBuyCandyChisel = false,
-    AutoBuyMochiMallet = true,
+    AutoBuyMochiMallet = false,
 
     --== [ MAIN FARM ] ==--
     PotFarm = true,
