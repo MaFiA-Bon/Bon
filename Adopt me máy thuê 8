@@ -26,7 +26,7 @@ getgenv().CONFIG_2G = {
     SkipTimer = true,
 
     --== [ AUTO FUSE ] ==--
-    AutoFuse = false,
+    AutoFuse = true,
 
     --== [ BUY PETS ] ==--
     BuyPets = false,
@@ -40,7 +40,7 @@ getgenv().CONFIG_2G = {
     WebhookURL = "https://discord.com/api/webhooks/1485291153149399302/F7xrpexczBB351JTZoRhlVxPzY9a9Pqx2Hq45GFphNy5gpgjRX_ICCHuAZJdv8zQzmZ3",
     WebhookPets = {},
 
-    ExtraOpti = false
+    ExtraOpti = true
 
 }
 loadstring(game:HttpGet("https://raw.githubusercontent.com/noboolean/2G_R/refs/heads/main/2GHUB_FARM_R.lua"))()
