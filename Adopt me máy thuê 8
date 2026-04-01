@@ -1,51 +1,46 @@
 getgenv().CONFIG_2G = {
-    -- === HUB / AUTH ===
+    --== [ HUB SETTINGS ] ==--
     HubKey = "3433d1c17b2c8e9edf54c5ece4bde0b0",
-    DeviceName = "Bon",
-
-    -- === MAIN FARM (choose one mode) ===
-    PotFarm = true,
-    EggFarm = false,
-    KeepEggFarm = false,
-    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
-    PrioritizePet = "2D Kitty",
+    CustomLabel = "Bon",
 
     -- === EVENT FARM ===
-    AutoBuyCandyChisel = true,
+    AutoBuyCandyChisel = false,
     AutoBuyMochiMallet = true,
 
-    -- === PET PEN ===
+    --== [ MAIN FARM ] ==--
+    PotFarm = true,
+    EggFarm = false,
+    EggName = {"Aztec Egg", "Desert Egg"},
+    PrioritizePet = "2D Kitty",
+
+    --== [ PET PEN ] ==--
     PetPen = false,
-    CustomPenEggs = {"Egg Name"},
+    CustomPenEggs = {"Aztec Egg"},
     CustomPenPets = {},
-    PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
+    PrioritizePetPenTypes = {},
 
-    -- === PET RELEASER ===
+    --== [ PET RELEASER ] ==--
     PetReleaser = false,
-    ReleasePets = {},       -- Whitelist: names to release (empty = all)
-    ExcludeReleasePets = {}, -- Blacklist: names to never release (overrides ReleasePets)
-    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleasePets = {},
+    ExcludeReleasePets = {},
+    SkipTimer = true,
 
-    -- === AGE PETS ===
-    AgePets = false,
-    AgePetsNames = {},
-    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
-
-    -- === AUTO FUSE ===
+    --== [ AUTO FUSE ] ==--
     AutoFuse = false,
 
-    -- === BUY PETS ===
+    --== [ BUY PETS ] ==--
     BuyPets = false,
-    BuyPetName = "Pet Name",
+    BuyPetName = "Christmas Spirit",
 
-    -- === LURE / BAIT ===
-    BaitName = "Bait Name",
+    --== [ LURE / BAIT SETTINGS ] ==--
+    BaitName = "Ice Soup Bait",
 
-    -- === DISCORD WEBHOOK ===
+    --== [ DISCORD WEBHOOK SETTINGS ] ==--
     WebhookEnabled = false,
-    WebhookURL = "",
-    WebhookPets = {},  -- Pet names to send (empty = all)
+    WebhookURL = "https://discord.com/api/webhooks/1485291153149399302/F7xrpexczBB351JTZoRhlVxPzY9a9Pqx2Hq45GFphNy5gpgjRX_ICCHuAZJdv8zQzmZ3",
+    WebhookPets = {},
 
-    ExtraOpti = false  -- Experimental; may cause issues
+    ExtraOpti = false
+
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Roleck11/2G_HUB/refs/heads/main/2G_FARM_BETA"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/noboolean/2G_R/refs/heads/main/2GHUB_FARM_R.lua"))()
