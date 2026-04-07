@@ -1,28 +1,48 @@
-script_key = "nQEhanyzTlToTHccgMBtbXAwVZyMpbsR";
-getgenv().Config = {
-    Reroll = {
-        ["Only Roll If have Title Lucky"] = {
-            Enable = true,
-            Title = "Destiny Marked", -- Lucky Novice,Fortune Seeker,Lucky Star,Blessed One,The Chosen One,Blessed Sovereign,Destiny Marked
-        },
-        Clan = {
-            Enable = true,
-            Keep = {"Monarch"} -- You Can Put Yourself
-        },
-        Race = {
-            Enable = true,
-            Keep = {"Oni","Kitsune","Leviathan","Slime","Servant","Sunborn","Galevorn","Swordblessed"} -- You Can Put Yourself
-        },
-        Trait = {
-            Enable = true,
-            Keep = {"Overload","Cataclysm","Singularity","Celestial","Godspeed","Sovereign","Infinity","Malevolent"} -- You Can Put Yourself
-        },
-    },
-    ["Task Do After Max Level"] = {
-        ["Auto Kill Saber Until Full Title"] = true, -- Unlocked All Title Bosses
-        ["Farm Drops"] = true,
-    },
-    Performance = {["FPS Lock"] = 10}
-}
-task.delay(120, function() if not getgenv().Loaded then game:GetService("TeleportService"):Teleport(game.PlaceId) end end)
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/b7ccd16f8c67f9b5528cf22a897443fb.lua"))()
+script_key="wjrSvuAjcXBgoClFSXUGmgzLgKiVpOYe";
+setfpscap(10)
+
+getgenv().sailorPieceConfig = {  
+    AUTO_UPDATE_RESTART = true,
+    
+    -- Autofarm
+    DO_REPEATABLE_QUEST = "QuestNPC19",
+    MULTI_FARM = { "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "Curse", "StrongSorcerer", "Hollow" },  -- Instant tp kill npc
+    AUTO_FARM = {},  -- Auto farm ascend/quest/weapon bosses
+    SUMMON_BOSS = {},  -- Auto summon ascend/quest/weapon bosses
+
+    -- Weapons
+    EQUIP_WEAPON = { "Strongest In History", "Ichigo", "Gryphon", "Dark Blade", "Katana" },
+    BLESS_WEAPON = { ["Strongest In History"] = 10, ["Ichigo"] = 10, ["Gryphon"] = 6, ["Dark Blade"] = 3 },
+
+    -- Reroll
+    REROLL_RACE_UNTIL = { "Warlord", "Sunborn", "Servant", "Kitsune", "Swordblessed", "Galevorn", "Leviathan", "Oni", "Slime" },
+    REROLL_CLAN_UNTIL = { "Pride", "Monarch", "Alter", "Espada", "Voldigoat", "Eminence", "Upper" },
+    REROLL_TRAIT_UNTIL = { "Overlord", "Cataclysm", "Singularity", "Celestial", "Emperor" },
+    REROLL_STAT_UNTIL = { ["Damage"] = "S", ["Defense"] = "S", ["CooldownReduction"] = "S", ["CritChance"] = "S", ["CritDamage"] = "S", ["DamageReduction"] = "S", ["Luck"] = "Z" },
+    REROLL_PASSIVE_UNTIL = { ["Gryphon"] = { "Fortune Chosen", "Executioner", "Damage V" }, ["Ichigo"] = { "Fortune Chosen", "Executioner", "Damage V" }, ["Strongest In History"] = { "Fortune Chosen", "Executioner", "Damage V" } },
+    REROLL_POWER_UNTIL = { "Cursebrand", "Colossus", "Eternal", "Abyssal", "Apex" },
+
+    -- Artifact
+    DELETE_ARTIFACT_RARITY = { "Common" },
+    EQUIP_ARTIFACT_SET = "Abyssal Crown",
+
+    -- Misc
+    BUILD_MODE = "Damage",  -- Damage/Luck
+    USE_ITEM = { "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest", "Aura Crate (Untradeable)", "Cosmetic Crate (Untradeable)", "Secret Chest (Untradeable)" },
+    BUY_MERCHANT = { "Race Reroll", "Trait Reroll", "Clan Reroll", "Passive Shard", "Boss Key", "Dungeon Key", "Rush Key", "Boss Ticket", "Haki Color Reroll", "Common Chest", "Rare Chest", "Epic Chest", "Legendary Chest", "Mythical Chest", "Secret Chest" },
+
+    -- Autotrade
+    TRADE_USERNAME = {},
+    TRADE_ITEM = {},
+
+    -- Discord
+    WEBHOOK_ITEM_NAME = { "Aura Crate", "Cosmetic Crate", "Secret Chest" },
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1491111439958806570/AGbPjU3vhd54gPWDNkTr8rZ-BDrUY72ak1HBr7_VhTE_K8v63k0qyy4U-o-gu9psHK24",
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "",
+    SHOW_PUBLIC_DISCORD_ID = true,
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
+}   
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1c7ac2a2f86ecf894218a424a1be7667.lua"))()
