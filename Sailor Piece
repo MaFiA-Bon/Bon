@@ -6,7 +6,7 @@ getgenv().sailorPieceConfig = {
     
     -- Autofarm
     DO_REPEATABLE_QUEST = "QuestNPC19",
-    MULTI_FARM = { "ArenaFighter", "Ninja", "Swordsman", "AcademyTeacher", "Slime", "Curse", "StrongSorcerer", "Hollow" },  -- Instant tp kill npc
+    MULTI_FARM = { "ArenaFighter", "Ninja", "Swordsman", "Quincy", "AcademyTeacher", "Slime", "Curse", "StrongSorcerer" },  -- Instant tp kill npc
     AUTO_FARM = {},  -- Auto farm ascend/quest/weapon bosses
     SUMMON_BOSS = {},  -- Auto summon ascend/quest/weapon bosses
 
@@ -19,7 +19,7 @@ getgenv().sailorPieceConfig = {
     REROLL_CLAN_UNTIL = { "Pride", "Monarch", "Alter", "Espada", "Voldigoat", "Eminence", "Upper" },
     REROLL_TRAIT_UNTIL = { "Overlord", "Cataclysm", "Singularity", "Celestial", "Emperor" },
     REROLL_STAT_UNTIL = { ["Damage"] = "S", ["Defense"] = "S", ["CooldownReduction"] = "S", ["CritChance"] = "S", ["CritDamage"] = "S", ["DamageReduction"] = "S", ["Luck"] = "Z" },
-    REROLL_PASSIVE_UNTIL = { ["Gryphon"] = { "Fortune Chosen", "Executioner", "Damage V" }, ["Ichigo"] = { "Fortune Chosen", "Executioner", "Damage V" }, ["Strongest In History"] = { "Fortune Chosen", "Executioner", "Damage V" } },
+    REROLL_PASSIVE_UNTIL = { ["Ichigo"] = { "Fortune Chosen", "Executioner", "Rampage", "Damage V" }, ["Strongest In History"] = { "Fortune Chosen", "Executioner", "Rampage", "Damage V" } },
     REROLL_POWER_UNTIL = { "Cursebrand", "Colossus", "Eternal", "Abyssal", "Apex" },
 
     -- Artifact
