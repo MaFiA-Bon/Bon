@@ -50,7 +50,7 @@ getgenv().VO_CONFIG = {
 
     -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
-    WebhookURL = "",
+    WebhookURL = "https://discord.com/api/webhooks/1485291153149399302/F7xrpexczBB351JTZoRhlVxPzY9a9Pqx2Hq45GFphNy5gpgjRX_ICCHuAZJdv8zQzmZ3",
     WebhookPets = {},  -- Pet names to send (empty = all)
 
     ExtraOpti = false  -- Experimental; may cause issues
