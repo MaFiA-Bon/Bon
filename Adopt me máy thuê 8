@@ -1,46 +1,58 @@
-getgenv().CONFIG_2G = {
-    --== [ HUB SETTINGS ] ==--
-    HubKey = "3433d1c17b2c8e9edf54c5ece4bde0b0",
-    CustomLabel = "Bon",
+getgenv().VO_CONFIG = {
+    -- === HUB / AUTH ===
+    HubKey = "xAepgNqBs7LK0TmiDdEdnZOj_wObn-kWgElyZMcPTBI",
+    DeviceName = "Bon",
+
+    -- === MAIN FARM (choose one mode) ===
+    PotFarm = true,
+    EggFarm = false,
+    KeepEggFarm = false,
+    EggName = {"Egg Name"},  -- Priority order: first egg tried, then second, etc.
+    PrioritizePet = "2D Kitty",
 
     -- === EVENT FARM ===
     AutoBuyCandyChisel = false,
     AutoBuyMochiMallet = false,
 
-    --== [ MAIN FARM ] ==--
-    PotFarm = true,
-    EggFarm = false,
-    EggName = {"Aztec Egg", "Desert Egg"},
-    PrioritizePet = "2D Kitty",
-
-    --== [ PET PEN ] ==--
+    -- === PET PEN ===
     PetPen = false,
-    CustomPenEggs = {"Aztec Egg"},
+    CustomPenEggs = {"Egg Name"},
     CustomPenPets = {},
-    PrioritizePetPenTypes = {},
+    PrioritizePetPenTypes = {},  -- "Egg", "Normal", "Neon" (empty = all)
 
-    --== [ PET RELEASER ] ==--
+    -- === PET RELEASER ===
     PetReleaser = false,
-    ReleasePets = {},
-    ExcludeReleasePets = {},
-    SkipTimer = true,
+    ReleasePets = {},       -- Whitelist: names to release (empty = all)
+    ExcludeReleasePets = {}, -- Blacklist: names to never release (overrides ReleasePets)
+    ReleaseTypes = {},      -- "Mega", "Neon", "Normal" (empty = all)
+    ReleaseRarities = {},   -- If ReleasePets non-empty: only used for pets NOT named in ReleasePets. If ReleasePets empty: filters all candidates.
+    ExcludeRarities = {},   -- Blacklist rarities (pets on ReleasePets by name bypass this)
 
-    --== [ AUTO FUSE ] ==--
-    AutoFuse = true,
+    -- === AGE PETS ===
+    AgePets = false,
+    AgePetsNames = {},
+    AgePetsTypes = {"Normal"},  -- "Normal", "Neon", "ALL"
 
-    --== [ BUY PETS ] ==--
+    -- === AUTO FUSE ===
+    AutoFuse = false,
+
+    -- === BUY PETS ===
     BuyPets = false,
-    BuyPetName = "Christmas Spirit",
+    BuyPetName = {"Pet Name", "Pet Name 2"},  -- Loops in order, buys all of first pet then moves to next
 
-    --== [ LURE / BAIT SETTINGS ] ==--
-    BaitName = "Ice Soup Bait",
+    -- === BOXES ===
+    BuyBoxes = false,
+    BoxName = "Box Name",   -- Name of the box to buy/open
+    OpenBoxes = false,
 
-    --== [ DISCORD WEBHOOK SETTINGS ] ==--
+    -- === LURE / BAIT ===
+    BaitName = "Bait Name",
+
+    -- === DISCORD WEBHOOK ===
     WebhookEnabled = false,
-    WebhookURL = "https://discord.com/api/webhooks/1485291153149399302/F7xrpexczBB351JTZoRhlVxPzY9a9Pqx2Hq45GFphNy5gpgjRX_ICCHuAZJdv8zQzmZ3",
-    WebhookPets = {},
+    WebhookURL = "",
+    WebhookPets = {},  -- Pet names to send (empty = all)
 
-    ExtraOpti = true
-
+    ExtraOpti = false  -- Experimental; may cause issues
 }
-loadstring(game:HttpGet("https://raw.githubusercontent.com/noboolean/2G_R/refs/heads/main/2GHUB_FARM_R.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/voltrex2/VoHub/refs/heads/main/FARM"))()
