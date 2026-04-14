@@ -3,7 +3,7 @@ getgenv().Settings = {
     ["Do Ranks"] = true,
     ["Webhook"] = {
         ["url"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {""},
+        ["Discord Id to ping"] = {"1120232109165006859"},
         ["Send Normal Huges"] = true
     }
 }
