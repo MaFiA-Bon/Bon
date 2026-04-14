@@ -1,56 +1,11 @@
-setfpscap(4)
-getgenv().GGFX_MODE = 1 --1 = REMOVE_TEXTURES : more stable! but no visuals, 2: see some stuff, 3: see all
-getgenv().GRANK_FIRST = true --if you use this you have to define GREBIRTH_TO and GRANK_TO
-getgenv().GZONE_TO = 999 -- to enter event from W1 put 1, from W2 put 100, from W3 200, from W4 240
-getgenv().GREBIRTH_TO = 9
-getgenv().GRANK_TO = 299
-getgenv().GMASTERY_TO_MAX = "Enchants"
-
-getgenv().GLOOTBOXES = {"Locked Hype Egg","Horseshoe Gift"}
-getgenv().GKICK_ON_STAFF = true
-getgenv().GAUTO_UPGRADE_PETS = true
-getgenv().GHATCH_CHARGED_EGGS = false
-getgenv().GHATCH_GOLDEN_EGGS = false
-getgenv().GCLEAR_FAVORITE_PETS = true
-getgenv().GHATCH_SPEED_MS = 0
-getgenv().GMAX_HATCH = 99
-getgenv().GHUGE_COUNT = 999 -- amount of huges to keep/not mail
-getgenv().GDAYCARE = true
-getgenv().GDAYCARE_NAME_PARTS_TO_EXCLUDE = {"Palace Pooka", "Lucki Golem", "Lucki Chest Mimic", "Leprechaun Kitsune"}
-
-getgenv().GWAIT_AT_GATES_TILL_RANK = 5
-getgenv().GMAX_EGG_SLOTS = 99
-getgenv().GMAX_EQUIP_SLOTS = 99
-getgenv().GCOMBINE_KEYS = true -- ghep keys
-getgenv().GHOLD_GIFTS = false
-getgenv().GHOLD_BUNDLES = false
-getgenv().GCONSUME_SEED_BAGS = true
-getgenv().GOPEN_ITEMS_IN_BULK = true
-getgenv().GMAX_ZONE_UPGRADE_COST = 300000
-getgenv().GCOLLECT_FREE_ITEMS = true
-getgenv().GIGNORE_ALL_INSTANCES = true
-getgenv().GIGNORE_ALL_INSTANCES = false
-getgenv().GIGNORE_SLEDRACE = false
-getgenv().GDO_DOODLE_BATTLE = false
-getgenv().GUSE_SPRINKLERS = true
-getgenv().GENCHANTS = {"Strong Pets", "Criticals", "Explosive", "Explosive", "Breakable Mayhem", "Breakable Mayhem", "Tap Power", "Lucky Eggs", "Criticals", "Strong Pets", "Treasure Hunter", "Diamonds", "Lucky Eggs", "Huge Hunter", "Fortune"} --leo rank
-getgenv().GUSE_ULTIMATES = {"UFO", "Tsunami", "Tornado", "Pet Surge", "Chest Spell","Ground Pound"}
-getgenv().GUSE_FLAGS = {"Fortune Flag","Diamonds Flag","Coins Flag"}
-getgenv().GFRUITS = {"Watermelon","Candycane","Apple","Rainbow","Pineapple","Orange","Banana"}
-getgenv().GPOTIONS = {"Coins","Lucky","The Cocktail","Huge","Treasure Hunter","Walkspeed","Diamonds","Damage"}
-getgenv().GPOTIONS_MAX_TIER = 99
-getgenv().GWEBHOOK_USERID = "1120232109165006859"
-getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
-getgenv().GMAIL_RECEIVERS = {""}
-getgenv().GMAIL_ITEMS = {
---["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
---["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
-["Lucki Chest Mimic"] = {Class = "Pet", Id = "Lucki Chest Mimic", IsRainbow = true, IsShiny = true, MinAmount = 2, KeepAmount = 1},	
---["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
---["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
---["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
---["Horseshoe Gift"] = {Class = "Lootbox", Id = "Horseshoe Gift", MinAmount = 100},
+task.wait(2)
+getgenv().Settings = {
+    ["Do Ranks"] = true,
+    ["Webhook"] = {
+        ["url"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
+        ["Discord Id to ping"] = {""},
+        ["Send Normal Huges"] = true
+    }
 }
-getgenv().GMAX_MAIL_COST = "1m"
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/da42d1e3a0381540c4939745177a73eb.lua"))()
