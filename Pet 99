@@ -5,9 +5,9 @@ getgenv().Config =  {
         ["Send Normal Huges"] = true
     },
     ["Mail Settings"] = {
-        ["User"] = "",
-        ["Min_Gems"] = 99999999999999999999,
-        ["MAX_MAIL_COST"] = 9999999999,
+        ["User"] = "PhongCaleb",
+        ["Min_Gems"] = 10000000,
+        ["MAX_MAIL_COST"] = 1000000,
         ["Mailing"] = {},
         ["Only_New_Huges"] = false,
     },
