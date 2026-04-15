@@ -1,0 +1,128 @@
+--// CONFIG
+getgenv().Webhook = {
+    Url = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
+    Ping = ""
+}
+
+--// SERVICES
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+
+local player = Players.LocalPlayer
+
+local Client = ReplicatedStorage:WaitForChild("Library"):WaitForChild("Client")
+local Save = require(Client.Save)
+
+local function GetData()
+    return Save.Get()
+end
+
+--// ANTI MULTI RUN
+if _G.RANK_TRACKER_RUNNING then
+    warn("Already running!")
+    return
+end
+_G.RANK_TRACKER_RUNNING = true
+
+--// WAIT DATA LOAD
+repeat task.wait()
+    local data = GetData()
+until data and data.Rank and data.Rebirths
+
+--// INIT
+local data = GetData()
+local lastRank = data.Rank or 0
+local lastRebirth = data.Rebirths or 0
+
+--// REQUEST
+local requestFunc = (syn and syn.request) or (http and http.request) or request
+
+--// WEBHOOK COOLDOWN
+local lastSend = 0
+local COOLDOWN = 10
+
+--// WEBHOOK
+local function sendWebhook(message)
+    if not requestFunc then return end
+    if tick() - lastSend < COOLDOWN then return end -- chống spam
+
+    lastSend = tick()
+
+    local body = {
+        ["content"] = getgenv().Webhook.Ping,
+        ["embeds"] = {{
+            ["title"] = "Rank update",
+            ["description"] = message,
+            ["color"] = 16711680
+        }}
+    }
+
+    requestFunc({
+        Url = getgenv().Webhook.Url,
+        Method = "POST",
+        Headers = {
+            ["Content-Type"] = "application/json"
+        },
+        Body = HttpService:JSONEncode(body)
+    })
+end
+
+--// CONFIRM FUNCTION
+local function confirmChange(oldRank, oldRebirth)
+    task.wait(15) -- delay để data ổn định
+
+    local data = GetData()
+    if not data then return nil end
+
+    local newRank = data.Rank or 0
+    local newRebirth = data.Rebirths or 0
+
+    return newRank, newRebirth
+end
+
+--// LOCK (ANTI DUPLICATE)
+local processing = false
+
+--// LOOP
+task.spawn(function()
+    while task.wait(3) do
+        if processing then continue end -- đang xử lý thì bỏ qua
+
+        local data = GetData()
+        if not data then continue end
+
+        local rank = data.Rank or 0
+        local rebirth = data.Rebirths or 0
+
+        if rank > lastRank or rebirth > lastRebirth then
+            processing = true -- khóa
+
+            local newRank, newRebirth = confirmChange(lastRank, lastRebirth)
+            if not newRank then 
+                processing = false
+                continue 
+            end
+
+            local msg = ""
+
+            if newRank > lastRank then
+                msg = player.Name .. " Rank up to: " .. newRank
+                lastRank = newRank
+            end
+
+            if newRebirth > lastRebirth then
+                if msg ~= "" then msg = msg .. "\n" end
+                msg = msg .. player.Name .. " Rebirth " .. newRebirth .. " done"
+                lastRebirth = newRebirth
+            end
+
+            if msg ~= "" then
+                sendWebhook(msg)
+            end
+
+            task.wait(2) -- giảm spam thêm
+            processing = false -- mở khóa
+        end
+    end
+end)
