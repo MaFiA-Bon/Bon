@@ -1,24 +1,11 @@
-getgenv().Config =  {
+task.wait(2)
+getgenv().Settings = {
+    ["Do Ranks"] = true,
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {""},
+        ["url"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
+        ["Discord Id to ping"] = {"1120232109165006859"},
         ["Send Normal Huges"] = true
-    },
-    ["Mail Settings"] = {
-        ["User"] = "PhongCaleb",
-        ["Min_Gems"] = 10000000,
-        ["MAX_MAIL_COST"] = 1000000,
-        ["Mailing"] = {},
-        ["Only_New_Huges"] = false,
-    },
-    ["Auto Enchant"] = {},
-    ["Ignore Do Ranks"] = false,
-    ["Time Trial"] = {
-        ["Disabled"] = false,
-        ["Open Chest"] = 3, -- 1,2,3 or do false to not open
-    },
-
-    ["CPU Saver"] = true,
-    ["CPU Saver2"] = false,
+    }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/da42d1e3a0381540c4939745177a73eb.lua"))()
