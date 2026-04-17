@@ -21,4 +21,4 @@ getgenv().Config =  {
     ["CPU Saver"] = true,
     ["CPU Saver2"] = false,
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/210d30c098e909fcffbaff4af2aa7f15.lua"))()
