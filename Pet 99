@@ -1,9 +1,8 @@
 getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {"Adam👑"},
+        ["Discord Id to ping"] = {""},
         ["Send Normal Huges"] = true,
-        ["Rank Updates"] = ""
     },
     ["Mail Settings"] = {
         ["User"] = "",
@@ -12,17 +11,13 @@ getgenv().Config =  {
         ["Mailing"] = {},
         ["Only_New_Huges"] = false,
     },
-    ["Auto Enchant"] = {"Breakable Mayhem","Tap Power","Strong Pets","Criticals","Explosive","Treasure Hunter","Lucky Eggs","Tap Power","Strong Pets","Tap Power"},
-    ["Ignore Do Ranks"] = false,
-    ["Time Trial"] = {
-        ["Disabled"] = false,
-        ["Open Chest"] = 3, -- 1,2,3 or do false to not open
-    },
+    ["Auto Enchant"] = {},
 
-    ["CPU Saver"] = true,
-    ["CPU Saver2"] = false,
+    ["CPU Saver"] = false,
 
-    ["MaxEggSlots"] = 99,
-    ["MaxPetSlots"] = 99,
+    ["Ignore Hatch"] = false,
+    ["Open Diamond Egg"] = "Spring Diamond Egg 1x",
+    ["Zone Farm Count"] = 3,
+    ["Disable Upgrade"] = false,
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/7585edb9f1f88388774c694157e5542d.lua"))()
