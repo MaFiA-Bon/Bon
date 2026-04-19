@@ -13,7 +13,7 @@ getgenv().Config =  {
     },
     ["Auto Enchant"] = {},
 
-    ["CPU Saver"] = false,
+    ["CPU Saver"] = true,
 
     ["Ignore Hatch"] = false,
     ["Open Diamond Egg"] = "Spring Diamond Egg 1x",
