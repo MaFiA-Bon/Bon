@@ -1,23 +1,33 @@
-getgenv().Config =  {
-    ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {""},
-        ["Send Normal Huges"] = true,
-    },
-    ["Mail Settings"] = {
-        ["User"] = "",
-        ["Min_Gems"] = 99999999999999999999,
-        ["MAX_MAIL_COST"] = 9999999999,
-        ["Mailing"] = {},
-        ["Only_New_Huges"] = false,
-    },
-    ["Auto Enchant"] = {},
-
-    ["CPU Saver"] = true,
-
-    ["Ignore Hatch"] = false,
-    ["Open Diamond Egg"] = "Spring Diamond Egg 1x",
-    ["Zone Farm Count"] = 3,
-    ["Disable Upgrade"] = false,
+script_key = "RiwGlYSZztRZiRAHzHRgyrvmoGApCBpb";
+getgenv().GGFX_MODE = 1
+getgenv().GDO_EASTER_HATCH_EVENT = true
+getgenv().GHATCH_HUB = true
+getgenv().GEASTER_HATCH_EVENT_AUTO_UPGRADE_PETS = true
+getgenv().GEVENT_UPGRADES = {
+    { Id = "Luck", MaxTier = 20 },
+    { Id = "ShinyLuck", MaxTier = 20 },
+    { Id = "HatchSpeed", MaxTier = 20 },
+    { Id = "CooldownAndAmount", MaxTier = 20 },
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/7585edb9f1f88388774c694157e5542d.lua"))()
+getgenv().GINVENTORY_COUNTS = {
+    ["Blue"] = {Class = "Misc", Id = "Spring Bluebell Token"},
+    ["Pink"] = {Class = "Misc", Id = "Spring Pink Rose Token"},
+    ["Red"] = {Class = "Misc", Id = "Spring Red Tulip Token"},
+    ["Yellow"] = {Class = "Misc", Id = "Spring Yellow Sunflower Token"},
+    ["Egg"] = {Class = "Misc", Id = "Spring Egg Token"},
+}
+getgenv().GUSE_FLAGS = {"Strength Flag","Hasty Flag"}
+getgenv().GHATCH_ENCHANTS = {"Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs"}
+getgenv().GWEBHOOK_USERID = ""
+getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
+getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
+getgenv().GMAIL_RECEIVERS = {"your-receiver-mule"}
+getgenv().GMAIL_ITEMS = {
+["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
+["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
+["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
+["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
+}
+getgenv().GMAX_MAIL_COST = "2m"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
