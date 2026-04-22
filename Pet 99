@@ -2,6 +2,11 @@ script_key = "RiwGlYSZztRZiRAHzHRgyrvmoGApCBpb";
 getgenv().GGFX_MODE = 1
 getgenv().GDO_EASTER_HATCH_EVENT = true
 getgenv().GHATCH_HUB = true
+getgenv().GEASTER_HATCH_EVENT_HATCH_TIME_ON_ENTRY_SECONDS = 60
+getgenv().GEASTER_HATCH_EVENT_MIN_HATCHES_BEFORE_SWITCH_TO_HATCHING = 1000 -- Only used on Egg5 when all wanted upgrades done.
+getgenv().GEASTER_HATCH_EVENT_TOKENS_TO_FARM_AFTER_ALL_UPGRADES = {"Spring Bluebell Token"}
+getgenv().GEASTER_HATCH_EVENT_TOKENS_TO_USE_FOR_BOOSTS = {"Spring Bluebell Token"}
+getgenv().GEASTER_HATCH_EVENT_BOOSTS_TO_USE = {"Titanic","Gargantuan"}
 getgenv().GEASTER_HATCH_EVENT_AUTO_UPGRADE_PETS = true
 getgenv().GEVENT_UPGRADES = {
     { Id = "Luck", MaxTier = 20 },
@@ -21,13 +26,11 @@ getgenv().GHATCH_ENCHANTS = {"Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs"
 getgenv().GWEBHOOK_USERID = ""
 getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
 getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
-getgenv().GMAIL_RECEIVERS = {"your-receiver-mule"}
+getgenv().GMAIL_RECEIVERS = {""}
 getgenv().GMAIL_ITEMS = {
 ["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
 ["Harvest egg"] = {Class = "Egg", Id = "Exclusive Egg 57", MinAmount = 1},
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
-["Hype Egg 2"] = {Class = "Lootbox", Id = "Hype Egg 2", MinAmount = 1},
-["Daycare egg 5"] = {Class = "Egg", Id = "Huge Machine Egg 5", MinAmount = 1},
+["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "50m"}, -- mail diamonds, to enable lower MinAmount..
 }
 getgenv().GMAX_MAIL_COST = "2m"
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
