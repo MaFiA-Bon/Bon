@@ -1,5 +1,1 @@
-script_key="HBrhslOFRrIZpdmfYyLOElrUAcVpIuVS";
-getgenv().Settings = {
-    ["Rank Until"] = 99
-}
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/07497d72a61a12d39c2176a63942d228.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ae895774291a4ad833276f74a2572818.lua"))()
