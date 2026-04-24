@@ -1,3 +1,4 @@
+script_key="OsobmfGIimBDBlZkYuqGwbefovvsguhR";
 getgenv().Config = {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
@@ -28,4 +29,4 @@ getgenv().Config = {
     -- Token Boost Settings
     ["Token Boost"] = false  -- Automatically add time to token boosts
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/ae895774291a4ad833276f74a2572818.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
