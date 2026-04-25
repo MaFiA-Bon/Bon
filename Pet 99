@@ -1,36 +1,32 @@
-script_key = "RiwGlYSZztRZiRAHzHRgyrvmoGApCBpb";
-getgenv().GGFX_MODE = 1
-getgenv().GDO_EASTER_HATCH_EVENT = true
-getgenv().GHATCH_HUB = true
-getgenv().GEASTER_HATCH_EVENT_AUTO_FAVORITE_BEST_PETS = true
-getgenv().GEASTER_HATCH_EVENT_HATCH_TIME_ON_ENTRY_SECONDS = 60
-getgenv().GEASTER_HATCH_EVENT_MIN_HATCHES_BEFORE_SWITCH_TO_HATCHING = 1000
-getgenv().GEASTER_HATCH_EVENT_TOKENS_TO_FARM_AFTER_ALL_UPGRADES = {"Spring Bluebell Token"}
-getgenv().GEASTER_HATCH_EVENT_TOKENS_TO_USE_FOR_BOOSTS = {"Spring Bluebell Token"}
-getgenv().GEASTER_HATCH_EVENT_BOOSTS_TO_USE = {"Titanic","Gargantuan"}
-getgenv().GEASTER_HATCH_EVENT_AUTO_UPGRADE_PETS = true
-getgenv().GEVENT_UPGRADES = { --MaxTier can be up to 20 but takes very long
-    { Id = "Luck", MaxTier = 5},
-    { Id = "ShinyLuck", MaxTier = 1},
-    { Id = "HatchSpeed", MaxTier = 5},
-    { Id = "CooldownAndAmount", MaxTier = 5},
+script_key="OsobmfGIimBDBlZkYuqGwbefovvsguhR";
+getgenv().Config = {
+    ["Webhook"] = {
+        ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
+        ["Discord Id to ping"] = {""},
+        ["Send Normal Huges"] = true,
+    },
+
+    ["Mail Settings"] = {
+        ["User"] = "",
+        ["Min_Gems"] = 99999999999999999999,
+        ["MAX_MAIL_COST"] = 9999999999,
+        ["Mailing"] = {},
+        ["Only_New_Huges"] = false
+    },
+    ["CPU Saver"] = true,
+
+    -- Egg Hatching Settings
+    ["Hatch Eggs"] = true,  -- Enable egg hatching
+    ["Open Diamond Egg"] = "",  -- Specific diamond egg to open (e.g., "Spring Diamond Egg 100x"), leave empty to disable
+
+    -- Upgrade Settings
+    ["Upgrade"] = false,  -- Automatically purchase egg upgrades when possible
+
+    -- Zone Farming Settings
+    ["Zone Farm"] = false,  -- Enable zone farming
+    ["Zone Farm Count"] = 4,  -- Number of zones to farm simultaneously (max 4)
+
+    -- Token Boost Settings
+    ["Token Boost"] = false  -- Automatically add time to token boosts
 }
-getgenv().GINVENTORY_COUNTS = {
-    ["Blue"] = {Class = "Misc", Id = "Spring Bluebell Token"},
-    ["Pink"] = {Class = "Misc", Id = "Spring Pink Rose Token"},
-    ["Red"] = {Class = "Misc", Id = "Spring Red Tulip Token"},
-    ["Yellow"] = {Class = "Misc", Id = "Spring Yellow Sunflower Token"},
-    ["Egg"] = {Class = "Misc", Id = "Spring Egg Token"},
-}
-getgenv().GUSE_FLAGS = {"Strength Flag","Hasty Flag"}
-getgenv().GHATCH_ENCHANTS = {"Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs","Lucky Eggs"}
-getgenv().GWEBHOOK_USERID = ""
-getgenv().GWEBHOOK_LINK = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N"
-getgenv().GHUGE_COUNT = 0 -- amount of huges to keep/not mail
-getgenv().GMAIL_RECEIVERS = {"your-receiver-mule"}
-getgenv().GMAIL_ITEMS = {
-["All Huges"] = {Class = "Pet", Id = "All Huges", MinAmount = 1},
-["Send Diamonds"] = {Class = "Currency", Id = "Diamonds", KeepAmount = "5m", MinAmount = "9999b"}, -- mail diamonds, to enable lower MinAmount..
-}
-getgenv().GMAX_MAIL_COST = "2m"
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/34915da4ad87a5028e1fd64efbe3543f.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
