@@ -1,34 +1,30 @@
-getgenv().Config = {
+getgenv().Config =  {
     ["Webhook"] = {
         ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {""},
+        ["Discord Id to ping"] = {"1092353095171833906"},
         ["Send Normal Huges"] = true,
+        --["Rank Updates"] = ""
     },
-
     ["Mail Settings"] = {
         ["User"] = "",
         ["Min_Gems"] = 99999999999999999999,
         ["MAX_MAIL_COST"] = 9999999999,
         ["Mailing"] = {},
-        ["Only_New_Huges"] = false
+        ["Only_New_Huges"] = false,
     },
+    },
+    ["Auto Enchant"] = {"Breakable Mayhem","Tap Power","Strong Pets","Criticals","Explosive","Tap Power","Tap Power","Tap Power","Strong Pets","Tap Power"},
     ["CPU Saver"] = true,
-
-    -- Egg Hatching Settings
-    ["Hatch Eggs"] = true,  -- Enable egg hatching
+    ["Hatch Eggs"] = true,
     ["AutoHatchSelectedEgg"] = 8,
-
-    -- Upgrade Settings
-    ["Upgrade"] = true,  -- Automatically purchase egg upgrades when possible
-
-    -- Zone Farming Settings
-    ["Zone Farm"] = false,  -- Enable zone farming
-    ["Zone Farm Count"] = 4,  -- Number of zones to farm simultaneously (max 4)
-    ["Open Diamond Egg"] = "",  -- Specific diamond egg to open (e.g., "Spring Diamond Egg 100x"), leave empty to disable
+    ["Upgrade"] = true,
+    ["Zone Farm"] = false,
+    ["Zone Farm Count"] = 4,
+    ["Open Diamond Egg"] = "",
     ["FarmBossChest"] = true,
-
-    -- Token Boost Settings
-    ["Token Boost"] = false  -- Automatically add time to token boosts
+    ["HatchEggsWhileBreakingChest"] = true,
+    ["MinTierBoss"] = 8,
+    ["Token Boost"] = true
 }
 script_key="OsobmfGIimBDBlZkYuqGwbefovvsguhR";
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
