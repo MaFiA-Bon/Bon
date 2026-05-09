@@ -1,30 +1,45 @@
 getgenv().Config =  {
     ["Webhook"] = {
-        ["URL"] = "https://discord.com/api/webhooks/1451968691129417812/arb_U_Gmdd4HLPwKA301Ifa79sx2QX8yVBgFtHvB7LVTTGss1fWKyNxIgyIwdHHDsE2N",
-        ["Discord Id to ping"] = {"1092353095171833906"},
+        ["URL"] = "",
+        ["Discord Id to ping"] = {""},
         ["Send Normal Huges"] = true,
-        --["Rank Updates"] = ""
+
+        ["Rank Updates"] = "",
+        ["Rank Update Min"] = 20, -- will send rank update when reaches that ranl
+
+        ["Admin Abuse"] = "" -- send when something gets claimed
     },
     ["Mail Settings"] = {
         ["User"] = "",
         ["Min_Gems"] = 99999999999999999999,
         ["MAX_MAIL_COST"] = 9999999999,
-        ["Mailing"] = {},
-        ["Only_New_Huges"] = false,
+        ["Mailing"] = {
+            ["Spring Pink Rose Token"] = {Class = "Misc", MinAmount = 30000},
+            ["All Huges"] = {Class = "Pet", MinAmount = 1},
+        },
+        ["Send Old Huges"] = false,
     },
-    },
-    ["Auto Enchant"] = {"Breakable Mayhem","Tap Power","Strong Pets","Criticals","Explosive","Tap Power","Tap Power","Tap Power","Strong Pets","Tap Power"},
-    ["CPU Saver"] = true,
-    ["Hatch Eggs"] = true,
-    ["AutoHatchSelectedEgg"] = 8,
-    ["Upgrade"] = true,
-    ["Zone Farm"] = false,
-    ["Zone Farm Count"] = 4,
-    ["Open Diamond Egg"] = "",
-    ["FarmBossChest"] = true,
-    ["HatchEggsWhileBreakingChest"] = true,
-    ["MinTierBoss"] = 8,
-    ["Token Boost"] = true
+    ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
+
+    ["CPU Saver"] = false, -- makes your game run smoother
+
+    ["MaxEggSlots"] = 50,
+    ["MaxPetSlots"] = 40,
+
+    ["Ignore Do Ranks"] = false, -- wont do quest at all
+
+    ["Fast Rankup"] = false, -- will focus on quest in world 1 until it reaches a specific rank (broken a bit)
+    ["Fast Rankup to"] = 20, -- choose your rank you want to do
+
+
+    ["StarterPets"] = false, -- will hatch event pets
+    
+    ["ClaimFreeStuff"] = false, -- disables claiming stuff loop (may fix stuck on upgrading stuff)
+    ["AutoCombinePresents"] = true, -- combines Prestes to the desired level
+    ["MaxCombineTier"] = 4, -- 1 = max Medium, 2 = max Large, 3 = max X-Large, 4 = max Titanic (default, craft everything)
+    ["OpenPresent"] = false, -- 1 = small, 2 = Medium, 3 = Large, 4 = X-Large, 5 = Titanic, false = disabled
+
+    ["AutoConsumeFlag"] = {"Strength Flag","Hasty Flag"},
+    ["AutoSprinkler"] = true,
 }
-script_key="OsobmfGIimBDBlZkYuqGwbefovvsguhR";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/aa27acc3f27fb34d8cbe6bd53d1b7ff4.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cd6279ef22ef689bec5cd78c7cd2f0a1.lua"))()
