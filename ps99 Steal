@@ -32,7 +32,7 @@ getgenv().Config =  {
     ["Fast Rankup to"] = 20, -- choose your rank you want to do
 
 
-    ["StarterPets"] = false, -- will hatch event pets
+    ["StarterPets"] = true, -- will hatch event pets
     
     ["ClaimFreeStuff"] = false, -- disables claiming stuff loop (may fix stuck on upgrading stuff)
     ["AutoCombinePresents"] = true, -- combines Prestes to the desired level
