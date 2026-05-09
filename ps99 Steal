@@ -10,14 +10,14 @@ getgenv().Config =  {
         ["Admin Abuse"] = "" -- send when something gets claimed
     },
     ["Mail Settings"] = {
-        ["User"] = "",
-        ["Min_Gems"] = 99999999999999999999,
-        ["MAX_MAIL_COST"] = 9999999999,
+        ["User"] = "PhongCaleb",
+        ["Min_Gems"] = 1000000,
+        ["MAX_MAIL_COST"] = 1000000,
         ["Mailing"] = {
             ["Spring Pink Rose Token"] = {Class = "Misc", MinAmount = 30000},
             ["All Huges"] = {Class = "Pet", MinAmount = 1},
         },
-        ["Send Old Huges"] = false,
+        ["Send Old Huges"] = true,
     },
     ["Auto Enchant"] = {"Treasure Hunter", "Coins", "Diamonds", "Criticals", "Strong Pets"},
 
