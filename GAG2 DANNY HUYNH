@@ -1,4 +1,3 @@
-```lua
 script_key = "wABYbJAlUjWoGFIiFKhmERQSmebnzNeC";
 getgenv().UserConfig = {
     ["FPS Cap"] = 5,
@@ -118,4 +117,3 @@ getgenv().UserConfig = {
     ["Blacklist Seed"] = {"Bamboo", "Rainbow", "Gold"},
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/cbe5e2d7d845580db3cfd92d7c3ad9bd.lua"))()
-```
