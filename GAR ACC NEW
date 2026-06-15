@@ -1,69 +1,99 @@
-
-local keys = {  -- Add as many key
-    "ABYORUsDRmrAORsyeHIdWjbOsXADMDzZ",
-    "rXkTIBIJMwajBVBoiVLmrteGutgSkRDW",
-    "ZvclgyEqPjhIIvIZDRFZTNXTwKGkXOyN",
-    "KCWrIGoOOAbYkKunFFqVebiQzOPWWFlw",
+```lua
+setfpscap(5)
+script_key="FoACmMfjCFWumbIBwPpFMXRaEQgrgdAw";
+getgenv().UserConfig = {
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+    ["Limit Plant Seed"] = {
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 4,
+        ["Blueberry"] = 4,
+        ["Tulip"] = 4,
+        ["Tomato"] = 4,
+        ["Apple"] = 4,
+        -- ["Bamboo"] = 50,
+        ["Corn"] = 4,
+        ["Cactus"] = 4,
+        ["Pineangle"] = 4,
+        ["Mushroom"] = 20,
+        ["Green Bean"] = 20,
+        ["Banana"] = 20,
+        ["Grape"] = 20,
+        ["Coconut"] = 20,
+        ["Mango"] = 20,
+        ["Dragon Fruit"] = 20,
+        ["Acorn"] = 20,
+        ["Cherry"] = 20,
+        ["Sunflower"] = 20,
+        ["Venus Fly Trap"] = 20,
+        ["Pomegranate"] = 20,
+        ["Poison Apple"] = 20,
+        ["Moon Bloom"] = 20,
+        ["Dragon's Breath"] = 20,
+    },
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 999, 
+        ["Strawberry"] = 999,
+        ["Blueberry"] = 999,
+        ["Tulip"] = 999,
+        ["Tomato"] = 999,
+        ["Apple"] = 999,
+        ["Bamboo"] = 999,
+        ["Corn"] = 999,
+        ["Cactus"] = 999,
+        ["Pineangle"] = 999,
+        ["Mushroom"] = 999,
+        ["Green Bean"] = 999,
+        ["Banana"] = 999,
+        ["Grape"] = 999,
+        ["Coconut"] = 999,
+        ["Mango"] = 999,
+        ["Dragon Fruit"] = 999,
+        ["Acorn"] = 999,
+        ["Cherry"] = 999,
+        ["Sunflower"] = 999,
+        ["Venus Fly Trap"] = 999,
+        ["Pomegranate"] = 999,
+        ["Poison Apple"] = 999,
+        ["Moon Bloom"] = 999,
+        ["Dragon's Breath"] = 999,
+    },
+    ["Favorite"] = {},
+    ["Buy Pets"] = {"Golden Dragonfly","Unicorn","Deer","Monkey","Robin","Raccoon"},
+    ["Equip Pets"] = {"Golden Dragonfly","Unicorn","Deer","Monkey","Robin","Raccoon"},
+    ["Expand Plot"] = true,
+    ["Auto Collect Seed Packs"] = true,
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            -- "Common Watering Can",
+            "Common Sprinkler",
+            "Uncommon Sprinkler",
+            "Rare Sprinkler",
+            "Legendary Sprinkler",
+            "Super Sprinkler",
+            "Super Watering Can",
+        },
+        ["Gears To Use"] = {
+            -- "Common Watering Can",
+            "Common Sprinkler",
+            "Uncommon Sprinkler",
+            "Rare Sprinkler",
+            "Legendary Sprinkler",
+            "Super Sprinkler",
+            "Super Watering Can",
+        },
+    },
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1389528057538412564/SE1zRnfxzzZ8LPMK1ldq6UDYGtHswhm3oedSMO73HuPqhmum5sVZ5lZzh0p_NhyZNUye",
+    ["Webhook Pet Name"] = {},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    ["Webhook Note"] = "Danny",
+    ["Discord ID"] = "229850538911596545",
+    ["Mail To Username"] = {"bonabbyhenry"},
+    ["Items To Mail"] = {
+        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon"},
+        ["Seed"] = {"Rainbow", "Gold", "Bamboo"},
+    },
+    ["Claim Mail"] = true,
 }
-
-script_key = keys[math.random(#keys)];
-setfpscap(3)
-
-getgenv().gagConfig = {
-    -- Event:
-    BUY_TRAVELING_MERCHANT = { "Bee Egg", "Paradise Egg", "Fall Egg", "Loquat", "Feijoa", "Pitcher Plant" },
-    BUY_EVENT_SHOP = { "New Year's Egg" },
-    OPEN_ALL_PRESENT = true,
-    
-    MAX_PLANTS = 200,
-    DESTROY_UNTIL_MIN_PLANTS = 150,
-    KEEP_SEEDS = { "Bone Blossom" },
-    KEEP_SEEDS_AFTER_MAX_PLANTS = {},
-
-    PLACE_COSMETIC = { "Cooking Kit", "Jingle Bells" },
-    
-    -- General:
-    AUTO_UPDATE_RESTART = true,
-    REDEEM_CODES = {},
-    EXTRA_PET_SLOTS = 5,
-    EXTRA_EGG_SLOTS = 5,
-    MAX_REBIRTH_SHECKLES = 0,
-    ADD_FRIEND = true,
-    OPEN_ALL_SEED_PACK = true,
-    COLLECT_FRUIT_PER_SECOND = 3,
-
-    BUY_COSMETIC_SHOP = { ["Cooking Kit"] = 3 },
-    
-    BUY_EGGS = { ["Common Egg"] = 10, "Jungle Egg", "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
-    PLANT_EGGS = { "New Year's Egg", "Winter Egg", "Christmas Egg", "Gem Egg", "Paradise Egg", "Rare Summer Egg", "Corrupted Zen Egg", "Zen Egg", "Dinosaur Egg", "Primal Egg", "Anti Bee Egg", "Night Egg", "Spooky Egg" },
-    
-    BUY_SEED_SHOP = { "Peppermint Vine Seed", "Octobloom Seed", "Zebrazinkle", "Crimson Thorn", "Romanesco", "Elder Strawberry", "Giant Pinecone", "Burning Bud", "Sugar Apple", "Ember Lily", "Beanstalk", "Sunflower", "Cacao", "Pepper", "Mushroom", "Grape", "Mango", "Dragon Fruit", "Cactus", ["Coconut"] = 50, ["Bamboo"] = 50, ["Apple"] = 50, ["Pumpkin"] = 50, ["Watermelon"] = 50, ["Daffodil"] = 50, ["Corn"] = 50, ["Tomato"] = 50, ["Buttercup"] = 50, ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 50 },
-    
-    FAVOURITE_FRUIT_MUTATIONS = {},
-    SKIP_HARVEST_MUTATIONS = {},
-
-    KEEP_PETS = { "New Year's Dragon", "Wendigo", "Ice Golem", "Eggnog Chick", "Yeti", ["Turtle Dove"] = 1, ["Nutcracker"] = 1, ["Reindeer"] = 1, "Krampus", "Frost Dragon", "Snowman Soldier", "Snowman Builder", "Arctic Fox", "Penguin", ["Mistletoad"] = 1, ["Christmas Gorilla"] = 1, ["French Hen"] = 1, "Bearded Dragon", ["Camel"] = 1, ["Magpie"] = 1, "Chimera", ["Pack Mule"] = 1, "Tarantula Hawk", "Goblin Miner", "Ruby Squid", "Diamond Panther", "Lion", ["Crocodile"] = 1, "Orange Tabby", "Elephant", "Hydra", "Mantis Shrimp", ["Rhino"] = 8, "Lich", "Sea Turtle", "Mummy", "Hex Serpent", "Headless Horseman", "Reaper", "Chinchilla", "Sugar Glider", "Chubby Chipmunk", "Tiger", "Red Panda", "Barn Owl", "Swan", "Space Squirrel", "Phoenix", "Drake", "Wisp", "Luminous Sprite", "Cockatrice", ["Glimmering Sprite"] = 1, "Gnome", "Griffin", "Golden Goose", "Spriggan", "Junkbot", "Lobster Thermidor", "French Fry Ferret", "Corrupted Kitsune", "Raiju", "Mizuchi", "Kitsune", "Koi", "Bald Eagle", "Ankylosaurus", "Spinosaurus", "Brontosaurus", "T-Rex", "Seal", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Hyacinth Macaw", "Pack Bee", ["Bear Bee"] = 1, ["Petal Bee"] = 1, "Hamster", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Ostrich", "Peacock", "Scarlet Macaw", "Echo Frog", "Firefly", "Chicken Zombie", "Corrupted Kodama", "Sunny-Side Chicken", ["Gorilla Chef"] = 2, ["Blood Kiwi"] = 2, "Capybara", ["Starfish"] = 2, ["Rooster"] = 8 },
-    KEEP_PETS_WEIGHT = 5,
-    KEEP_PETS_AGE = 90,
-    
-    EQUIP_PETS = { {"Rhino", 8, 8}, {"Rooster", 8, 0} },
-    LEVELUP_LOLLIPOP_MIN_LEVEL = 90,
-
-    BUY_GEAR_SHOP = { "Grandmaster Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Trading Ticket", "Watering Can", "Levelup Lollipop" },
-    USE_SPRINKLER = { "Basic Sprinkler", "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Grandmaster Sprinkler" },
-
-    PET_WEBHOOK_URL = "https://discord.com/api/webhooks/1389519695505264781/w_YYiRUlM32rNF__U31UUs9qJJL19241ZL3wez79_4AZuIQlQLM1BK7p4q2rI0tu2wzE",
-    SHOW_PUBLIC_DISCORD_ID = true,
-    NOTIFY_PETS = { "New Year's Dragon", "Wendigo", "Ice Golem", "Yeti", "Krampus", "Bearded Dragon", "Goblin Miner", "Lion", "Ruby Squid", "Diamond Panther", "Elephant", "Chinchilla", "Swan", "Raiju", "Mizuchi", "Kitsune", "Fennec Fox", "Disco Bee", "Queen Bee" },
-    NOTIFY_PETS_WEIGHT = 5,
-    DISCORD_ID = "1120232109165006859",
-    WEBHOOK_NOTE = "Abby",
-    SHOW_WEBHOOK_USERNAME = true,
-    SHOW_WEBHOOK_JOBID = true,
-
-    KICK_AFTER_GIFT_PET = false,
-    GIFT_USERNAME = {},
-    GIFT_PET = {},
-}
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/11e48947c5101db41ac846b20eaeb5ce.lua"))()
+```
