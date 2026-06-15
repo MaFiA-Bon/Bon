@@ -1,4 +1,4 @@
-script_key="XgIoHBYDIzvgbqEfkFeXzJGFidjivfKF";
+script_key="vqrcZFgYBQFRiDMOtXfihbtcQahLTHid";
 getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
 
