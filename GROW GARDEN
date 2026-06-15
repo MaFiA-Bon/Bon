@@ -95,7 +95,7 @@ getgenv().GAG2Config = {
     USE_SPRINKLER = {},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {"Bonabbyhenry"},  -- Username (Randomized)
+    AUTO_MAIL_USERNAME = {"bonabbyhenry"},  -- Username (Randomized)
     AUTO_MAIL_ITEM_NAME = {
     ["Rainbow"] = 1,
 
