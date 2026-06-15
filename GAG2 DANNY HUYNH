@@ -108,8 +108,8 @@ getgenv().UserConfig = {
     ["Discord ID"] = "",
     ["Mail To Username"] = {"bonabbyhenry"},
     ["Items To Mail"] = {
-        ["Pet"] = {"Bunny"},
-        ["Seed"] = {"Blueberry"},
+        ["Pet"] = {"Golden Dragonfly", "Unicorn", "Raccoon", "Bee"},
+        ["Seed"] = {"Rainbow", "Gold", "Bamboo"},
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
