@@ -24,10 +24,10 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 10, 
+        ["Carrot"] = 50, 
         ["Strawberry"] = 4,
         ["Blueberry"] = 4,
-        ["Tulip"] = 4,
+        ["Tulip"] = 50,
         ["Tomato"] = 4,
         ["Apple"] = 4,
         ["Bamboo"] = 50,
@@ -79,6 +79,9 @@ getgenv().GAG2Config = {
         ["Dragon's Breath"] = 999,
     },
 
+    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+
     SELL_ALL_DELAY = 20,
     EXPAND_PLOT = false,
     BUY_GEAR = {},  -- ["Gear Name"] = Amount
@@ -86,7 +89,7 @@ getgenv().GAG2Config = {
     USE_SPRINKLER = {},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {Bonabbyhenry},  -- Username (Randomized)
+    AUTO_MAIL_USERNAME = {Bonabbyhenry},  -- "Username" (Randomized)
     AUTO_MAIL_ITEM_NAME = {},  -- ["Item Name"] = Amount
     COLLECT_MAIL = true,
 
