@@ -1,120 +1,120 @@
-script_key="vqrcZFgYBQFRiDMOtXfihbtcQahLTHid";
-getgenv().GAG2Config = {
-    FPS_CAP = 5,
-    AUTO_UPDATE_RESTART = true,
-
-    BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Monkey"] = 99, 
-        ["Bee"] = 99, 
-        ["BlackDragon"] = 99, 
-        ["GoldenDragonfly"] = 99, 
-        ["Unicorn"] = 99, 
-        ["Raccoon"] = 99, 
-        ["IceSerpent"] = 99,
-
-        ["Robin"] = 5,
-        ["Deer"] = 5,
+setfpscap(5)
+script_key = "FoACmMfjCFWumbIBwPpFMXRaEQgrgdAw";
+getgenv().UserConfig = {
+    ["FPS Cap"] = 5,
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+    ["Limit Plant Seed"] = {
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 10,
+        ["Blueberry"] = 10,
+        ["Tulip"] = 10,
+        ["Tomato"] = 10,
+        ["Apple"] = 10,
+        ["Bamboo"] = 20,
+        ["Corn"] = 10,
+        ["Cactus"] = 10,
+        ["Pineangle"] = 10,
+        ["Mushroom"] = 20,
+        ["Green Bean"] = 20,
+        ["Banana"] = 20,
+        ["Grape"] = 20,
+        ["Coconut"] = 20,
+        ["Mango"] = 20,
+        ["Dragon Fruit"] = 20,
+        ["Acorn"] = 20,
+        ["Cherry"] = 20,
+        ["Sunflower"] = 20,
+        ["Venus Fly Trap"] = 20,
+        ["Pomegranate"] = 20,
+        ["Poison Apple"] = 20,
+        ["Moon Bloom"] = 20,
+        ["Dragon's Breath"] = 20,
     },
-
-    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
-        {"Unicorn", 5, 1}, 
-        {"GoldenDragonfly", 10, 2},
-        {"Robin", 5, 3},
-        {"Deer", 5, 4},
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 10,
+        ["Blueberry"] = 10,
+        ["Tulip"] = 10,
+        ["Tomato"] = 10,
+        ["Apple"] = 10,
+        ["Bamboo"] = 9999,
+        ["Corn"] = 10,
+        ["Cactus"] = 10,
+        ["Pineangle"] = 10,
+        ["Mushroom"] = 99999,
+        ["Green Bean"] = 10,
+        ["Banana"] = 10,
+        ["Grape"] = 10,
+        ["Coconut"] = 10,
+        ["Mango"] = 10,
+        ["Dragon Fruit"] = 10,
+        ["Acorn"] = 10,
+        ["Cherry"] = 10,
+        ["Sunflower"] = 10,
+        ["Venus Fly Trap"] = 10,
+        ["Pomegranate"] = 10,
+        ["Poison Apple"] = 10,
+        ["Moon Bloom"] = 10000,
+        ["Dragon's Breath"] = 10000,
     },
-
-    PLANT_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 50, 
-        ["Strawberry"] = 4,
-        ["Blueberry"] = 4,
-        ["Tulip"] = 50,
-        ["Tomato"] = 4,
-        ["Apple"] = 4,
-        ["Bamboo"] = 50,
-        ["Corn"] = 4,
-        ["Cactus"] = 4,
-        ["Pineapple"] = 4,
-        ["Mushroom"] = 50,
-        ["Green Bean"] = 50,
-        ["Banana"] = 50,
-        ["Grape"] = 50,
-        ["Coconut"] = 50,
-        ["Mango"] = 50,
-        ["Dragon Fruit"] = 50,
-        ["Acorn"] = 50,
-        ["Cherry"] = 50,
-        ["Sunflower"] = 50,
-        ["Venus Fly Trap"] = 50,
-        ["Pomegranate"] = 50,
-        ["Poison Apple"] = 50,
-        ["Moon Bloom"] = 50,
-        ["Dragon's Breath"] = 50,
+    ["Favorite"] = {
+        ["Horned Melon"] = {"Rainbow", "Gold"},
     },
-
-    BUY_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 999, 
-        ["Strawberry"] = 999,
-        ["Blueberry"] = 999,
-        ["Tulip"] = 999,
-        ["Tomato"] = 999,
-        ["Apple"] = 999,
-        ["Bamboo"] = 999,
-        ["Corn"] = 999,
-        ["Cactus"] = 999,
-        ["Pineapple"] = 999,
-        ["Mushroom"] = 999,
-        ["Green Bean"] = 999,
-        ["Banana"] = 999,
-        ["Grape"] = 999,
-        ["Coconut"] = 999,
-        ["Mango"] = 999,
-        ["Dragon Fruit"] = 999,
-        ["Acorn"] = 999,
-        ["Cherry"] = 999,
-        ["Sunflower"] = 999,
-        ["Venus Fly Trap"] = 999,
-        ["Pomegranate"] = 999,
-        ["Poison Apple"] = 999,
-        ["Moon Bloom"] = 999,
-        ["Dragon's Breath"] = 999,
+    ["Buy Pets"] = {
+        ["Monkey"] = 99,
+        ["Bee"] = 99,
+        ["Black Dragon"] = 99,
+        ["Golden Dragonfly"] = 99,
+        ["Unicorn"] = 99,
+        ["Raccoon"] = 99,
+        ["Ice Serpent"] = 99,
+        ["Robin"] = 0,
+        ["Deer"] = 0,
     },
-
-    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
-    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
-
-    SELL_ALL_DELAY = 20,
-    EXPAND_PLOT = false,
-    BUY_GEAR = {},  -- ["Gear Name"] = Amount
-    BUY_CRATE = {},  -- ["Crate Name"] = Amount
-    USE_SPRINKLER = {},  -- "Sprinkler Name"
-
-    -- Auto Mail
-    AUTO_MAIL_USERNAME = {"bonabbyhenry"},  -- "Username" (Randomized)
-    AUTO_MAIL_ITEM_NAME = {},  -- ["Item Name"] = Amount
-    ["Rainbow"] = 1,
-
-    ["Unicorn"] = 1,
-    ["Golden Dragonfly"] = 1,
-    ["Black Dragon"] = 1,
-    ["Ice Serpent"] = 1,
-    ["Raccoon"] = 1,
-    ["Monkey"] = 1,
-    ["Bee"] = 1,
-
-    ["Dragon's Breath"] = 1,
-    ["Moon Bloom"] = 1,
-    },  -- ["Item Name"] = Amount  
-    COLLECT_MAIL = true,
-
-    -- Discord
-    WEBHOOK_PET_NAME = {},
-    WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1389528057538412564/SE1zRnfxzzZ8LPMK1ldq6UDYGtHswhm3oedSMO73HuPqhmum5sVZ5lZzh0p_NhyZNUye",
-    DISCORD_ID = "",
-    WEBHOOK_NOTE = "",  -- Private Webhook
-    SHOW_PUBLIC_DISCORD_ID = true,
-    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
-    SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
+    ["Equip Pets"] = {
+        {"Unicorn", 5, 1},
+        {"Golden Dragonfly", 10, 2},
+        {"Deer", 5, 3},
+    },
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 1,
+    ["Unlock Pet Slots"] = 5,
+    ["Auto Collect Seed Packs"] = true,
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            -- "Common Watering Can",
+            -- "Common Sprinkler",
+            -- "Uncommon Sprinkler",
+            "Rare Sprinkler",
+            -- "Legendary Sprinkler",
+            -- "Super Sprinkler",
+            -- "Super Watering Can",
+        },
+        ["Gears To Use"] = {
+            -- "Common Watering Can",
+            -- "Common Sprinkler",
+            -- "Uncommon Sprinkler",
+            "Rare Sprinkler",
+            -- "Legendary Sprinkler",
+            -- "Super Sprinkler",
+            -- "Super Watering Can",
+        },
+    },
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1389528057538412564/SE1zRnfxzzZ8LPMK1ldq6UDYGtHswhm3oedSMO73HuPqhmum5sVZ5lZzh0p_NhyZNUye",
+    ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+    ["Webhook Seed Name"] = {"Rainbow", "Gold"},
+    ["Webhook Note"] = "xx",
+    ["Discord ID"] = "xx",
+    ["Mail To Username"] = {"bonabbyhenry"},
+    ["Items To Mail"] = {
+        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
+        ["Seed"] = {"Rainbow", "Gold", "Bamboo", "Mushroom"},
+    },
+    ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 200,
+    ["Blacklist Seed"] = {"Rainbow", "Gold"},
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
