@@ -63,7 +63,7 @@ getgenv().UserConfig = {
     },
     ["Buy Pets"] = {
         ["Monkey"] = 99,
-        ["Bee"] = 99,
+        ["Bee"] = 0,
         ["Black Dragon"] = 99,
         ["Golden Dragonfly"] = 99,
         ["Unicorn"] = 99,
@@ -109,8 +109,22 @@ getgenv().UserConfig = {
     ["Discord ID"] = "xx",
     ["Mail To Username"] = {"bonabbyhenry"},
     ["Items To Mail"] = {
-        ["Pet"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
-        ["Seed"] = {"Rainbow", "Gold", "Bamboo", "Mushroom"},
+        ["Pet"] = {
+            ["Golden Dragonfly"] = 1,
+            ["Unicorn"] = 1,
+            ["Raccoon"] = 1,
+            ["Monkey"] = 5,
+            ["Bee"] = 5,
+            ["Ice Serpent"] = 1,
+            ["Robin"] = 20,
+            ["Deer"] = 20,
+        },
+        ["Seed"] = {
+            ["Rainbow"] = 2,
+            ["Gold"] = 20,
+            ["Bamboo"] = 1000,
+            ["Mushroom"] = 1000,
+        },
     },
     ["Claim Mail"] = true,
     ["Auto Plant"] = true,
