@@ -101,7 +101,7 @@ getgenv().UserConfig = {
             -- "Super Watering Can",
         },
     },
-    ["Webhook URL"] = "https://discord.com/api/webhooks/1389528057538412564/SE1zRnfxzzZ8LPMK1ldq6UDYGtHswhm3oedSMO73HuPqhmum5sVZ5lZzh0p_NhyZNUye",
+    ["Webhook URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
     ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer"},
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
     ["Webhook Seed Name"] = {"Rainbow", "Gold"},
