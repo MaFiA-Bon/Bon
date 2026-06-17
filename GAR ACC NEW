@@ -1,97 +1,112 @@
 script_key="cBgzrLvvUfDlGvoCMGzwjtAvgRugAcVG";
 getgenv().GAG2Config = {
-    FPS_CAP = 5,  -- MUST USE 5+ FPS FOR TWEENING
     AUTO_UPDATE_RESTART = true,
 
     BUY_PET = {  -- ["Pet Name"] = Amount
-        ["Monkey"] = 99, 
-        ["Bee"] = 99, 
-        ["BlackDragon"] = 99, 
-        ["GoldenDragonfly"] = 99, 
-        ["Unicorn"] = 99, 
-        ["Raccoon"] = 99, 
-        ["IceSerpent"] = 99,
+        --Super--
+        ["Raccoon"] = 99,
+        ["BlackDragon"] = 99,
+        --["Ice Serpent"] = 99,
 
+        --Mythic--
+        ["Unicorn"] = 99,
+        ["GoldenDragonfly"] = 99,
+
+
+        ["Deer"] = 3,
         ["Robin"] = 5,
-        ["Deer"] = 5,
     },
 
     EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
         {"Unicorn", 5, 1}, 
         {"GoldenDragonfly", 10, 2},
-        {"Robin", 5, 3},
-        {"Deer", 5, 4},
+        {"Deer", 3, 3},
+        {"Robin", 5, 4},        
     },
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 50, 
-        ["Strawberry"] = 4,
-        ["Blueberry"] = 4,
-        ["Tulip"] = 50,
-        ["Tomato"] = 4,
-        ["Apple"] = 4,
-        ["Bamboo"] = 200,
-        ["Corn"] = 4,
-        ["Cactus"] = 4,
-        ["Pineapple"] = 4,
-        ["Mushroom"] = 200,
-        ["Green Bean"] = 200,
-        ["Banana"] = 50,
-        ["Grape"] = 50,
-        ["Coconut"] = 50,
-        ["Mango"] = 50,
+        ["Carrot"] = 2, 
+        ["Strawberry"] = 2,
+        ["Blueberry"] = 2,
+        ["Tulip"] = 2,
+        ["Tomato"] = 2,
+        ["Apple"] = 2,
+        ["Bamboo"] = 50,
+        ["Corn"] = 2,
+        ["Cactus"] = 2,
+        ["Pineapple"] = 5,
+        ["Mushroom"] = 50,
+        ["Green Bean"] = 50,
+        ["Banana"] = 5,
+        ["Grape"] = 30,
+        ["Coconut"] = 10,
+        ["Mango"] = 40,
         ["Dragon Fruit"] = 50,
         ["Acorn"] = 50,
         ["Cherry"] = 50,
-        ["Sunflower"] = 50,
-        ["Venus Fly Trap"] = 50,
-        ["Pomegranate"] = 50,
-        ["Poison Apple"] = 50,
-        ["Moon Bloom"] = 50,
-        ["Dragon's Breath"] = 50,
+        ["Sunflower"] = 10,
+        ["Venus Fly Trap"] = 40,
+        ["Pomegranate"] = 30,
+        ["Poison Apple"] = 40,
+        --["Moon Bloom"] = 50,
+        --["Dragon's Breath"] = 50,
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 9999, 
-        ["Strawberry"] = 9999,
-        ["Blueberry"] = 9999,
-        ["Tulip"] = 9999,
-        ["Tomato"] = 9999,
-        ["Apple"] = 9999,
-        ["Bamboo"] = 9999,
-        ["Corn"] = 9999,
-        ["Cactus"] = 9999,
-        ["Pineapple"] = 9999,
-        ["Mushroom"] = 9999,
-        ["Green Bean"] = 9999,
-        ["Banana"] = 9999,
-        ["Grape"] = 9999,
-        ["Coconut"] = 9999,
-        ["Mango"] = 9999,
-        ["Dragon Fruit"] = 9999,
-        ["Acorn"] = 9999,
-        ["Cherry"] = 9999,
-        ["Sunflower"] = 9999,
-        ["Venus Fly Trap"] = 9999,
-        ["Pomegranate"] = 9999,
-        ["Poison Apple"] = 9999,
-        ["Moon Bloom"] = 9999,
-        ["Dragon's Breath"] = 9999,
+        ["Carrot"] = 10, 
+        ["Strawberry"] = 20,
+        ["Blueberry"] = 20,
+        ["Tulip"] = 20,
+        ["Tomato"] = 20,
+        ["Apple"] = 20,
+        ["Bamboo"] = 999,
+        ["Corn"] = 20,
+        ["Cactus"] = 20,
+        ["Pineapple"] = 20,
+        ["Mushroom"] = 999,
+        ["Green Bean"] = 999,
+        ["Banana"] = 999,
+        ["Grape"] = 999,
+        ["Coconut"] = 999,
+        ["Mango"] = 999,
+        ["Dragon Fruit"] = 999,
+        ["Acorn"] = 999,
+        ["Cherry"] = 999,
+        ["Sunflower"] = 999,
+        ["Venus Fly Trap"] = 999,
+        ["Pomegranate"] = 999,
+        ["Poison Apple"] = 999,
+
+        ["Ghost Pepper"] = 999,
+        ["Moon Bloom"] = 999,
+        ["Dragon's Breath"] = 999,
     },
 
     COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean" },  -- Only collect fruit when have ANY mutation
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DELAY = 20,
-    FOCUS_RAINBOW_GOLD_SEED = false,  -- set true if public server (instant collect), false for slightly slower collect
-    EXPAND_PLOT = 2,  -- 0 = No expand, 3 = expand plot 3 times
+    EXPAND_PLOT = false,
     BUY_GEAR = {},  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
     USE_SPRINKLER = {},  -- "Sprinkler Name"
 
     -- Auto Mail
-    AUTO_MAIL_USERNAME = {},  -- "bonabbyhenry" (Randomized)
-    AUTO_MAIL_ITEM_NAME = {},  -- ["Item Name"] = Amount
+    AUTO_MAIL_USERNAME = {"bonabbyhenry"},  -- Username (Randomized)
+    AUTO_MAIL_ITEM_NAME = {
+    ["Rainbow"] = 1,
+
+    ["Unicorn"] = 1,
+    ["GoldenDragonfly"] = 1,
+    ["BlackDragon"] = 1,
+    ["IceSerpent"] = 1,
+    ["Raccoon"] = 1,
+    ["Monkey"] = 1,
+    ["Bee"] = 1,
+
+    ["Dragon's Breath"] = 1,
+    ["Moon Bloom"] = 1,
+    },  -- ["Item Name"] = Amount   
     COLLECT_MAIL = true,
 
     -- Discord
@@ -100,7 +115,7 @@ getgenv().GAG2Config = {
     WEBHOOK_URL = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
     DISCORD_ID = "",
     WEBHOOK_NOTE = "",  -- Private Webhook
-    SHOW_PUBLIC_DISCORD_ID = true,
+    SHOW_PUBLIC_DISCORD_ID = false,
     SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
     SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
