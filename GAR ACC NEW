@@ -86,7 +86,7 @@ getgenv().GAG2Config = {
     FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
 
     SELL_ALL_DELAY = 20,
-    EXPAND_PLOT = false,
+    EXPAND_PLOT = 2,
     BUY_GEAR = {},  -- ["Gear Name"] = Amount
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
     USE_SPRINKLER = {},  -- "Sprinkler Name"
