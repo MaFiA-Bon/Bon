@@ -121,7 +121,7 @@ getgenv().UserConfig = {
             ["Pomegranate"] = {Amount = 1, To = "ienvymacmaji"},
             ["Poison Apple"] = {Amount = 1, To = "ienvymacmaji"},
             ["Moon Bloom"] = {Amount = 1, To = "ienvymacmaji"},
-            ["Dragon's Breath"] {Amount = 1, To = "ienvymacmaji"},          
+            ["Dragon's Breath"] = {Amount = 1, To = "ienvymacmaji"},          
         },
 
     },
