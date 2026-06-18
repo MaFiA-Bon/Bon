@@ -66,7 +66,6 @@ getgenv().UserConfig = {
         ["Unicorn"] = 99,
         ["Raccoon"] = 99,
         ["Ice Serpent"] = 99,
-        ["Robin"] = 5,
         ["Deer"] = 5,
     },
     ["Equip Pets"] = {
@@ -110,14 +109,12 @@ getgenv().UserConfig = {
             ["Raccoon"] = 1,
             ["Monkey"] = 1,
             ["Bee"] = 1,
-            ["Ice Serpent"] = 1,
-            ["Robin"] = 1,         
+            ["Ice Serpent"] = 1,         
         },
       
   ["Seed"] = {
             ["Rainbow"] = 1,
             ["Gold"] = 5,
-            ["Bamboo"] = 500,
             ["Mushroom"] = 50,
             ["Venus Fly Trap"] = 1,
             ["Pomegranate"] = 1,
