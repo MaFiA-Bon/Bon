@@ -95,6 +95,10 @@ getgenv().GAG2Config = {
     AUTO_MAIL_USERNAME = {"bonabbyhenry"},  -- Username (Randomized)
     AUTO_MAIL_ITEM_NAME = {
     ["Rainbow"] = 1,
+    ["Venus Fly Trap"] = 1,
+    ["Ghost Pepper"] = 999,
+    ["Moon Bloom"] = 999,
+    ["Dragon's Breath"] = 999,
 
     ["Unicorn"] = 1,
     ["GoldenDragonfly"] = 1,
