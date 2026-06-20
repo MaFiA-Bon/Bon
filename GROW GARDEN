@@ -116,7 +116,7 @@ getgenv().UserConfig = {
             ["Bear"] = 1,
         },
       
-  ["Seed"] = {
+        ["Seed"] = {
             ["Rainbow"] = 1,
             ["Bamboo"] = 999,
             ["Gold"] = 1,
@@ -127,7 +127,7 @@ getgenv().UserConfig = {
             ["Moon Bloom"] = 1,
             ["Dragon's Breath"] = 1,          
         },
-  ["Gear"] = {
+        ["Gear"] = {
             ["Super Watering Can"] = 1,
             ["Super Sprinkler"] = 1,
         },
