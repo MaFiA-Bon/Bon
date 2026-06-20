@@ -69,7 +69,7 @@ getgenv().UserConfig = {
         ["Ice Serpent"] = 99,
         ["Deer"] = 5,
         ["Robin"] = 5,
-        ["Bear"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        ["Bear"] = {Normal = 99, Big = 99, Huge = 99, Rainbow = 99},
     },
     ["Equip Pets"] = {
           {"Deer", 5, 1},
