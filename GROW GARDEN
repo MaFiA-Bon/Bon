@@ -56,6 +56,7 @@ getgenv().UserConfig = {
         ["Poison Apple"] = 999,
         ["Moon Bloom"] = 999,
         ["Dragon's Breath"] = 999,
+        ["Venom Spitter"] = 9999,
     },
     ["Favorite"] = {},
     ["Buy Pets"] = {
@@ -111,7 +112,8 @@ getgenv().UserConfig = {
             ["Monkey"] = 1,
             ["Bee"] = 1,
             ["Robin"] = 1,
-            ["Ice Serpent"] = 1,         
+            ["Ice Serpent"] = 1,
+            ["Bear"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
         },
       
   ["Seed"] = {
