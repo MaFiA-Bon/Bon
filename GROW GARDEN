@@ -61,7 +61,6 @@ getgenv().UserConfig = {
     ["Favorite"] = {},
     ["Buy Pets"] = {
         ["Monkey"] = 99,
-        ["Bee"] = 99,
         ["Black Dragon"] = 99,
         ["Golden Dragonfly"] = 99,
         ["Unicorn"] = 99,
