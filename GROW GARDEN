@@ -114,6 +114,9 @@ getgenv().UserConfig = {
             ["Gold"] = 1,
             ["Mushroom"] = 20,
             ["Dragon's Breath"] = 1,
+            ["Venus Fly Trap"] = 1,
+            ["Moon Bloom"] = 1,
+            ["Venom Spitter"] = 1,
         },
         ["Gear"] = {
             ["Super Sprinkler"] = 1,
