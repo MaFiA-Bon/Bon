@@ -116,7 +116,6 @@ getgenv().UserConfig = {
       
         ["Seed"] = {
             ["Rainbow"] = 1,
-            ["Bamboo"] = 999,
             ["Gold"] = 1,
             ["Mushroom"] = 20,
             ["Venus Fly Trap"] = 1,
