@@ -117,8 +117,6 @@ getgenv().GAG2Config = {
 
     ["Dragon's Breath"] = 1,
     ["Moon Bloom"] = 1,
-
-  
     COLLECT_MAIL = true,
 
     -- Discord
