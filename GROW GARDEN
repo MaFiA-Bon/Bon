@@ -115,6 +115,7 @@ getgenv().UserConfig = {
         },
       
         ["Seed"] = {
+            {Amount = 999, To = "abby020420"},
             ["Rainbow"] = 1,
             ["Gold"] = 1,
             ["Mushroom"] = 20,
