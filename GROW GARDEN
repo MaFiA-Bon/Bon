@@ -4,12 +4,12 @@ getgenv().GAG2Config = {
     AUTO_UPDATE_RESTART = true,
     COLLECT_FRUIT_DELAY = 20,
 
-    BUY_PET = {  -- ["Pet Name"] = Amount 
-        ["BlackDragon"] = 99, 
-        ["GoldenDragonfly"] = 99, 
+    BUY_PET = {  -- ["Pet Name"] = Amount
+        ["BlackDragon"] = 99,
+        ["GoldenDragonfly"] = 99,
         ["Unicorn"] = 99,
-        ["Bear"] = 99, 
-        ["Raccoon"] = 99, 
+        ["Bear"] = 99,
+        ["Raccoon"] = 99,
         ["IceSerpent"] = 99,
 
         ["Robin"] = 5,
@@ -22,7 +22,7 @@ getgenv().GAG2Config = {
     },
 
     PLANT_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 1000, 
+        ["Carrot"] = 1000,
         ["Strawberry"] = 10,
         ["Blueberry"] = 10,
         ["Tulip"] = 1000,
@@ -51,7 +51,7 @@ getgenv().GAG2Config = {
     },
 
     BUY_SEED = {  -- ["Seed Name"] = Amount
-        ["Carrot"] = 999, 
+        ["Carrot"] = 999,
         ["Strawberry"] = 999,
         ["Blueberry"] = 999,
         ["Tulip"] = 999,
@@ -105,8 +105,7 @@ getgenv().GAG2Config = {
     ["Mushroom"] = 20,
     ["Dragon's Breath"] = 1,
     ["Moon Bloom"] = 1,
-
-    ["Unicorn"] = 1,
+     ["Unicorn"] = 1,
     ["GoldenDragonfly"] = 1,
     ["BlackDragon"] = 1,
     ["IceSerpent"] = 1,
@@ -114,9 +113,10 @@ getgenv().GAG2Config = {
     ["Monkey"] = 1,
     ["Bee"] = 1,
     ["Bear"] = 1,
-
     ["Dragon's Breath"] = 1,
     ["Moon Bloom"] = 1,
+    ["Super Watering Can"] = 1,
+    ["Super Sprinkler"] = 1,
     COLLECT_MAIL = true,
 
     -- Discord
