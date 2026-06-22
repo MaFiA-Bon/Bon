@@ -89,7 +89,7 @@ getgenv().UserConfig = {
              "Common Sprinkler",
              "Uncommon Sprinkler",
              "Rare Sprinkler",
-             "Legendary Sprinkler",
+            -- "Legendary Sprinkler",
             -- "Super Sprinkler",
             -- "Super Watering Can",
         },
