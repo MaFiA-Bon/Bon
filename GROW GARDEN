@@ -16,11 +16,11 @@ getgenv().UserConfig = {
         ["Tomato"] = 20,         -- 🟡 Early
         ["Apple"] = 20,          -- 🟡 Early
 
-        ["Bamboo"] = 500,        -- 🟢 Main Farm
+        ["Bamboo"] = 9999,        -- 🟢 Main Farm
         ["Corn"] = 150,          -- 🟢 Main Farm
         ["Cactus"] = 100,        -- 🟢 Main Farm
         ["Pineapple"] = 100,      -- 🟡 Backup
-        ["Mushroom"] = 999,      -- 🟢 Main Farm
+        ["Mushroom"] = 9999,      -- 🟢 Main Farm
         ["Green Bean"] = 100,    -- 🟢 Main Farm
 
         ["Banana"] = 50,         -- 🟡 Mid
@@ -32,7 +32,7 @@ getgenv().UserConfig = {
         ["Acorn"] = 50,          -- 🔵 VIP
         ["Cherry"] = 50,         -- 🔵 VIP
         ["Sunflower"] = 50,      -- 🟣 Rare
-        ["Venus Fly Trap"] = 999, -- 🟣 Rare
+        ["Venus Fly Trap"] = 9999, -- 🟣 Rare
         ["Pomegranate"] = 50,    -- 🟣 Rare
         ["Poison Apple"] = 50,   -- 🟣 Rare
         ["Venom Spitter"] = 50,  -- 🟣 Rare
