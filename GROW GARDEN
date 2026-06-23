@@ -100,6 +100,7 @@ getgenv().UserConfig = {
             ["Venus Fly Trap"] = 1,
             ["Moon Bloom"] = 1,
             ["Venom Spitter"] = 1,
+            ["Bamboo"] = {Amount = 500, To = "PhongCaleb"},
         },
         ["Gear"] = {
             ["Super Sprinkler"] = 1, 
