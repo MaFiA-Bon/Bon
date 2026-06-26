@@ -122,7 +122,7 @@ getgenv().UserConfig = {
     ["Blacklist Shovel"] = {"Dragon's Breath", "Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"},
     ["Shovel Plant Once"] = {},
     ["Claim Mail"] = true,
-    ["Auto Plant"] = false,
+    ["Auto Plant"] = true,
     ["Limit Auto Plant"] = 800,
     ["Blacklist Seed"] = {"Rainbow","Gold", "Dragon's Breath", "Moon Bloom", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap"}
 }
