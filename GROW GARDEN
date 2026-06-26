@@ -74,9 +74,9 @@ getgenv().UserConfig = {
     ["Webhook Seed Name"] = {""Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer","Bear""},
     ["Webhook Note"] = "",
     ["Discord ID"] = "",
-["Mail To Username"] = {"abby020420"},
+["Mail To Username"] = {"kharipate2hrgbrfef"},
     ["Items To Mail"] = {
-        ["Pet"] = {
+         ["Pet"] = {
             ["Golden Dragonfly"] = 1,
             ["Unicorn"] = 1,
             ["Raccoon"] = 1,
@@ -86,17 +86,17 @@ getgenv().UserConfig = {
             ["Bear"] = 1,
         },
         ["Seed"] = {
-            ["Rainbow"] = 1,
-            ["Gold"] = 1,
-            ["Mushroom"] = 5,
+            ["Rainbow"] = {Amount = 5, To = "kellandouglas7grggrg"},
+            ["Gold"] = {Amount = 20, To = "roydukeytgytt"},
+            ["Mushroom"] = {Amount = 50, To = "joedavide7ggfgyh"},
             ["Dragon's Breath"] = 1,
             ["Venus Fly Trap"] = {Amount = 1, To = "PhongCaleb"},
-            ["Moon Bloom"] = {Amount = 1, To = "PhongCaleb"},
-            ["Venom Spitter"] = {Amount = 1, To = "PhongCaleb"},
-            ["Bamboo"] = {Amount = 500, To = "PhongCaleb"},
+            ["Moon Bloom"] = 1,
+            ["Venom Spitter"] = 1,
+            ["Bamboo"] = {Amount = 999, To = "kermitalford4322hgyt"},
         },
         ["Gear"] = {
-            ["Super Sprinkler"] = 1, 
+            ["Super Sprinkler"] = {Amount = 1, To = "PhongCaleb"}, 
             ["Super Watering Can"] = 1,
             ["Legendary Sprinkler"] = 1,
 	}
