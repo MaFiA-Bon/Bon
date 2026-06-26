@@ -9,8 +9,8 @@ getgenv().UserConfig = {
     ["Limit Plant Seed"] = {
         ["Carrot"] = 5,
     },
-    ["Limit Buy Seed"] = {        
-        ["Carrot"] = 2, 
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 2,
         ["Strawberry"] = 2,
         ["Blueberry"] = 2,
         ["Tulip"] = 5,
@@ -34,7 +34,7 @@ getgenv().UserConfig = {
         ["Raccoon"] = 999,
         ["Unicorn"] = 999,
         ["Golden Dragonfly"] = 999,
-        ["Black Dragon"] = 999,       
+        ["Black Dragon"] = 999,
         ["Frog"] = {Huge = 99, Rainbow = 99}, -- mua 99 Huge, 99 Rainbow (không mua pet Normal, Big)
         ["Bunny"] = {Huge = 99, Rainbow = 99},
         ["Owl"] = {Huge = 99, Rainbow = 99},
@@ -96,7 +96,7 @@ getgenv().UserConfig = {
             ["Bamboo"] = {Amount = 500, To = "PhongCaleb"},
         },
         ["Gear"] = {
-            ["Super Sprinkler"] = 1, 
+            ["Super Sprinkler"] = 1,
             ["Super Watering Can"] = 1,
             ["Legendary Sprinkler"] = 1,
 	}
