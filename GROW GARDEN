@@ -9,8 +9,8 @@ getgenv().UserConfig = {
     ["Limit Plant Seed"] = {
         ["Carrot"] = 5,
     },
-    ["Limit Buy Seed"] = {        
-        ["Carrot"] = 2, 
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 2,
         ["Strawberry"] = 2,
         ["Blueberry"] = 2,
         ["Tulip"] = 5,
@@ -34,14 +34,14 @@ getgenv().UserConfig = {
         ["Raccoon"] = 999,
         ["Unicorn"] = 999,
         ["Golden Dragonfly"] = 999,
-        ["Black Dragon"] = 999,       
+        ["Black Dragon"] = 999,
         ["Frog"] = {Huge = 99, Rainbow = 99}, -- mua 99 Huge, 99 Rainbow (không mua pet Normal, Big)
         ["Bunny"] = {Huge = 99, Rainbow = 99},
         ["Owl"] = {Huge = 99, Rainbow = 99},
         ["Deer"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
         ["Robin"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Bee"] = {Big = 99, Huge = 99, Rainbow = 99},
-        ["Bear"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Bear"] = 99,
         ["Monkey"] = {Big = 99, Huge = 99, Rainbow = 99},
     },
     ["Equip Pets"] = {
@@ -71,7 +71,7 @@ getgenv().UserConfig = {
     ["Webhook URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
     ["Webhook Pet Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Ice Serpent"},
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
-    ["Webhook Seed Name"] = {""Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer","Bear""},
+    ["Webhook Seed Name"] = {"Golden Dragonfly","Unicorn","Raccoon","Monkey","Bee","Ice Serpent","Robin","Deer","Bear"},
     ["Webhook Note"] = "",
     ["Discord ID"] = "",
 ["Mail To Username"] = {"abby020420"},
@@ -96,7 +96,7 @@ getgenv().UserConfig = {
             ["Bamboo"] = {Amount = 500, To = "PhongCaleb"},
         },
         ["Gear"] = {
-            ["Super Sprinkler"] = 1, 
+            ["Super Sprinkler"] = 1,
             ["Super Watering Can"] = 1,
             ["Legendary Sprinkler"] = 1,
 	}
