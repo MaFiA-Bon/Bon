@@ -48,7 +48,7 @@ getgenv().UserConfig = {
 
         --["Blueberry"] = 4,
         --["Strawberry"] = 4,
-        ["Carrot"] = 300,
+        ["Carrot"] = 1,
     },
 
     ["Limit Buy Seed"] = {
@@ -67,7 +67,7 @@ getgenv().UserConfig = {
         ["Corn"] = 5,
         ["Apple"] = 5,
         ["Tulip"] = 300,
-        ["Carrot"] = 200,
+        ["Carrot"] = 999,
     },
 
     ["Favorite"] = {
@@ -75,7 +75,7 @@ getgenv().UserConfig = {
     },
     ["Buy Pets"] = {
         ["Raccoon"] = 999,
-        --["Unicorn"] = 999,
+        ["Unicorn"] = 999,
         --["Golden Dragonfly"] = 999,
         ["Black Dragon"] = 999,
 
@@ -140,6 +140,40 @@ getgenv().UserConfig = {
     ["Harvest Mutation Only"] = {
         --"Bamboo", -- Chỉ thu hoạch Bamboo đột biến (bất kỳ loại đột biến nào)
         "Mushroom",
+    },
+["Mail To Username"] = {"PhongCaleb"},
+    ["Items To Mail"] = {
+        ["Pet"] = {
+            ["Golden Dragonfly"] = 1,
+            ["Unicorn"] = 1,
+            ["Raccoon"] = 1,
+            ["Ice Serpent"] = 1,
+            ["Monkey"] = 1,
+            ["Bee"] = 1,
+            ["Bear"] = 1,
+            ["Turtle"] = {Big = 1, Huge = 1, Rainbow = 1},
+            ["Robin"] = {Big = 1, Huge = 1, Rainbow = 1},
+            ["Frog"] = {Big = 1, Huge = 1, Rainbow = 1},
+            ["Bunny"] = {Big = 1, Huge = 1, Rainbow = 1},
+            ["Owl"] = {Big = 1, Huge = 1, Rainbow = 1},
+            ["Deer"] = {Big = 1, Huge = 1, Rainbow = 1},
+        },
+        ["Seed"] = {
+            ["Rainbow"] = {Amount = 10, To = "NexusGrace_Cinder201"},
+            ["Mushroom"] = {Amount = 50, To = "NexusGrace_Cinder201"},
+            ["Mega"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+            ["Dragon's Breath"] = {Amount = 0, To = "NexusGrace_Cinder201"},
+            ["Pomegranate"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+            ["Venus Fly Trap"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+            ["Moon Bloom"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+            ["Venom Spitter"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+            ["Hypno Bloom"] = {Amount = 1, To = "NexusGrace_Cinder201"},
+        },
+        ["Gear"] = {
+            ["Super Sprinkler"] = {Amount = 2, To = "JtoWkzHboD"},
+            ["Super Watering Can"] = {Amount = 2, To = "JtoWkzHboD"},
+            ["Legendary Sprinkler"] = {Amount = 20, To = "JtoWkzHboD"},
+    }
     },
     ["Auto Plant"] = false,
     ["Limit Auto Plant"] = 700,
