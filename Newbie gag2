@@ -1,0 +1,70 @@
+setfpscap(5)
+script_key = "jaLXmziuPHXvDrNVpBwlyRVISJzaweeL"; 
+getgenv().UserConfig = {
+    ["FPS Cap"] = 5,
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+    ["Limit Plant Seed"] = { -- không cần dùng tới
+    },
+    ["Limit Buy Seed"] = {
+        ["Carrot"] = 5, 
+        ["Strawberry"] = 5,
+        ["Blueberry"] = 5,
+        ["Tulip"] = 5,
+        ["Tomato"] = 5,
+        ["Apple"] = 5,
+        ["Bamboo"] = 300,
+        ["Corn"] = 5,
+        ["Cactus"] = 5,
+        ["Pineapple"] = 5, 
+        ["Mushroom"] = 300, 
+    },
+    ["Blacklist Shovel"] = {"Mega", "Gold", "Rainbow", "Dragon's Breath", "Hypno Bloom" ,"Moon Bloom", "Ghost Pepper", "Venom Spitter", "Poison Apple", "Pomegranate", "Venus Fly Trap", "Briar Rose", "Romanesco"},
+    ["Shovel Plant Once"] = {},
+    ["Harvest Mutation Only"] = {
+        "Bamboo",
+        "Mushroom",
+    },
+    ["Buy Pets"] = {
+        ["Bunny"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
+        --["Unicorn"] = 6,
+        --["Raccoon"] = 99,
+    },
+    ["Equip Pets"] = {
+        {"Bunny", 6, 1},
+    },
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 3,
+    ["Unlock Pet Slots"] = 5,
+    ["Auto Collect Seed Packs"] = true,
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            "Common Watering Can",
+            "Common Sprinkler",
+            "Uncommon Sprinkler",
+            "Rare Sprinkler",
+            --"Legendary Sprinkler",
+            "Super Sprinkler",
+            "Super Watering Can",
+        },
+        ["Gears To Use"] = {
+            "Common Watering Can",
+            "Common Sprinkler",
+            "Uncommon Sprinkler",
+            "Rare Sprinkler",
+        },
+    },
+    -- CẤU HÌNH GỬI MAIL (Điền chính xác Username của acc nhận đồ)
+    ["Mail To Username"] = {"JtoWkzHboD"},
+    ["Items To Mail"] = {
+        ["Gear"] = {
+            ["Super Sprinkler"] = 1,
+            ["Super Watering Can"] = 1,
+            ["Legendary Sprinkler"] = 1,
+        },
+    },
+    ["Claim Mail"] = true,
+    ["Auto Plant"] = true,
+    ["Limit Auto Plant"] = 500,
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/66adeacbfb46c0ea4883aefee367292a.lua"))()
