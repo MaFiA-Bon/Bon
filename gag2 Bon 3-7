@@ -137,40 +137,6 @@ getgenv().UserConfig = {
     ["Harvest Mutation Only"] = {
         --"Bamboo", -- Chỉ thu hoạch Bamboo đột biến (bất kỳ loại đột biến nào)
         "Mushroom",
-["Mail To Username"] = {"PhongCaleb"},
-    ["Items To Mail"] = {
-        ["Pet"] = {
-            ["Golden Dragonfly"] = 1,
-            ["Unicorn"] = 1,
-            ["Raccoon"] = 1,
-            ["Ice Serpent"] = 1,
-            ["Monkey"] = {Big = 1, Huge = 1, Rainbow = 1},
-            ["Bee"] = {Big = 1, Huge = 1, Rainbow = 1},
-            ["Bear"] = 1,
-            ["Turtle"] = {Big = 1, Huge = 1, Rainbow = 1},
-            ["Robin"] = {Big = 1, Huge = 1, Rainbow = 1},
-            ["Frog"] = {Big = 99, Huge = 99, Rainbow = 99},
-            ["Bunny"] = {Big = 99, Huge = 99, Rainbow = 99},
-            ["Owl"] = {Huge = 99, Rainbow = 99},
-            ["Deer"] = {Big = 99, Huge = 99, Rainbow = 99},
-        },
-        ["Seed"] = {
-            ["Rainbow"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Gold"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Carrot"] = {Amount = 50, To = "Xz_Frostbit3qqAlphaF"},
-            ["Mushroom"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Mega"] = {Amount = 1, To = "NexusGrace_Cinder201"},
-            ["Dragon's Breath"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Venus Fly Trap"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Moon Bloom"] = {Amount = 1, To = "NexusGrace_Cinder201"},
-            ["Venom Spitter"] = {Amount = 50, To = "NexusGrace_Cinder201"},
-            ["Hypno Bloom"] = {Amount = 1, To = "NexusGrace_Cinder201"},
-        },
-        ["Gear"] = {
-            ["Super Sprinkler"] = {Amount = 2, To = "JtoWkzHboD"},
-            ["Super Watering Can"] = {Amount = 2, To = "JtoWkzHboD"},
-            ["Legendary Sprinkler"] = {Amount = 20, To = "JtoWkzHboD"},
-    }
     },
     ["Auto Plant"] = false,
     ["Limit Auto Plant"] = 700,
