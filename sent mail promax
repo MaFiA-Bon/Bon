@@ -61,13 +61,13 @@ getgenv().MailConfig = {
             ["Hypno Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
             ["Moon Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
 
-            ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ"}, "Thunder77Byte1:Bonevn94Z0Sk"}},
+            ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ"}, "Thunder77Byte1"}},
         },
 
         ["Gear"] = {
             ["Super Sprinkler"] = {Amount = 1, To = {"JtoWkzHboD"}},
             ["Super Watering Can"] = {Amount = 1, To = {"JtoWkzHboD"}},
-			["Legendary Sprinkler"] = 30,
+			["Legendary Sprinkler"] = {Amount = 1, To = {"JtoWkzHboD"}},
         },
     }
 }
