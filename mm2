@@ -1,11 +1,79 @@
-script_key="88f8e70880be63e5b5334c11199b3932"
-getgenv().YuukiHub = {
-    ["Change Acc Custom"] = true, -- Auto Change Account After Do Daily Quest
-    ["Change Mode"] = "Yummy", -- Yummy | Decode
-    ["Original ID"] = "", -- Support Decode
-    ["Completed ID"] = "", -- Support Decode
-    ["Webhook URL"] = "https://discord.com/api/webhooks/1450345724968697967/uwZ8SUmZ3dPMk5uqaFgXvXau7OzPjMLAfgq2OcdRU7Vz8iYjUu2NQEGTbthwPPE_IuoU",
-    ["Discord Id"] = "",
-    ["Performance"] = {["FPS Lock"] = 3,["Low CPU"] = true}
+task.wait(90)
+getgenv().MailConfig = {
+    ["Mail Time Window"] = {
+        "08:30 - 08:40",
+        "09:00 - 09:10",
+        "09:30 - 09:40",
+        "10:00 - 10:10",
+        "10:30 - 10:40",
+        "11:00 - 11:10",
+        "11:30 - 11:40",
+
+        "14:00 - 14:10",
+        "14:30 - 14:40",
+        "15:00 - 15:10",
+        "15:30 - 15:40",
+        "16:00 - 16:10",
+        "16:30 - 16:40",
+        "17:00 - 17:10",
+        "17:30 - 17:40",
+
+        "19:00 - 19:10",
+        "19:30 - 19:40",
+        "20:00 - 20:10",
+        "20:30 - 20:40",
+        "21:00 - 21:10",
+        "21:30 - 21:40",
+        "22:00 - 22:10",
+        "22:30 - 22:40",
+        "23:00 - 23:10",
+        "23:30 - 23:40",
+    },
+
+    ["Claim Mail"] = false,
+    ["Mail Cooldown Secs"] = {60, 300},
+    ["Mail To Username"] = {"kharipate2hrgbrfef"},
+
+    ["Items To Mail"] = {
+        ["Pet"] = {
+            ["Golden Dragonfly"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Unicorn"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Raccoon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Ice Serpent"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+
+            ["Frog"] = {Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Bunny"] = {Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Owl"] = {Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+            ["Deer"] = {Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Robin"] = {Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Bee"] = {Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Turtle"] = {Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Bear"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Monkey"] = {Big = 1, Huge = 1, Rainbow = 1, To = {PhongCaleb}},
+            ["Black Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {kharipate2hrgbrfef}},
+        },
+
+        ["Seed"] = {
+            --["Rainbow"] = {Amount = 1, To = {"kellandouglas7grggrg"}},
+            --["Gold"] = {Amount = 5, To = {"kellandouglas7grggrg"}},
+            ["Mega"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+            ["Dragon's Breath"] = {Amount = 1, To = {"roydukeytgytt"}},
+            ["Mushroom"] = {Amount = 1, To = {"roydukeytgytt"}},
+            ["Hypno Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+            ["Moon Bloom"] = {Amount = 1, To = {"roydukeytgytt"}},
+            ["Venus Fly Trap"] = {Amount = 1, To = {"roydukeytgytt"}},
+            ["Venom Spitter"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+            ["Bamboo"] = {Amount = 999, To = "kermitalford4322hgyt"},
+
+            ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ"}, "Thunder77Byte1"}},
+        },
+
+        ["Gear"] = {
+            ["Super Sprinkler"] = {Amount = 1, To = {"JtoWkzHboD"}},
+            ["Super Watering Can"] = {Amount = 1, To = {"kharipate2hrgbrfef"}},
+			["Legendary Sprinkler"] = {Amount = 1, To = {"kharipate2hrgbrfef"}},
+        },
+    }
 }
-loadstring(game:HttpGet('https://yuukihubz.net/scripts/94f86c5f71845e76baff4b7b1e971f20'))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1032e5c52568b7657b19e3f62ebaac8e.lua"))()
