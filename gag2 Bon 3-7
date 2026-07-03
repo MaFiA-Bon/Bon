@@ -37,17 +37,17 @@ getgenv().UserConfig = {
 
         --Rare--
         ["Bamboo"] = 999,
-        ["Pineapple"] = 5,
-        ["Cactus"] = 5,
-        ["Corn"] = 5,
+        ["Pineapple"] = 20,
+        ["Cactus"] = 20,
+        ["Corn"] = 20,
 
         --Uncommon--
-        ["Apple"] = 5,
-        ["Tomato"] = 5,
+        ["Apple"] = 20,
+        ["Tomato"] = 20,
         ["Tulip"] = 300,
 
-        --["Blueberry"] = 4,
-        --["Strawberry"] = 4,
+        ["Blueberry"] = 5,
+        ["Strawberry"] = 5,
         --["Carrot"] = 2,
     },
 
@@ -58,14 +58,15 @@ getgenv().UserConfig = {
         ["Venom Spitter"] = 100,
         ["Cherry"] = 100,
         ["Dragon Fruit"] = 100,
-        ["Green Bean"] = 5,
+        ["Green Bean"] = 20,
         ["Mushroom"] = 9999,
         ["Bamboo"] = 9999,
-
+        ["Grape"] = 5,
+        ["Pineapple"] = 5,
         ["Banana"] = 5,
-        --["Cactus"] = 1,
-        --["Corn"] = 1,
-        --["Apple"] = 1,
+        ["Cactus"] = 5,
+        ["Corn"] = 5,
+        ["Apple"] = 5,
         ["Tulip"] = 300,
         ["Carrot"] = 99999,
     },
@@ -79,7 +80,6 @@ getgenv().UserConfig = {
         --["Golden Dragonfly"] = 999,
         ["Black Dragon"] = 999,
 
-        ["Unicorn"] = {Normal = 3, Big = 99, Huge = 99, Rainbow = 99},
         ["Golden Dragonfly"] = {Big = 99, Huge = 99, Rainbow = 99},
 
         ["Turtle"] = {Big = 99, Huge = 99, Rainbow = 99},
@@ -165,7 +165,7 @@ getgenv().UserConfig = {
         "Mushroom",
         "Bamboo",
         "Tulip",
-        --"Pineapple",
+        "Pineapple",
         --"Cactus",
         --"Corn",
         --"Apple",
@@ -173,7 +173,7 @@ getgenv().UserConfig = {
 
         --["Green Bean"] = {"Rainbow", "Mega", "Gold"},
         --["Banana"] = {"Rainbow", "Mega", "Gold"},
-        ["Pineapple"] = {"Rainbow", "Mega", "Gold"},
+        --["Pineapple"] = {"Rainbow", "Mega", "Gold"},
         ["Cactus"] = {"Rainbow", "Mega", "Gold"},
         ["Corn"] = {"Rainbow", "Mega", "Gold"},
         ["Apple"] = {"Rainbow", "Mega", "Gold"},
@@ -185,11 +185,11 @@ getgenv().UserConfig = {
     ["Shovel Plant Once"] = {
         "Strawberry",
         "Blueberry",
-        "Tomato",
-        "Apple",
-        "Corn",
-        "Cactus",
-        "Pineapple",
+        --"Tomato",
+       --"Apple",
+        --"Corn",
+        --"Cactus",
+        --"Pineapple",
     },
 
     ["Blacklist Seed"] = {
