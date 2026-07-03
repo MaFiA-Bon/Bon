@@ -62,7 +62,7 @@ getgenv().MailConfig = {
             ["Hypno Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
             ["Moon Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
 
-            ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ"}, "Thunder77Byte1"}},
+            ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ", "Thunder77Byte1"}},
         },
 
         ["Gear"] = {
