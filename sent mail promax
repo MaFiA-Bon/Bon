@@ -60,6 +60,9 @@ getgenv().MailConfig = {
             ["Dragon's Breath"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
             ["Hypno Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
             ["Moon Bloom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+			["Mushroom"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+            ["Venus Fly Trap"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
+            ["Venom Spitter"] = {Amount = 1, To = {"NexusGrace_Cinder201"}},
 
             ["Carrot"] = {Amount = 200, To = {"Xz_Frostbit3qqAlphaF", "Xz_FrostbiteSXHyperZ"}, "Thunder77Byte1"}},
         },
