@@ -23,18 +23,18 @@ getgenv().UserConfig = {
         ["Rainbow"] = 999,
         --Legendary--
         ["Rocket Pop"] = 9999,
-        ["Fire Fern"] = 100,
-        ["Sunflower"] = 100,
+        --["Fire Fern"] = 100,
+        ["Sunflower"] = 50,
         ["Cherry"] = 100,
         ["Acorn"] = 50,
-        ["Dragon Fruit"] = 150,
+        ["Dragon Fruit"] = 100,
 
         --Epic--
-        ["Mango"] = 50,
-        ["Coconut"] = 50,
-        ["Grape"] = 50,
-        ["Banana"] = 30,
-        ["Green Bean"] = 20,
+        ["Mango"] = 30,
+        ["Coconut"] = 20,
+        ["Grape"] = 30,
+        ["Banana"] = 20,
+        ["Green Bean"] = 10,
         ["Mushroom"] = 999,
 
         --Rare--
@@ -93,7 +93,7 @@ getgenv().UserConfig = {
         ["Horned Melon"] = {},
     },
     ["Buy Pets"] = {
-        ["Butterfly"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Butterfly"] = {Normal = 999, Big = 99, Huge = 99, Rainbow = 99},
         ["Bald Eagle"] = 999,
         ["Raccoon"] = 999,
         --["Unicorn"] = 999,
@@ -157,7 +157,8 @@ getgenv().UserConfig = {
     ["Webhook Gear Name"] = {"Super Sprinkler", "Super Watering Can"},
     ["Harvest Mutation Only"] = {
         --"Bamboo", -- Chỉ thu hoạch Bamboo đột biến (bất kỳ loại đột biến nào)
-        "Mushroom",
+        --"Mushroom",
+        "Rocket Pop",
     },
     ["Auto Plant"] = false,
     ["Limit Auto Plant"] = 700,
