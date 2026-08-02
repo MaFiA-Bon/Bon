@@ -1,4 +1,7 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
 script_key = "jaLXmziuPHXvDrNVpBwlyRVISJzaweeL"; -- Điền Key script của bạn vào đây
+
 getgenv().UserConfig = {
 	["Auto Double Or Nothing"] = false, -- Tự động bật tính năng Double Or Nothing (Cược nhân đôi)
     ["Double Or Nothing Target Wins"] = 1, -- Số trận thắng mục tiêu khi chơi Double Or Nothing
@@ -58,7 +61,7 @@ getgenv().UserConfig = {
         
         -- Legendary
         ["Squirrel"] = {Big = 99, Huge = 99, Rainbow = 99},
-        ["Swan"] = {Normal =1, Big = 99, Huge = 99, Rainbow = 99},
+        ["Swan"] = {Normal = 1, Big = 99, Huge = 99, Rainbow = 99},
         
         -- Mythic
         ["Fox"] = 999,
@@ -68,7 +71,7 @@ getgenv().UserConfig = {
         ["Shadow Dragon"] = 999,
     },
 	["Equip Pets"] = {
-		{"Swan", 6, 1} -- Tự động trang bị pet Unicorn
+		{"Swan", 6, 1} -- Tự động trang bị pet Swan
 			},
 	["Sell Pets"] = {
         -- Cấu hình tự động bán pet (Thêm dấu `--` ở đầu để tạm tắt)
@@ -111,14 +114,13 @@ getgenv().UserConfig = {
 	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"}, -- Tên các dụng cụ cần thông báo
     ["Webhook Note"] = "", -- Ghi chú tên của bạn trên Webhook
     ["Discord ID"] = "", -- ID Discord của bạn để tag
-        },
-    },
+    
     ["Claim Mail"] = true, -- Tự động nhận thư gửi đến
 	
 	-- [ CẤU HÌNH NÂNG CAO ]
     ["Auto Plant"] = true, -- Bật tự động trồng cây
     ["Limit Auto Plant"] = 800, -- Giới hạn số lượng trồng tự động tối đa (800)
-    ["Blacklist Seed"] = {"Amber Cranberry"}, -- Danh sách hạt giống bị cấm (Đã fix thêm dấu phẩy ở cuối dòng để tránh lỗi script)
+    ["Blacklist Seed"] = {"Amber Cranberry"}, -- Danh sách hạt giống bị cấm
     ["Blacklist Shovel"] = {
         -- Danh sách các loại cây cấm dùng xẻng xúc theo cấp độ
 	"Maple Venus Fly Trap", 
@@ -134,4 +136,5 @@ getgenv().UserConfig = {
     },
     ["World"] = "Fall Harvest" -- Thế giới game (Mặc định: Fall Harvest)
 }
+
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
