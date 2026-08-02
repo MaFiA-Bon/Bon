@@ -29,11 +29,11 @@ getgenv().UserConfig = {
 		["Maple Tulip"] = 20,
 		["Maple Tomato"] = 20,
 		["Maple Apple"] = 20,
-		["Maple Bamboo"] = 20,
+		["Maple Bamboo"] = 9999,
 		["Maple Corn"] = 20,
 		["Maple Cactus"] = 20,
 		["Maple Pineapple"] = 20,
-		["Maple Mushroom"] = 20,
+		["Maple Mushroom"] = 9999,
 		["Maple Green Bean"] = 20,
 		["Maple Venus Fly Trap"] = 10,
 		["Maple Pomegranate"] = 10,
@@ -116,31 +116,8 @@ getgenv().UserConfig = {
 	
 	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc", -- Link Webhook Discord nhận thông báo Dụng cụ
 	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"}, -- Tên các dụng cụ cần thông báo
-    ["Webhook Note"] = "Enter_Your_Name", -- Ghi chú tên của bạn trên Webhook
-    ["Discord ID"] = "Enter_Your_Discord_ID", -- ID Discord của bạn để tag
-	
-	-- [ TÍNH NĂNG GỬI THƯ (MAIL) ]
-    ["Mail To Username"] = {"Enter_Main_Account_Username"}, -- Tên tài khoản chính nhận đồ
-    ["Items To Mail"] = {
-		["Pet"] = {
-            ["Fox"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Wolf"] = {Normal = 2, Big = 1, Huge = 1, Rainbow = 1, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Shadow Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Enter_Receiver_Username"},
-        },
-        ["Seed"] = {
-            ["Rainbow"] = {Amount = 2, To = "Enter_Receiver_Username"},
-            ["Gold"] = {Amount = 10, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Mega"] = {Amount = 3, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Maple Pomegranate"] = {Amount = 50, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Maple Venus Fly Trap"] = {Amount = 1, To = "Enter_Receiver_Username"},
-        },
-        ["Gear"] = {
-            ["Super Syrup Sprinkler"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Super Syrup Watering Can"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-            ["Super Magic Mail"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
-        },
-		["Other"] = {
-            
+    ["Webhook Note"] = "", -- Ghi chú tên của bạn trên Webhook
+    ["Discord ID"] = "", -- ID Discord của bạn để tag
         },
     },
     ["Claim Mail"] = true, -- Tự động nhận thư gửi đến
