@@ -1,0 +1,69 @@
+task.wait(90)
+getgenv().MailConfig = {
+    ["Mail Time Window"] = {
+        "08:30 - 08:40",
+        "09:00 - 09:10",
+        "09:30 - 09:40",
+        "10:00 - 10:10",
+        "10:30 - 10:45",
+        "11:00 - 11:15",
+        "11:16 - 12:29",
+
+        "13:30 - 14:10",
+        "14:30 - 14:40",
+        "15:00 - 15:10",
+        "15:30 - 15:40",
+        "16:00 - 16:10",
+        "16:30 - 16:40",
+        "17:00 - 17:10",
+        "17:30 - 17:40",
+
+        "19:00 - 19:10",
+        "19:30 - 19:40",
+        "20:00 - 20:10",
+        "20:30 - 20:40",
+        "21:00 - 21:10",
+        "21:30 - 21:40",
+        "22:00 - 22:10",
+        "22:30 - 22:40",
+        "23:00 - 23:10",
+        "23:30 - 23:40",
+        "23:45 - 02:00",
+    },
+
+    ["Claim Mail"] = false,
+    ["Mail Cooldown Secs"] = {60, 300},
+    ["Mail To Username"] = {},
+
+    ["Items To Mail"] = {
+        ["Pet"] = {
+            ["Fox"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27"}},
+            ["Wolf"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27"}},
+            ["Shadow Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27"}},
+            ["Dog"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"Herox1ShifterJ2004"}},
+            ["Hedgehog"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"Herox1ShifterJ2004"}},
+            ["Turkey"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"Herox1ShifterJ2004"}},
+            ["Squirrel"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"Xz_SPARKLYMPNIGHTFAL"}},
+            ["Swan"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"Xz_SPARKLYMPNIGHTFAL"}},
+
+        },
+
+        ["Seed"] = {
+            ["Rainbow"] = {Amount = 2, To = "Craz33zPix3lh2000"},
+            ["Gold"] = {Amount = 10, To = {"VoidzeEchoPeFury1991"}},
+            ["Mega"] = {Amount = 3, To = {"XzSlimeb2Runef2P0wer"}},
+            --["Maple Pomegranate"] = {Amount = 50, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            --["Maple Venus Fly Trap"] = {Amount = 1, To = "Enter_Receiver_Username"},
+            ["Maple Mushroom"] = {Amount = 10, To = {"ZapQcDustVcLight1992", "Circuite3HunterU1992"}},
+            ["Maple Bamboo"] = {Amount = 100, To = {"DarkC2MagicL11", "AlphaP5Mystict5Circu"}},
+        },
+
+        ["Gear"] = {
+            ["Super Syrup Sprinkler"] = {Amount = 1, To = {"Xz_Rocket41HyperU1Ze"}},
+            ["Super Syrup Watering Can"] = {Amount = 1, To = {"XzSynthlpLi0nszX2000"}},
+            --["Super Magic Mail"] = {Amount = 5, To = {"XzSynthlpLi0nszX2000"}},
+        },
+    }
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1032e5c52568b7657b19e3f62ebaac8e.lua"))()
