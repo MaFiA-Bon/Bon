@@ -1,109 +1,67 @@
-setfpscap(3)
-wait(20)
-script_key = "talARYIdaEEpgdgmrxqHIbFYPSGTEbiU";
-getgenv().UserConfig = {
-    AddFriends          = true,
-    RedeemCode = {"RELEASE", "THANKS", "update2", "sylentlyssorry", "update4"},
-    EquipBestFlavorGum  = true,
-    BuyFlavorGum        = true,
-    AutoMinigames       = true,
-    AutoRollDice        = true,
-    ["Super Ticket"]    = "Robot Claw",
-    ["Use Super Ticket"] = true,
-    ["Season Challenges"] = true, -- True means there is a chance of getting the secret Luminosity but less hatching xxx false means there is more hatching but no luminosity 
-    ["Min gems"] = "1m",
-    ["Min tickets"] = "5b", -- Default if not set in UserConfig
-    ["Min coins"] = "3b", -- Default if not set in UserConfig
-    ["Giant Chest"] = false,
-    ["Void Chest"] = false,
-    ["Golden Chest"] = false,
-    ["Royal Chest"] = false,
-    ["Detector"] = {
-        Enable = true,
-        ["Name Needed"] = {"Avernus", "Patronus"},
-        ["Rarity Needed"] = {
-            "Legendary",
-            "Mythic",
-            "Secret"
-        }
-    },
-    ["Alien Shop"] = {
-        Enable = false,
-        ["Min Gems"] = "1m",
-        ["Items Needed"] = {
-            "Golden Key",
-            "Mystery Box",
-            "Coins III",
-            "Coins IV",
-            "Lucky III",
-            "Lucky IV",
-            "Speed III",
-            "Speed IV"
-        }
-    },
-    ["Black Market"] = {
-        Enable = false,
-        ["Min Gems"] = "1m",
-        ["Items Needed"] = {
-            "Lucky Evolved",
-            -- "Coins Evolved",
-            "Mythic Evolved",
-            "Speed Evolved",
-            "Lucky V",
-            -- "Coins V",
-            "Mythic V",
-            "Speed V"
-        }
-    },
-    ["Craft Potions"] = {
-        Enable = false,
-        MinGems = "100k",
-        ["Potion Needed"] = {
-            {"Coins", Level = 5},
-            {"Speed", Level = 5},
-            {"Lucky", Level = 5},
-            {"Mythic", Level = 5}
-        }
-    },
-    ["Mastery"] = {
-        Pets = 15,
-        Buffs = 15,
-        Shops = 10
-    },
-    ["Star Shop"] = {
-        Enable = true,
-        MinStars = 100,
-        ["Items Needed"] = {
-            "Speed V",
-            "Lucky V",
-            "Mythic V"
-        }
-    },
-    ["Rifts"] = {
-        AlwaysFindRifts = true,
-        Targets = {"Neon Egg", "Chance Egg", "Underworld Egg 3","Underworld Egg 2"},
-        Luck = 5 -- dont change
-    },
-    ["Secret Bounty"] = {"Prophet", "D0GGY1337", "Queen Kitty"}, -- delete pet name if you dont want that pet
-    FindDuck = "Chance Egg", -- Nightmare Egg, Common Egg, Cyber Egg, Neon Egg
-    ["Replace FindDuck"] = "Neon Egg",
-    ["Best Potions Find Duck"] = true, --false if there are only few potions 
-    ["Enchant Team 1"] = {enable = true, ["team-up"] = 1},
-    ["Gems coefficient"] = 1,
-    ["Tickets coefficient"] = 40,
-    ["Auto Restart"] = true,
+task.wait(90)
+getgenv().MailConfig = {
+    ["Mail Time Window"] = {
+        "08:30 - 08:40",
+        "09:00 - 09:10",
+        "09:30 - 09:40",
+        "10:00 - 10:10",
+        "10:30 - 10:45",
+        "11:00 - 11:15",
+        "11:16 - 12:29",
 
-    ["Webhook"] = {
-        Enable = true,
-        Note = "Duck",
-        ID = "1120232109165006859",
-        URL = "https://discord.com/api/webhooks/1361957775608905810/M0iCCHqfRflFhMmxA6q0ia4bgaVbbFJdcLjo4lqSfIUGhDikyxJ_jzDijroCYEdzIGvH",
-        Rarity = {
-            "Legendary",
-            "Secret"
-        }, -- General rarity filter
-        Legendary = "1m",
-        ["Special Pets"] = {"Avernus", "Patronus","Dementor","Jackpot","Luminosity"}
+        "13:30 - 14:10",
+        "14:30 - 14:40",
+        "15:00 - 15:10",
+        "15:30 - 15:40",
+        "16:00 - 16:10",
+        "16:30 - 16:40",
+        "17:00 - 17:10",
+        "17:30 - 17:40",
+
+        "19:00 - 19:10",
+        "19:30 - 19:40",
+        "20:00 - 20:10",
+        "20:30 - 20:40",
+        "21:00 - 21:10",
+        "21:30 - 21:40",
+        "22:00 - 22:10",
+        "22:30 - 22:40",
+        "23:00 - 23:10",
+        "23:30 - 23:40",
+        "23:45 - 02:00",
+    },
+
+    ["Claim Mail"] = false,
+    ["Mail Cooldown Secs"] = {60, 300},
+    ["Mail To Username"] = {},
+
+    ["Items To Mail"] = {
+        ["Pet"] = {
+            ["Fox"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27"}},
+            ["Wolf"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Shadow Dragon"] = {Normal = 1, Big = 1, Huge = 1, Rainbow = 1, To = "Enter_Receiver_Username"},
+            ["Dog"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27", "Enter_Receiver_Username_2"}},
+            ["Hedgehog"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27", "Enter_Receiver_Username_2"}},
+            ["Turkey"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27", "Enter_Receiver_Username_2"}},
+            ["Squirrel"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27", "Enter_Receiver_Username_2"}},
+            ["Swan"] = {Big = 1, Huge = 1, Rainbow = 1, To = {"GlitchaZOrbitT27", "Enter_Receiver_Username_2"}},
+
+        },
+
+        ["Seed"] = {
+            ["Rainbow"] = {Amount = 2, To = "Enter_Receiver_Username"},
+            ["Gold"] = {Amount = 10, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Mega"] = {Amount = 3, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Maple Pomegranate"] = {Amount = 50, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Maple Venus Fly Trap"] = {Amount = 1, To = "Enter_Receiver_Username"},
+        },
+
+        ["Gear"] = {
+            ["Super Syrup Sprinkler"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Super Syrup Watering Can"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+            ["Super Magic Mail"] = {Amount = 5, To = {"Enter_Receiver_Username_1", "Enter_Receiver_Username_2"}},
+        },
     }
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b85c17425e59b76c0487999c21ef4557.lua"))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/1032e5c52568b7657b19e3f62ebaac8e.lua"))()
