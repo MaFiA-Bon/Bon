@@ -1,31 +1,239 @@
-setfpscap(5)  -- number = fps
+if not game:IsLoaded() then game.Loaded:Wait() end
 
-getgenv().petsGoConfig = {
-    AUTO_RESTART = true,
-    -- true/false (true = consume, false = automail)
-    CONSUME_CORRUPTED_HUGE_BAIT = true,
-    CONSUME_ALL_MINING_CHEST = true,
-    CONSUME_EVENT_EGG = true, -- Hype eggs not included
-    CONSUME_INSTA_LUCK_4 = true,
-    CONSUME_VAULT_KEY = true,
-    CONSUME_KRAKEN_TENTACLE = true,
-    CONSUME_BUCKET_O_CHUM = true,
+script_key = "jaLXmziuPHXvDrNVpBwlyRVISJzaweeL"; -- Điền Key script của bạn vào đây
 
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1304677344148979772/cS81U8uDXdR-4O7vst5Wk59u82Fa6ij2lSNvORYTT6bSy8gyvPQ-c2UbaD7nfKVRYHSZ",
-    MAILING_WEBHOOK_URL = "https://discord.com/api/webhooks/1311596125861576714/v6zVuGK0w7_B-KBXblHLyBxnifZr98KKa51a_mtx3zPvGOOkU9tGdpVjHN1mV4JX0g8v",
-    DISCORD_ID = "1120232109165006859",
-    WEBHOOK_ODDS = 200000000, -- Minimum Pet Odds To Trigger Webhook
+getgenv().UserConfig = {
 
-    DIAMOND_EGG = true,  -- true = Diamond Egg, false = F2P Egg
-    MINE_ALL_ORES = false,  -- true = all ore, false = runic & event ore
-    
-    MAILING = true,  -- Auto mail
-    MAIL_PICKAXE = true,  -- true = mail (smart mail [keep best pickaxe, mail excess])
-    SHOW_PET_WEBHOOK_USERNAME = true,
-    MAIL_WEBHOOK_ODDS = 100000000, -- Minimum Pet Odds To Trigger MAIL Webhook
-    MAIL_PET_ODDS = 490000000,  -- Minimum Pet Odds To Mail
+    ["FPS Cap"] = 5,
+	["World"] = "Fall Harvest",
+    ["Auto Double Or Nothing"] = false,
+    ["Double Or Nothing Target Wins"] = 1,
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
 
-    USERNAME_TO_MAIL = {"HBT_yh7FSkBwv9"}, -- Mail to username, Example : USERNAME_TO_MAIL = {"username1", "username2"} 
+    ["Limit Plant Seed"] = {
+        --Mythic--
+        ["Gold"] = 999,
+        ["Mega"] = 999,
+        ["Rainbow"] = 999,
+        --["Amber Cranberry"] = 10,
+        --["Atlantic Giant Pumpkin"] = 10,
+        --["Conifer Cone"] = 20,
+        ["Maple Venom Spitter"] = 50,
+        ["Maple Venus Fly Trap"] = 20,
+        ["Maple Poison Apple"] = 30,  
+        --["Maple Pomegranate"] = 10,
+        --Legendary--
+        ["Maple Cherry"] = 40,
+        ["Maple Dragon Fruit"] = 20,
+
+        --Epic--
+        ["Maple Green Bean"] = 20,
+        ["Maple Mushroom"] = 50,
+
+        --Rare--
+        ["Maple Bamboo"] = 50,
+        ["Maple Pineapple"] = 40,
+        ["Maple Cactus"] = 35,
+        ["Maple Corn"] = 35,
+
+        --Uncommon--
+        ["Maple Apple"] = 30,
+        ["Maple Tomato"] = 25,
+        ["Maple Tulip"] = 999,
+
+        ["Maple Blueberry"] = 20,
+        ["Maple Strawberry"] = 20,
+        ["Maple Carrot"] = 20,
+    },
+
+    ["Limit Buy Seed"] = {
+        --Legendary--
+		["Amber Cranberry"] = 10,
+		["Atlantic Giant Pumpkin"] = 10,
+        ["Conifer Cone"] = 20,
+        ["Maple Venom Spitter"] = 5,
+        ["Maple Venus Fly Trap"] = 5,
+        ["Maple Poison Apple"] = 5,  
+        --["Maple Pomegranate"] = 10,
+        ["Maple Cherry"] = 1,
+        ["Maple Dragon Fruit"] = 1,
+
+        --Epic--
+        ["Maple Green Bean"] = 5,
+        ["Maple Mushroom"] = 999,
+
+        --Rare--
+        ["Maple Bamboo"] = 999,
+        ["Maple Pineapple"] = 5,
+        ["Maple Cactus"] = 5,
+        ["Maple Corn"] = 5,
+
+        --Uncommon--
+        ["Maple Apple"] = 5,
+        ["Maple Tomato"] = 5,
+        ["Maple Tulip"] = 20,
+
+        ["Maple Blueberry"] = 5,
+        ["Maple Strawberry"] = 5,
+        ["Maple Carrot"] = 20,
+    },
+
+    ["Favorite"] = {
+        ["Horned Melon"] = {},
+    },
+    ["Buy Pets"] = {
+        -- Uncommon
+        ["Dog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Rare
+        ["Hedgehog"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Turkey"] = {Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Legendary
+        ["Squirrel"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Swan"] = {Normal = 1, Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Mythic
+        ["Fox"] = 999,
+        ["Wolf"] = 999,
+
+        -- Super
+        ["Shadow Dragon"] = 999,
+    },
+
+    ["Equip Pets"] = {
+        {"Wolf", 6, 1},
+        {"Fox", 6, 2},
+        {"Swan", 6, 3},
+    },
+
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 3,
+    ["Unlock Pet Slots"] = 6,
+
+    ["Auto Collect Seed Packs"] = true,
+
+    ["Gears"] = {
+        ["Buy Gear"] = {
+            ["Syrup Watering Can"] = 50,
+            ["Syrup Sprinkler"] = 50,
+            ["Super Syrup Sprinkler"] = 100,
+            ["Super Syrup Watering Can"] = 100,
+            --["Super Magic Mail"] = 999,
+        },
+
+        ["Gears To Use"] = {
+            "Syrup Watering Can",
+            "Syrup Sprinkler",
+            --"Super Syrup Sprinkler", -- Mua vòi si-rô siêu cấp
+            --"Super Syrup Watering Can", -- Mua bình tưới si-rô siêu cấp
+            --"Super Magic Mail",
+        },
+    },
+    ["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
+    ["Webhook Pet Name"] = {"Dog", "Hedgehog", "Turkey", "Squirrel", "Swan", "Fox", "Wolf", "Shadow Dragon"},
+    ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
+	
+	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Maple Carrot", "Maple Pomegranate", "Maple Venus Fly Trap", "Maple Poison Apple", "Maple Venom Spitter", "Conifer Cone", "Atlantic Giant Pumpkin", "Amber Cranberry"}, -- Tên các loại hạt giống cần thông báo
+	
+	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
+	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
+    ["Harvest Mutation Only"] = {
+        --"Bamboo", -- Chỉ thu hoạch Bamboo đột biến (bất kỳ loại đột biến nào)
+        --"Mushroom",
+        --"Rocket Pop",
+    },
+    ["Auto Plant"] = false,
+    ["Limit Auto Plant"] = 700,
+
+    ["Blacklist Shovel"] = {
+        "Gold",
+        "Mega",
+        "Rainbow",
+        "Amber Cranberry",
+        "Atlantic Giant Pumpkin",
+        "Conifer Cone",
+        "Maple Venom Spitter",
+        "Maple Venus Fly Trap",
+        "Maple Poison Apple",
+        "Maple Pomegranate",
+
+        --Legendary--
+        "Maple Cherry",
+        "Maple Dragon Fruit",
+
+        --Epic--
+        "Maple Green Bean",
+        "Maple Mushroom",
+
+        --Rare--
+        "Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+       -- "Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        "Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        "Maple Carrot",
+    },
+
+    ["Shovel Plant Once"] = {
+        --Rare--
+        --"Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+       -- "Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        --"Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        --"Maple Carrot",
+    },
+
+    ["Blacklist Seed"] = {
+        --"Mega",
+        "Amber Cranberry",
+        "Atlantic Giant Pumpkin",
+        "Conifer Cone",
+        --"Maple Venom Spitter",
+        --"Maple Venus Fly Trap",
+        --"Maple Poison Apple",
+        --"Maple Pomegranate",
+
+        --Legendary--
+        --"Maple Cherry",
+        --"Maple Dragon Fruit",
+
+        --Epic--
+        --"Maple Green Bean",
+        --"Maple Mushroom",
+
+        --Rare--
+        --"Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+       -- "Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        --"Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        --"Maple Carrot",
+    },
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/cd1c29852c6641789162a7b0a4c97428.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
