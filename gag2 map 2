@@ -13,13 +13,9 @@ getgenv().UserConfig = {
 		["Super Sprinkler"] = {["Max Price"] = "1b"}, -- Giá tối đa để mua vòi nước Super Sprinkler               
 	},
     ["Limit Plant Seed"] = {
-        -- Giới hạn số lượng từng loại hạt giống được phép trồng tự động trên đất
-	-- không dùng tới nên đừng qtam chỗ này
         ["Carrot"] = 50, 
             },
     ["Limit Buy Seed"] = {
-        -- Giới hạn số lượng từng loại hạt giống được phép mua tự động trong cửa hang
-	-- Xoá bớt dòng tên hạt không cần nếu muốn tiết kiệm sheckles
 		["Maple Carrot"] = 20,
 		["Maple Strawberry"] = 20,
 		["Maple Blueberry"] = 20,
@@ -77,7 +73,7 @@ getgenv().UserConfig = {
 	["Sell Pets"] = {
         -- Cấu hình tự động bán pet (Thêm dấu `--` ở đầu để tạm tắt)
 		-- ["Frog"] = {Normal = 6},
-		-- ["Bunny"] = {Normal = 6}
+		-- ["Bunny"] = {Normal = 6},
 	},
     ["Expand Plot"] = true, -- Tự động mua mở rộng ô đất trồng
     ["Plot Expansions"] = 3, -- Số lần mua mở rộng ô đất mục tiêu
