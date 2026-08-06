@@ -141,7 +141,7 @@ getgenv().UserConfig = {
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
 	
 	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
-    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Maple Carrot", "Maple Pomegranate", "Maple Venus Fly Trap", "Maple Poison Apple", "Maple Venom Spitter", "Conifer Cone", "Atlantic Giant Pumpkin", "Amber Cranberry"}, -- Tên các loại hạt giống cần thông báo
+    ["Webhook Seed Name"] = {"Rainbow", "Gold", "Mega", "Conifer Cone", "Atlantic Giant Pumpkin", "Amber Cranberry"}, -- Tên các loại hạt giống cần thông báo
 	
 	["Webhook Gear URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
 	["Webhook Gear Name"] = {"Super Syrup Sprinkler", "Super Syrup Watering Can", "Super Magic Mail"},
