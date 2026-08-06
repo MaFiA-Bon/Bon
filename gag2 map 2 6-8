@@ -137,7 +137,7 @@ getgenv().UserConfig = {
         },
     },
  	["Webhook Pet URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
-    ["Webhook Pet Name"] = {"Dog", "Hedgehog", "Turkey", "Squirrel", "Swan", "Fox", "Wolf", "Shadow Dragon"},
+    ["Webhook Pet Name"] = {"Wolf", "Shadow Dragon"},
     ["Webhook Pet Rarity"] = {"Mythic", "Super", "Secret"},
 	
 	["Webhook Seed URL"] = "https://discord.com/api/webhooks/1516360005396336754/zioVkwis6zkgDlXLszQWekQ_B24Bb8ESf0nsLLXHpyC1DWo5WRW9ygleX4jFZYltfthc",
