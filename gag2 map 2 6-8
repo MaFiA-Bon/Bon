@@ -1,0 +1,235 @@
+if not game:IsLoaded() then game.Loaded:Wait() end
+
+script_key = "GZYYQNqTmxthFRmrlrvxKmEIySWpJRVK"; -- Điền Key script của bạn vào đây
+
+getgenv().UserConfig = {
+
+    ["FPS Cap"] = 5,
+	["World"] = "Fall Harvest",
+    ["Auto Double Or Nothing"] = false,
+    ["Double Or Nothing Target Wins"] = 1,
+    ["Auto Buy Seed"] = true,
+    ["Auto Plant Seed"] = true,
+
+    ["Limit Plant Seed"] = {
+        --Mythic--
+        ["Gold"] = 999,
+        ["Mega"] = 999,
+        --["Rainbow"] = 999,
+        --["Amber Cranberry"] = 10,
+        ["Atlantic Giant Pumpkin"] = 1,
+        --["Conifer Cone"] = 20,
+        --["Maple Venom Spitter"] = 50,
+        --["Maple Venus Fly Trap"] = 20,
+        --["Maple Poison Apple"] = 30,  
+        --["Maple Pomegranate"] = 10,
+        --Legendary--
+        ["Maple Cherry"] = 40,
+        ["Maple Dragon Fruit"] = 30,
+
+        --Epic--
+        ["Maple Green Bean"] = 50,
+        ["Maple Mushroom"] = 999,
+
+        --Rare--
+        ["Maple Bamboo"] = 999,
+        ["Maple Pineapple"] = 70,
+        ["Maple Cactus"] = 70,
+        ["Maple Corn"] = 70,
+
+        --Uncommon--
+        ["Maple Apple"] = 60,
+        ["Maple Tomato"] = 50,
+        ["Maple Tulip"] = 999,
+
+        ["Maple Blueberry"] = 50,
+        ["Maple Strawberry"] = 50,
+        ["Maple Carrot"] = 999,
+    },
+
+    ["Limit Buy Seed"] = {
+        --Legendary--
+		["Amber Cranberry"] = 10,
+		["Atlantic Giant Pumpkin"] = 100,
+        --["Conifer Cone"] = 20,
+        ["Maple Venom Spitter"] = 5,
+        --["Maple Venus Fly Trap"] = 5,
+        --["Maple Poison Apple"] = 5,  
+        --["Maple Pomegranate"] = 10,
+        ["Maple Cherry"] = 1,
+        ["Maple Dragon Fruit"] = 1,
+
+        --Epic--
+        ["Maple Green Bean"] = 1,
+        ["Maple Mushroom"] = 999,
+
+        --Rare--
+        ["Maple Bamboo"] = 999,
+        ["Maple Pineapple"] = 1,
+        ["Maple Cactus"] = 2,
+        ["Maple Corn"] = 2,
+
+        --Uncommon--
+        ["Maple Apple"] = 2,
+        ["Maple Tomato"] = 2,
+        ["Maple Tulip"] = 999,
+
+        ["Maple Blueberry"] = 2,
+        ["Maple Strawberry"] = 2,
+        ["Maple Carrot"] = 999,
+    },
+
+    ["Favorite"] = {
+        ["Horned Melon"] = {},
+    },
+    ["Buy Pets"] = {
+        -- Uncommon
+        ["Dog"] = {Huge = 99, Rainbow = 99},
+        
+        -- Rare
+        ["Hedgehog"] = {Huge = 99, Rainbow = 99},
+        ["Turkey"] = {Normal = 6, Huge = 99, Rainbow = 99},
+        
+        -- Legendary
+        ["Squirrel"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Swan"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        
+        -- Mythic
+        ["Fox"] = {Big = 99, Huge = 99, Rainbow = 99},
+        ["Wolf"] = {Normal = 6, Big = 99, Huge = 99, Rainbow = 99},
+        --["Fox"] = 999,
+        --["Wolf"] = 999,
+
+        -- Super
+        ["Shadow Dragon"] = 999,
+    },
+    ["Equip Wolf At Night"] = true,
+    ["Equip Pets"] = {
+        --{"Wolf", 6, 1},
+        --{"Fox", 6, 2},
+        {"Swan", 6, 1},
+        {"Turkey", 6, 2},
+    },
+
+    ["Expand Plot"] = true,
+    ["Plot Expansions"] = 3,
+    ["Unlock Pet Slots"] = 6,
+
+    ["Auto Collect Seed Packs"] = true,
+
+    ["Gears"] = {
+        ["Buy Gear"] = {
+			["Harp"] = 100, -- Mua đàn Harp
+            ["Syrup Watering Can"] = 50,
+            ["Syrup Sprinkler"] = 50,
+            ["Super Syrup Sprinkler"] = 100,
+            ["Super Syrup Watering Can"] = 100,
+            --["Super Magic Mail"] = 999,
+        },
+
+        ["Gears To Use"] = {
+			["Harp"] = {["Min Sheckles"] = "30m"},
+            "Syrup Watering Can",
+            "Syrup Sprinkler",
+            --"Super Syrup Sprinkler", -- Mua vòi si-rô siêu cấp
+            --"Super Syrup Watering Can", -- Mua bình tưới si-rô siêu cấp
+            --"Super Magic Mail",
+        },
+    },
+    ["Harvest Mutation Only"] = {
+        --"Bamboo", -- Chỉ thu hoạch Bamboo đột biến (bất kỳ loại đột biến nào)
+        --"Mushroom",
+        --"Rocket Pop",
+    },
+    ["Auto Plant"] = false,
+    ["Limit Auto Plant"] = 700,
+
+    ["Blacklist Shovel"] = {
+        "Gold",
+        "Mega",
+        "Rainbow",
+        "Amber Cranberry",
+        "Atlantic Giant Pumpkin",
+        "Conifer Cone",
+        "Maple Venom Spitter",
+        "Maple Venus Fly Trap",
+        "Maple Poison Apple",
+        "Maple Pomegranate",
+
+        --Legendary--
+        "Maple Cherry",
+        "Maple Dragon Fruit",
+
+        --Epic--
+        "Maple Green Bean",
+        "Maple Mushroom",
+
+        --Rare--
+        "Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+        --"Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        "Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        "Maple Carrot",
+    },
+
+    ["Shovel Plant Once"] = {
+        --Rare--
+        --"Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+       -- "Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        --"Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        --"Maple Carrot",
+    },
+
+    ["Blacklist Seed"] = {
+        --"Mega",
+        --"Rainbow",
+        "Amber Cranberry",
+        --"Atlantic Giant Pumpkin",
+        --"Conifer Cone",
+        --"Maple Venom Spitter",
+        --"Maple Venus Fly Trap",
+        --"Maple Poison Apple",
+        --"Maple Pomegranate",
+
+        --Legendary--
+        --"Maple Cherry",
+        --"Maple Dragon Fruit",
+
+        --Epic--
+        --"Maple Green Bean",
+        --"Maple Mushroom",
+
+        --Rare--
+        --"Maple Bamboo",
+        --"Maple Pineapple",
+        --"Maple Cactus",
+       -- "Maple Corn",
+
+        --Uncommon--
+        --"Maple Apple",
+        --"Maple Tomato",
+        --"Maple Tulip",
+
+        --"Maple Blueberry",
+        --"Maple Strawberry",
+        --"Maple Carrot",
+    },
+}
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
