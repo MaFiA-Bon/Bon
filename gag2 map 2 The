@@ -1,6 +1,6 @@
 if not game:IsLoaded() then game.Loaded:Wait() end
 
-script_key = "jaLXmziuPHXvDrNVpBwlyRVISJzaweeL"; -- Điền Key script của bạn vào đây
+script_key = "GZYYQNqTmxthFRmrlrvxKmEIySWpJRVK"; -- Điền Key script của bạn vào đây
 
 getgenv().UserConfig = {
 
@@ -15,13 +15,13 @@ getgenv().UserConfig = {
         --Mythic--
         ["Gold"] = 999,
         ["Mega"] = 999,
-        ["Rainbow"] = 999,
+        --["Rainbow"] = 999,
         --["Amber Cranberry"] = 10,
         --["Atlantic Giant Pumpkin"] = 10,
         --["Conifer Cone"] = 20,
-        ["Maple Venom Spitter"] = 50,
-        ["Maple Venus Fly Trap"] = 20,
-        ["Maple Poison Apple"] = 30,  
+        --["Maple Venom Spitter"] = 50,
+        --["Maple Venus Fly Trap"] = 20,
+        --["Maple Poison Apple"] = 30,  
         --["Maple Pomegranate"] = 10,
         --Legendary--
         ["Maple Cherry"] = 40,
@@ -29,7 +29,7 @@ getgenv().UserConfig = {
 
         --Epic--
         ["Maple Green Bean"] = 20,
-        ["Maple Mushroom"] = 50,
+        --["Maple Mushroom"] = 50,
 
         --Rare--
         ["Maple Bamboo"] = 50,
@@ -50,21 +50,21 @@ getgenv().UserConfig = {
     ["Limit Buy Seed"] = {
         --Legendary--
 		["Amber Cranberry"] = 10,
-		["Atlantic Giant Pumpkin"] = 10,
+		["Atlantic Giant Pumpkin"] = 110,
         ["Conifer Cone"] = 20,
-        ["Maple Venom Spitter"] = 5,
-        ["Maple Venus Fly Trap"] = 5,
-        ["Maple Poison Apple"] = 5,  
+        --["Maple Venom Spitter"] = 5,
+        --["Maple Venus Fly Trap"] = 5,
+        --["Maple Poison Apple"] = 5,  
         --["Maple Pomegranate"] = 10,
         ["Maple Cherry"] = 1,
         ["Maple Dragon Fruit"] = 1,
 
         --Epic--
         ["Maple Green Bean"] = 5,
-        ["Maple Mushroom"] = 999,
+        ["Maple Mushroom"] = 9999,
 
         --Rare--
-        ["Maple Bamboo"] = 999,
+        ["Maple Bamboo"] = 9999,
         ["Maple Pineapple"] = 5,
         ["Maple Cactus"] = 5,
         ["Maple Corn"] = 5,
@@ -92,7 +92,7 @@ getgenv().UserConfig = {
         
         -- Legendary
         ["Squirrel"] = {Big = 99, Huge = 99, Rainbow = 99},
-        ["Swan"] = {Normal = 1, Big = 99, Huge = 99, Rainbow = 99},
+        ["Swan"] = {Big = 99, Huge = 99, Rainbow = 99},
         
         -- Mythic
         ["Fox"] = 999,
@@ -144,7 +144,7 @@ getgenv().UserConfig = {
         --"Rocket Pop",
     },
     ["Auto Plant"] = false,
-    ["Limit Auto Plant"] = 700,
+    ["Limit Auto Plant"] = 800,
 
     ["Blacklist Shovel"] = {
         "Gold",
@@ -232,6 +232,7 @@ getgenv().UserConfig = {
         --"Maple Strawberry",
         --"Maple Carrot",
     },
+    ["World"] = "Fall Harvest"
 }
 
 loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/081b6484489dff091ae98ca65051f94b.lua"))()
