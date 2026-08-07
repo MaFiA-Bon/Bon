@@ -80,6 +80,7 @@ getgenv().UserConfig = {
     ["Merge Eclipse Bloom"] = true,
     ["Gears"] = {
         ["Buy Gear"] = {
+			["Harp"] = 100,
 			["Trowel"] = 50,
             ["Syrup Watering Can"] = 50,
             ["Syrup Sprinkler"] = 50,
@@ -87,6 +88,7 @@ getgenv().UserConfig = {
             ["Super Syrup Sprinkler"] = 50,
         },
         ["Gears To Use"] = {
+			["Harp"] = {["Min Sheckles"] = "30m"},
             "Trowel",
             "Syrup Watering Can",
 			"Syrup Sprinkler",
