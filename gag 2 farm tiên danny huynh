@@ -62,7 +62,8 @@ getgenv().UserConfig = {
 	},
     ["Favorite"] = {},
     ["Buy Pets"] = {
-		["Hedgehog"] = {Huge = 99, Rainbow = 99},
+		["Squirrel"] = {Huge = 99},
+		["Hedgehog"] = {Huge = 99},
 		["Dog"] = {Huge = 99},
         ["Hedgehog"] = {Big = 99, Huge = 99, Rainbow = 99},
         ["Turkey"] = {Normal = 6, Big = 6, Huge = 6, Rainbow = 6},
